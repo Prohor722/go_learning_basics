@@ -22,6 +22,7 @@ func showVariables() {
 	fmt.Println("Sum of float is:", sum2)	// using fmt package to print float sum
 	fmt.Println("Sum of float32 is:", sum3)
 	println("String is:", str)
+	fmt.Printf("One line String is: %v", str)
 	println(str2)
 
 	println("this is a variable: ",a)
