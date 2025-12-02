@@ -14,6 +14,11 @@ func showVariables() {
 	const abc = 100
 	const pi float64 = 3.14159
 	const str1 string = "Constant String"
+	var name string
+
+	println("Enter user name:")
+	fmt.Scan(&name)
+	fmt.Printf("The user name: %v.\n", name)
 
 	var sum3 float32 = f + g
 	// _ = d // to avoid unused variable error
