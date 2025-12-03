@@ -10,5 +10,5 @@ func formatVariables() {
 	print("Enter a decimal number: ")
 	fmt.Scan(&decimalNumber)
 
-	println("\n You have entered: ", decimalNumber)
+	fmt.Printf("\n You have entered: %b", decimalNumber) // binary format
 }
