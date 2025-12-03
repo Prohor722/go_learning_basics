@@ -3,6 +3,12 @@ package main
 func main() {
 	// showVariables();
 	// Prints();
-	formatVariables();
+	// formatVariables();
+	Tests();
+}
+
+
+func Tests() {
+ print("Hello, World!")
 }
 
