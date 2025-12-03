@@ -1,7 +1,8 @@
 package main
 
 func main() {
-	showVariables();
+	// showVariables();
 	// Prints();
+	formatVariables();
 }
 
