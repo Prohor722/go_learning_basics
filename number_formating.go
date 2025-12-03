@@ -1,8 +1,14 @@
 package main
 
-func formatVariables() {
-	a:= 10
-	var b int = 20	
+import (
+	"fmt"
+)
 
-	print(a," and ",b)
+func formatVariables() {
+	var decimalNumber int
+
+	print("Enter a decimal number: ")
+	fmt.Scan(&decimalNumber)
+
+	println("\n You have entered: ", decimalNumber)
 }
