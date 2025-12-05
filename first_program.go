@@ -14,7 +14,6 @@ func Tests() {
 	_ = a + b
 	sum := a + b
 
-
 	print(sum)
 
  print("Hello, World!")
