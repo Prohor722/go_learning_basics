@@ -4,7 +4,8 @@ func main() {
 	// showVariables();
 	// Prints();
 	// formatVariables();
-	Tests();
+	// Tests();
+	stingPrints();
 }
 
 
