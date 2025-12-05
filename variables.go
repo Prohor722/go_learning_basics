@@ -38,3 +38,10 @@ func showVariables() {
 
 	fmt.Printf("Constant abc: %d, pi: %.5f, str1: %s\n", abc, pi, str1)
 }
+
+func stingPrints(){
+	var str string = "Prohor Banik"
+	println("Hello, ", str)
+	fmt.Printf("Hello, %s\n", str)
+	fmt.Printf("Hello, %q\n", str)
+}
