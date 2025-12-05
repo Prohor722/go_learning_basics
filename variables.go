@@ -43,5 +43,6 @@ func stingPrints(){
 	var str string = "Prohor Banik"
 	println("Hello, ", str)
 	fmt.Printf("Hello, %s\n", str)
+	fmt.Printf("Hello, %v\n", str)
 	fmt.Printf("Hello, %q\n", str)
 }
