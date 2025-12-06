@@ -5,7 +5,8 @@ func main() {
 	// Prints();
 	// formatVariables();
 	// Tests();
-	stingPrints();
+	// stingPrints();
+	calculator();
 }
 
 
