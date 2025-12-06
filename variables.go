@@ -39,7 +39,7 @@ func showVariables() {
 	fmt.Printf("Constant abc: %d, pi: %.5f, str1: %s\n", abc, pi, str1)
 }
 
-func stingPrints(){
+func stingPrints() {
 	var str string = "Prohor Banik"
 	println("Hello, ", str)  // simple println
 	fmt.Printf("Hello, %s\n", str)  // string format
