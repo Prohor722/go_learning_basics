@@ -10,7 +10,7 @@ func calculator(){
 	print("Enter two numbers: ")
 	fmt.Scan(&x,&y)
 	
-	print("Enter operator: ")
+	print("Enter operator(+,-,* or /): ")
 	fmt.Scan(&operator)
 
 	switch operator {
