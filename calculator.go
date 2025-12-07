@@ -7,11 +7,14 @@ import (
 func calculator(){
 	var x,y int
 	operator:=""
-	print("Enter two numbers: ")
-	fmt.Scan(&x,&y)
+	print("Enter first number: ")
+	fmt.Scan(&x)
 	
 	print("Enter operator(+,-,* or /): ")
 	fmt.Scan(&operator)
+
+	print("Enter second number: ")
+	fmt.Scan(&y)
 
 	switch operator {
 		case "+":
