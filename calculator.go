@@ -35,6 +35,12 @@ func calculator(){
 
 func areaCalculator() {
 	var radius float64
+
+	print("Calculate area of a rectangle or a circle? (r/c): ")
+	var choice string
+	fmt.Scan(&choice)
+
+	if choice == "r" {	
 	print("Enter the radius of the circle: ")
 	fmt.Scan(&radius)
 	area := areaOfCircle(radius)
@@ -44,4 +50,8 @@ func areaCalculator() {
 func areaOfCircle(radius float64) float64 {
 	const pi = 3.14159
 	return pi * radius * radius
+}
+
+func areaOfRectangle(length, width float64) float64 {
+	return length * width
 }
