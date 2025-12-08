@@ -45,6 +45,17 @@ func areaCalculator() {
 	fmt.Scan(&radius)
 	area := areaOfCircle(radius)
 	fmt.Printf("The area of the circle with radius %.2f is %.2f\n", radius, area)
+	} else if choice == "c" {
+		var length, width float64
+		print("Enter the length of the rectangle: ")
+		fmt.Scan(&length)
+		print("Enter the width of the rectangle: ")
+		fmt.Scan(&width)
+		area := areaOfRectangle(length, width)
+		fmt.Printf("The area of the rectangle with length %.2f and width %.2f is %.2f\n", length, width, area)
+	} else {
+		fmt.Println("Invalid choice. Please enter 'r' for rectangle or 'c' for circle.")
+	}
 }
 
 func areaOfCircle(radius float64) float64 {
