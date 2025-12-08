@@ -32,3 +32,8 @@ func calculator(){
 	}
 
 }
+
+func areaOfCircle(radius float64) float64 {
+	const pi = 3.14159
+	return pi * radius * radius
+}
