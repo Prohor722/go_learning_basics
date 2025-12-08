@@ -6,7 +6,9 @@ func main() {
 	// formatVariables();
 	// Tests();
 	// stingPrints();
-	calculator();
+	// calculator();
+
+	areaCalculator();
 }
 
 
