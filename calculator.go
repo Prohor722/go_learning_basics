@@ -33,6 +33,13 @@ func calculator(){
 
 }
 
+func areaCalculator() {
+	var radius float64
+	print("Enter the radius of the circle: ")
+	fmt.Scan(&radius)
+	area := areaOfCircle(radius)
+	fmt.Printf("The area of the circle with radius %.2f is %.2f\n", radius, area)
+}
 
 func areaOfCircle(radius float64) float64 {
 	const pi = 3.14159
