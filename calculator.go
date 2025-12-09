@@ -53,6 +53,14 @@ func areaCalculator() {
 		fmt.Scan(&width)
 		area := areaOfRectangle(length, width)
 		fmt.Printf("The area of the rectangle with length %.2f and width %.2f is %.2f\n", length, width, area)
+	} else if choice == "t" {
+		var base, height float64
+		print("Enter the base of the triangle: ")
+		fmt.Scan(&base)
+		print("Enter the height of the triangle: ")
+		fmt.Scan(&height)
+		area := areaOfTriangle(base, height)
+		fmt.Printf("The area of the triangle with base %.2f and height %.2f is %.2f\n", base, height, area)
 	} else {
 		fmt.Println("Invalid choice. Please enter 'r' for rectangle or 'c' for circle.")
 	}
