@@ -36,7 +36,7 @@ func calculator(){
 func areaCalculator() {
 	var radius float64
 
-	print("Calculate area of a rectangle or a circle? (r/c): ")
+	print("Calculate area of rectangle, tringle or circle? (r/t/c): ")
 	var choice string
 	fmt.Scan(&choice)
 
