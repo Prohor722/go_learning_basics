@@ -40,30 +40,34 @@ func areaCalculator() {
 	var choice string
 	fmt.Scan(&choice)
 
-	if choice == "r" {	
-		print("Enter the radius of the circle: ")
-		fmt.Scan(&radius)
-		area := areaOfCircle(radius)
-		fmt.Printf("The area of the circle with radius %.2f is %.2f\n", radius, area)
-	} else if choice == "c" {
-		var length, width float64
-		print("Enter the length of the rectangle: ")
-		fmt.Scan(&length)
-		print("Enter the width of the rectangle: ")
-		fmt.Scan(&width)
-		area := areaOfRectangle(length, width)
-		fmt.Printf("The area of the rectangle with length %.2f and width %.2f is %.2f\n", length, width, area)
-	} else if choice == "t" {
-		var base, height float64
-		print("Enter the base of the triangle: ")
-		fmt.Scan(&base)
-		print("Enter the height of the triangle: ")
-		fmt.Scan(&height)
-		area := areaOfTriangle(base, height)
-		fmt.Printf("The area of the triangle with base %.2f and height %.2f is %.2f\n", base, height, area)
-	} else {
-		fmt.Println("Invalid choice. Please enter 'r' for rectangle or 'c' for circle.")
-	}
+		if choice == "c" {	
+			print("Enter the radius of the circle: ")
+			fmt.Scan(&radius)
+			area := areaOfCircle(radius)
+			
+			fmt.Printf("The area of the circle with radius %.2f is %.2f\n", radius, area)
+	
+		} else if choice == "r" {
+			var length, width float64
+			print("Enter the length of the rectangle: ")
+			fmt.Scan(&length)
+			print("Enter the width of the rectangle: ")
+			fmt.Scan(&width)
+			area := areaOfRectangle(length, width)
+			fmt.Printf("The area of the rectangle with length %.2f and width %.2f is %.2f\n", length, width, area)
+	
+		} else if choice == "t" {
+			var base, height float64
+			print("Enter the base of the triangle: ")
+			fmt.Scan(&base)
+			print("Enter the height of the triangle: ")
+			fmt.Scan(&height)
+			area := areaOfTriangle(base, height)
+			fmt.Printf("The area of the triangle with base %.2f and height %.2f is %.2f\n", base, height, area)
+	
+		} else {
+			fmt.Println("Invalid choice. Please enter 'r' for rectangle or 'c' for circle.")
+		}
 }
 
 func areaOfCircle(radius float64) float64 {
