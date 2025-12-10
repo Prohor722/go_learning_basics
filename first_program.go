@@ -8,7 +8,7 @@ func main() {
 	// stingPrints();
 	// calculator();
 
-	areaCalculator();
+	assignOperator();
 }
 
 
