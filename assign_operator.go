@@ -18,5 +18,7 @@ func assignOperator() {
 	x--;
 	println("after x-- ",x)
 
+	println("example of x==0, where x is 0",x==0)
+	println("example of x!=1, where x is not 1", x!=1)
 
 }
