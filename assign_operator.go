@@ -11,5 +11,6 @@ func assignOperator() {
 	println("after x *= 2 ",x)
 	x /= 4   // x = x / 4
 	x %= 3   // x = x % 3
-	print(x)
+	println("after x /= 4 and x %= 3 ",x)
+	
 }
