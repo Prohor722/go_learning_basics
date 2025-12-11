@@ -15,6 +15,8 @@ func assignOperator() {
 	println("after x %= 3 ",x)
 	x++;
 	println("after x++ ",x)
+	x--;
+	println("after x-- ",x)
 
 
 }
