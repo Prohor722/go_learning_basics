@@ -6,4 +6,5 @@ func logicalOperator() {
 	println("a && b is ", a && b) // Logical AND
 	println("a || b is ", a || b) // Logical OR
 	println("!a is ", !a)         // Logical NOT
+	println("!b is ", !b)         // Logical NOT
 }
