@@ -8,7 +8,8 @@ func main() {
 	// stingPrints();
 	// calculator();
 
-	assignOperator();
+	// assignOperator();
+	logicalOperator();
 }
 
 
