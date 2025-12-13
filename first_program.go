@@ -10,7 +10,9 @@ func main() {
 
 	// assignOperator();
 	// logicalOperator();
-	conditions();
+	
+	// conditions();
+	loops();
 }
 
 
