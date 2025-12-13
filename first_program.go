@@ -9,7 +9,8 @@ func main() {
 	// calculator();
 
 	// assignOperator();
-	logicalOperator();
+	// logicalOperator();
+	conditions();
 }
 
 
