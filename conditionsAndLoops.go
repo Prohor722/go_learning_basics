@@ -14,3 +14,9 @@ func conditions(){
 		println("a is greater than b")
 	}
 }
+
+func loops(){
+	for i := 0; i < 10; i++ {
+		println(i)
+	}
+}
