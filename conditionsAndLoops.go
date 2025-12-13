@@ -16,7 +16,7 @@ func conditions(){
 }
 
 func loops(){
-	for i := 0; i < 10; i++ {
+	for i := 1; i < 11; i++ {
 		println(i)
 	}
 }
