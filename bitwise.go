@@ -8,4 +8,5 @@ func bitwise(){
 
 	fmt.Printf("a & b = %d\n", a & b)   // 12 = 0000 1100
 	fmt.Printf("a | b = %d\n", a | b)   // 61 = 0011 1101
+	fmt.Printf("a ^ b = %d\n", a ^ b)   // 49 = 0011 0001
 }
