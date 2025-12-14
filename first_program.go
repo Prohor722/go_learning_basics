@@ -12,7 +12,8 @@ func main() {
 	// logicalOperator();
 	
 	// conditions();
-	loops();
+	// loops();
+	bitwise();
 }
 
 
