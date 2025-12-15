@@ -13,7 +13,8 @@ func main() {
 	
 	// conditions();
 	// loops();
-	bitwise();
+	// bitwise();
+	evenOdd();
 }
 
 
