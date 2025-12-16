@@ -9,5 +9,10 @@ func getNumber() int {
 	return a
 }
 func largestNumber(){
-	
+	num1 := getNumber()
+	num2 := getNumber()
+
+	if(num1 > num2){
+		println("\nLargest Number is: ", num1)
+	}
 }
