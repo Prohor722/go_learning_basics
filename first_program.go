@@ -14,7 +14,8 @@ func main() {
 	// conditions();
 	// loops();
 	// bitwise();
-	evenOdd();
+	// evenOdd();
+	largestNumber();
 }
 
 
