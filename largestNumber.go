@@ -2,17 +2,19 @@ package main
 
 import "fmt"
 
-func getNumber() int {
+func getNumber(serial string) int {
 	var a int
-	println("\nEnter Number: ")
-	fmt.Scan("%d", &a)
+	fmt.Printf("\nEnter %s Number: ", serial)
+	fmt.Scan(&a)
 	return a
 }
 func largestNumber(){
-	num1 := getNumber()
-	num2 := getNumber()
+	num1 := getNumber("1st")
+	num2 := getNumber("2nd")
 
 	if(num1 > num2){
 		println("\nLargest Number is: ", num1)
+	} else{
+		println("\nLargest Number is: ", num2)
 	}
 }
