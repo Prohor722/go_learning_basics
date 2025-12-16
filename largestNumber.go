@@ -1,10 +1,13 @@
 package main
 
-func getNumber(a int, b int){
-	print("Enter the first number:")
-	scanf("%d", &a)
-	print("Enter the second number:")
-	scanf("%d", &b)
+import "fmt"
+
+func getNumber() int {
+	var a int
+	println("\nEnter Number: ")
+	fmt.Scan("%d", &a)
+	return a
 }
-func largestNumber(a int, b int){
+func largestNumber(){
+	
 }
