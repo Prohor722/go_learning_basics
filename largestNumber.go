@@ -4,7 +4,7 @@ import "fmt"
 
 func getNumber(serial string) int {
 	var a int
-	fmt.Printf("\nEnter %s Number: ", serial)
+	fmt.Printf("\nEnter %v Number: ", serial)
 	fmt.Scan(&a)
 	return a
 }
@@ -14,7 +14,9 @@ func largestNumber(){
 
 	if(num1 > num2){
 		println("\nLargest Number is: ", num1)
-	} else{
+	}else if(num1 == num2){
+		fmt.Printf("\nBoth Numbers %d and %d are Equal", num1, num2)
+	}else{
 		println("\nLargest Number is: ", num2)
 	}
 }
