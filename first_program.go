@@ -15,7 +15,8 @@ func main() {
 	// loops();
 	// bitwise();
 	// evenOdd();
-	largestNumber();
+	// largestNumber();
+	gradeCal();
 }
 
 

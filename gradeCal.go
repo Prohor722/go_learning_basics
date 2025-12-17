@@ -11,7 +11,7 @@ func getGradeNumber() int {
 		println("Please enter a valid number between 0 to 100")
 		return getGradeNumber()
 	}
-	
+
 	return a
 }
 
