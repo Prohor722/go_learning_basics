@@ -1,5 +1,14 @@
 package main
 
+func getNumber() int {
+	var a int
+	print("Enter Number: ")
+	fmt.Scan(&a)
+	return a
+}
+
 func gradeCal(){
-	// function to calculate grade based on marks
+	var number int = getNumber();
+
+
 }
