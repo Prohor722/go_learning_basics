@@ -1,6 +1,8 @@
 package main
 
-func getNumber() int {
+import "fmt"
+
+func getGradeNumber() int {
 	var a int
 	print("Enter Number: ")
 	fmt.Scan(&a)
@@ -8,7 +10,7 @@ func getNumber() int {
 }
 
 func gradeCal(){
-	var number int = getNumber();
+	var number int = getGradeNumber();
 
 
 }
