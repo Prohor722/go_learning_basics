@@ -12,5 +12,11 @@ func getGradeNumber() int {
 func gradeCal(){
 	var number int = getGradeNumber();
 
+	switch {
+	case number >= 90 && number <= 100:
+		println("Grade: A+")
+	case number >= 80 && number < 90:
+		println("Grade: A")
+
 
 }
