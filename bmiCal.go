@@ -11,6 +11,12 @@ func bmiCal() {
 	println("1.Feet/Inches \n2.Meters (Select 1 or 2): ")
 	var choice int
 	fmt.Scan(&choice)
+
+	if choice<1 || choice>2 {
+		println("Invalid choice")
+		bmiCal()
+	}
+
 	if choice == 1 {
 		var feet, inches float64
 		print("Enter your height - Feet: ")
