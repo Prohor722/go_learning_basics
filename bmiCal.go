@@ -7,4 +7,9 @@ func bmiCal() {
 	fmt.Scan(&weight)
 	print("Enter your height in meters: ")
 	fmt.Scan(&height)
+
+	bmi = weight / (height * height)
+
+	println("Your BMI is:", bmi)
+	
 }
