@@ -5,4 +5,6 @@ func bmiCal() {
 	var weight, height, bmi float64;
 	print("Enter your weight in kg: ")
 	fmt.Scan(&weight)
+	print("Enter your height in meters: ")
+	fmt.Scan(&height)
 }
