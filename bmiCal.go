@@ -11,8 +11,17 @@ func bmiCal() {
 	println("1.Feet/Inches \n2.Meters (Select 1 or 2): ")
 	var choice int
 	fmt.Scan(&choice)
-	print("Enter your height in meters: ")
-	fmt.Scan(&height)
+	if choice == 1 {
+		var feet, inches float64
+		print("Enter your height - Feet: ")
+		fmt.Scan(&feet)
+		print("Inches: ")
+		fmt.Scan(&inches)
+		height = (feet * 12 + inches) * 0.0254 // converting to meters
+	} else {
+		print("Enter your height in meters: ")
+		fmt.Scan(&height)
+	}
 
 	bmi = weight / (height * height)
 
