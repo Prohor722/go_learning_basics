@@ -13,7 +13,7 @@ func bmiCal() {
 	fmt.Scan(&choice)
 
 	if choice<1 || choice>2 {
-		println("Invalid choice")
+		println("Invalid choice !! Please select again.")
 		bmiCal()
 	}
 
