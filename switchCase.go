@@ -13,4 +13,9 @@ func switchCase(){
 		println("Wednesday")
 	case 4:
 		println("Thursday")
-		
+	case 5:
+		println("Friday")
+	case 6:
+		println("Saturday")
+	case 7:
+		println("Sunday")
