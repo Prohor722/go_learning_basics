@@ -19,7 +19,8 @@ func main() {
 	// gradeCal();
 	// bmiCal();
 	// switchCase()
-	switchCaseExample2()
+	// switchCaseExample2()
+	switchCaseExample3()
 }
 
 
