@@ -19,3 +19,7 @@ func switchCase(){
 		println("Saturday")
 	case 7:
 		println("Sunday")
+	default:
+		println("Invalid day number!")
+	}
+}
