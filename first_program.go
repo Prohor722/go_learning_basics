@@ -17,7 +17,9 @@ func main() {
 	// evenOdd();
 	// largestNumber();
 	// gradeCal();
-	bmiCal();
+	// bmiCal();
+	// switchCase()
+	switchCaseExample2()
 }
 
 
