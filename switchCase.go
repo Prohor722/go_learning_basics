@@ -45,3 +45,23 @@ func switchCaseExample2() {
 	}
 
 }
+
+func switchCaseExample3() {
+	var cls int
+	print("Enter your class: (1-12) ")
+	fmt.Scan(&cls)
+
+	switch cls{
+	case 1,2,3,4,5:
+		println("You are in Primary School")
+	case 6,7,8:
+		println("You are in Middle School")
+	case 9,10:
+		println("You are in High School")
+	case 11,12:
+		println("You are in Senior Secondary School")
+	default:
+		println("Invalid class!")
+	}
+
+}
