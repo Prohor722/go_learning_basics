@@ -8,3 +8,6 @@ func switchCase(){
 	case 1:
 		println("Monday")
 	case 2:
+		println("Tuesday")
+	case 3:
+		println("Wednesday")
