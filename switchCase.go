@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func switchCase(){
 	var day int
 	print("Enter day number (1-7): ")
