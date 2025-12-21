@@ -63,5 +63,10 @@ func switchCaseExample3() {
 	default:
 		println("Invalid class!")
 	}
-
 }
+
+func switchCaseExample4() {
+	var month int
+	print("Enter month number (1-12): ")
+	fmt.Scan(&month)
+	switch month {
