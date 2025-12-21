@@ -74,3 +74,5 @@ func switchCaseExample4() {
 		println("31 days")
 	case 4, 6, 9, 11:
 		println("30 days")
+	case 2:
+		println("28 or 29 days")
