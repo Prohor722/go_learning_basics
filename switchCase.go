@@ -70,3 +70,5 @@ func switchCaseExample4() {
 	print("Enter month number (1-12): ")
 	fmt.Scan(&month)
 	switch month {
+	case 1, 3, 5, 7, 8, 10, 12:
+		println("31 days")
