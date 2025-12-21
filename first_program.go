@@ -20,7 +20,8 @@ func main() {
 	// bmiCal();
 	// switchCase()
 	// switchCaseExample2()
-	switchCaseExample3()
+	// switchCaseExample3()
+	switchCaseExample4()
 }
 
 
