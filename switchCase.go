@@ -76,3 +76,7 @@ func switchCaseExample4() {
 		println("30 days")
 	case 2:
 		println("28 or 29 days")
+	default:
+		println("Invalid month number!")
+	}
+}
