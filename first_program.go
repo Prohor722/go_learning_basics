@@ -21,7 +21,8 @@ func main() {
 	// switchCase()
 	// switchCaseExample2()
 	// switchCaseExample3()
-	switchCaseExample4()
+	// switchCaseExample4()
+	loopExmple()
 }
 
 
