@@ -22,7 +22,8 @@ func main() {
 	// switchCaseExample2()
 	// switchCaseExample3()
 	// switchCaseExample4()
-	loopExmple()
+	// loopExmple()
+	sequenceFormula()
 }
 
 
