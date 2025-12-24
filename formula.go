@@ -1,6 +1,7 @@
 package main
 
 func sequenceFormula(n int) int {
-	// Formula: n(n + 1)/2
+	println("Enter the value of n:")
+	
 	return n * (n + 1) / 2
 }
