@@ -4,7 +4,7 @@ import "fmt"
 
 func sequenceFormula() {
 	var n int
-	println("Enter the value of n:")
+	print("Enter the value of n:")
 	fmt.Scanln(&n)
 
 	result := n * (n + 1) / 2
