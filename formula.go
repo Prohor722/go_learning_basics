@@ -5,6 +5,8 @@ import "fmt"
 func sequenceFormula() int {
 	var n int
 	println("Enter the value of n:")
+	fmt.Scanln(&n)
 
-	return n * (n + 1) / 2
+	result := n * (n + 1) / 2
+	println("The sum of the first", n, "natural numbers is:", result)
 }
