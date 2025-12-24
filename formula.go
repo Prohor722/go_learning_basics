@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func sequenceFormula() int {
+func sequenceFormula() {
 	var n int
 	println("Enter the value of n:")
 	fmt.Scanln(&n)
