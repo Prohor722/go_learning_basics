@@ -11,6 +11,7 @@ func sequenceFormula() {
 	println("The sum of the first", n, "natural numbers is:", result)
 }
 
-func arithmeticProgression(a, d, n int) int {
+func arithmeticProgression() {
+	var a, d, n int
 	return n * (2*a + (n-1)*d) / 2
 }
