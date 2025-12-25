@@ -24,3 +24,7 @@ func arithmeticProgression() {
 	sum := n * (a + lastTerm) / 2
 	println("The sum of the arithmetic progression is:", sum)
 }
+
+func GeometricProgression(){
+	
+}
