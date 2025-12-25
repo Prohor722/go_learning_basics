@@ -34,4 +34,6 @@ func GeometricProgression(){
 	print("Enter the number of terms (n):")
 	fmt.Scanln(&n)
 
+	sum := a * (pow(r, n) - 1) / (r - 1)
+
 }
