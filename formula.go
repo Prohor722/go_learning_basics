@@ -27,5 +27,11 @@ func arithmeticProgression() {
 
 func GeometricProgression(){
 	var a, r, n int
+	print("Enter the first term (a):")
+	fmt.Scanln(&a)
+	print("Enter the common ratio (r):")
+	fmt.Scanln(&r)
+	print("Enter the number of terms (n):")
+	fmt.Scanln(&n)
 
 }
