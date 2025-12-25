@@ -19,5 +19,7 @@ func arithmeticProgression() {
 	fmt.Scanln(&d)
 	print("Enter the number of terms (n):")
 	fmt.Scanln(&n)
-	return n * (2*a + (n-1)*d) / 2
+
+	lastTerm := a + (n-1)*d
+	sum := n * (a + lastTerm) / 2
 }
