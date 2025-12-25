@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func sequenceFormula() {
 	var n int
@@ -33,8 +36,6 @@ func GeometricProgression(){
 	fmt.Scanln(&r)
 	print("Enter the number of terms (n):")
 	fmt.Scanln(&n)
-
-	sum := a * (pow(r, n) - 1) / (r - 1)
+	sum := a * (int(math.Pow(float64(r), float64(n))) - 1) / (r - 1)
 	println("The sum of the geometric progression is:", sum)
-
 }
