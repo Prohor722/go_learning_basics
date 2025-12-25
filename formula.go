@@ -26,5 +26,6 @@ func arithmeticProgression() {
 }
 
 func GeometricProgression(){
-	
+	var a, r, n int
+
 }
