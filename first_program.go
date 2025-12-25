@@ -23,7 +23,8 @@ func main() {
 	// switchCaseExample3()
 	// switchCaseExample4()
 	// loopExmple()
-	sequenceFormula()
+	// sequenceFormula()
+	arithmeticProgression()
 }
 
 
