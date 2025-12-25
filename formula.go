@@ -13,5 +13,11 @@ func sequenceFormula() {
 
 func arithmeticProgression() {
 	var a, d, n int
+	print("Enter the first term (a):")
+	fmt.Scanln(&a)
+	print("Enter the common difference (d):")
+	fmt.Scanln(&d)
+	print("Enter the number of terms (n):")
+	fmt.Scanln(&n)
 	return n * (2*a + (n-1)*d) / 2
 }
