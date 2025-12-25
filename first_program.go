@@ -24,7 +24,8 @@ func main() {
 	// switchCaseExample4()
 	// loopExmple()
 	// sequenceFormula()
-	arithmeticProgression()
+	// arithmeticProgression()
+	GeometricProgression()
 }
 
 
