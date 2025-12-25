@@ -22,4 +22,5 @@ func arithmeticProgression() {
 
 	lastTerm := a + (n-1)*d
 	sum := n * (a + lastTerm) / 2
+	println("The sum of the arithmetic progression is:", sum)
 }
