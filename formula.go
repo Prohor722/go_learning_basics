@@ -35,5 +35,6 @@ func GeometricProgression(){
 	fmt.Scanln(&n)
 
 	sum := a * (pow(r, n) - 1) / (r - 1)
+	println("The sum of the geometric progression is:", sum)
 
 }
