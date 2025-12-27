@@ -41,5 +41,7 @@ func GeometricProgression(){
 }
 
 func fibonacciSeries(){
-	
+	var n int
+	print("Enter the number of terms:")
+	fmt.Scanln(&n)
 }
