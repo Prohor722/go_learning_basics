@@ -46,4 +46,8 @@ func fibonacciSeries(){
 	fmt.Scanln(&n)
 	a, b := 0, 1
 	println("Fibonacci Series:")
+	for i := 0; i < n; i++ {
+		print(a, " ")
+		a, b = b, a+b
+	}
 }
