@@ -25,7 +25,8 @@ func main() {
 	// loopExmple()
 	// sequenceFormula()
 	// arithmeticProgression()
-	GeometricProgression()
+	// GeometricProgression()
+	fibonacciSeries()
 }
 
 

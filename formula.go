@@ -50,4 +50,5 @@ func fibonacciSeries(){
 		print(a, " ")
 		a, b = b, a+b
 	}
+	
 }
