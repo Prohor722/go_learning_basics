@@ -44,4 +44,6 @@ func fibonacciSeries(){
 	var n int
 	print("Enter the number of terms:")
 	fmt.Scanln(&n)
+	a, b := 0, 1
+	println("Fibonacci Series:")
 }
