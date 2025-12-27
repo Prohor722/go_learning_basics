@@ -39,3 +39,7 @@ func GeometricProgression(){
 	sum := a * (int(math.Pow(float64(r), float64(n))) - 1) / (r - 1)
 	println("The sum of the geometric progression is:", sum)
 }
+
+func fibonacciSeries(){
+	
+}
