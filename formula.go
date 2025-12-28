@@ -72,4 +72,6 @@ func sumOfCubes(){
 	var n int
 	print("Enter a positive integer:")
 	fmt.Scanln(&n)
+	sum := (n * (n + 1) / 2) * (n * (n + 1) / 2)
+	println("Sum of cubes of the first", n, "natural numbers is:", sum)
 }
