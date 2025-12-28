@@ -27,7 +27,8 @@ func main() {
 	// arithmeticProgression()
 	// GeometricProgression()
 	// fibonacciSeries()
-	sumOfFirstNNumbers()
+	// sumOfFirstNNumbers()
+	SumOfSquares();
 }
 
 
