@@ -61,5 +61,6 @@ func sumOfFirstNNumbers(){
 }
 
 func SumOfSquares(){
-	
+	var n int
+	print("Enter a positive integer:")
 }
