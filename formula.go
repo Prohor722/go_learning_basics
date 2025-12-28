@@ -67,3 +67,7 @@ func SumOfSquares(){
 	sum := n * (n + 1) * (2*n + 1) / 6
 	println("Sum of squares of the first", n, "natural numbers is:", sum)
 }
+
+func sumOfCubes(){
+	
+}
