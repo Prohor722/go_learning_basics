@@ -28,7 +28,8 @@ func main() {
 	// GeometricProgression()
 	// fibonacciSeries()
 	// sumOfFirstNNumbers()
-	SumOfSquares();
+	// SumOfSquares();
+	sumOfCubes()
 }
 
 
