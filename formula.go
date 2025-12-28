@@ -65,4 +65,5 @@ func SumOfSquares(){
 	print("Enter a positive integer:")
 	fmt.Scanln(&n)
 	sum := n * (n + 1) * (2*n + 1) / 6
+	println("Sum of squares of the first", n, "natural numbers is:", sum)
 }
