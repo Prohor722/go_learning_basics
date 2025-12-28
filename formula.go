@@ -75,3 +75,7 @@ func sumOfCubes(){
 	sum := (n * (n + 1) / 2) * (n * (n + 1) / 2)
 	println("Sum of cubes of the first", n, "natural numbers is:", sum)
 }
+
+func permutation(){
+	
+}
