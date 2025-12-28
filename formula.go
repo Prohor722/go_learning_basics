@@ -59,3 +59,7 @@ func sumOfFirstNNumbers(){
 	sum := n * (n + 1) / 2
 	println("Sum of the first", n, "natural numbers is:", sum)
 }
+
+func SumOfSquares(){
+	
+}
