@@ -26,7 +26,8 @@ func main() {
 	// sequenceFormula()
 	// arithmeticProgression()
 	// GeometricProgression()
-	fibonacciSeries()
+	// fibonacciSeries()
+	sumOfFirstNNumbers()
 }
 
 
