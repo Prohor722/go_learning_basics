@@ -69,5 +69,6 @@ func SumOfSquares(){
 }
 
 func sumOfCubes(){
-	
+	var n int
+	print("Enter a positive integer:")
 }
