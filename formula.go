@@ -64,4 +64,5 @@ func SumOfSquares(){
 	var n int
 	print("Enter a positive integer:")
 	fmt.Scanln(&n)
+	sum := n * (n + 1) * (2*n + 1) / 6
 }
