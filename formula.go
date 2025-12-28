@@ -53,5 +53,7 @@ func fibonacciSeries(){
 }
 
 func sumOfFirstNNumbers(){
-	
+	var n int
+	print("Enter a positive integer:")
+	fmt.Scanln(&n)
 }
