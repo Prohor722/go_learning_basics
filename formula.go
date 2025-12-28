@@ -51,3 +51,7 @@ func fibonacciSeries(){
 		a, b = b, a+b
 	}
 }
+
+func sumOfFirstNNumbers(){
+	
+}
