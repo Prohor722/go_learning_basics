@@ -84,4 +84,6 @@ func permutation(){
 	fmt.Scanln(&r)
 	numerator := factorial(n)
 	denominator := factorial(n - r)
+	result := numerator / denominator
+	println("Number of permutations (P(n,r)) is:", result)
 }
