@@ -83,4 +83,5 @@ func permutation(){
 	print("Enter r (items to arrange):")
 	fmt.Scanln(&r)
 	numerator := factorial(n)
+	denominator := factorial(n - r)
 }
