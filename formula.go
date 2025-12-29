@@ -76,6 +76,17 @@ func sumOfCubes(){
 	println("Sum of cubes of the first", n, "natural numbers is:", sum)
 }
 
+func factorial(n int) int {
+	if n <= 1 {
+		return 1
+	}
+	result := 1
+	for i := 2; i <= n; i++ {
+		result *= i
+	}
+	return result
+}
+
 func permutation(){
 	var n, r int
 	print("Enter n (total items):")
