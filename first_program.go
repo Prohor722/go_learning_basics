@@ -29,7 +29,8 @@ func main() {
 	// fibonacciSeries()
 	// sumOfFirstNNumbers()
 	// SumOfSquares();
-	sumOfCubes()
+	// sumOfCubes()
+	permutation()
 }
 
 
