@@ -108,3 +108,6 @@ func combination(){
 	fmt.Scanln(&r)
 	numerator := factorial(n)
 	denominator := factorial(r) * factorial(n - r)
+	result := numerator / denominator
+	println("Number of combinations (C(n,r)) is:", result)
+}
