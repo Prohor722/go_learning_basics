@@ -30,7 +30,8 @@ func main() {
 	// sumOfFirstNNumbers()
 	// SumOfSquares();
 	// sumOfCubes()
-	permutation()
+	// permutation()
+	combination()
 }
 
 
