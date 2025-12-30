@@ -103,3 +103,6 @@ func combination(){
 	var n, r int
 	print("Enter n (total items):")
 	fmt.Scanln(&n)
+
+	print("Enter r (items to choose):")
+	fmt.Scanln(&r)
