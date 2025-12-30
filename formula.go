@@ -102,4 +102,4 @@ func permutation(){
 func combination(){
 	var n, r int
 	print("Enter n (total items):")
-	
+	fmt.Scanln(&n)
