@@ -106,3 +106,4 @@ func combination(){
 
 	print("Enter r (items to choose):")
 	fmt.Scanln(&r)
+	numerator := factorial(n)
