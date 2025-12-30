@@ -98,3 +98,8 @@ func permutation(){
 	result := numerator / denominator
 	println("Number of permutations (P(n,r)) is:", result)
 }
+
+func combination(){
+	var n, r int
+	print("Enter n (total items):")
+	
