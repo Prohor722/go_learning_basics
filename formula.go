@@ -122,3 +122,7 @@ func power(){
 	result := int(math.Pow(float64(base), float64(exponent)))
 	println(base, "raised to the power of", exponent, "is:", result)
 }
+
+func logIdentity(){
+	var x float64
+}
