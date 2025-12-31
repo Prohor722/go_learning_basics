@@ -32,7 +32,8 @@ func main() {
 	// sumOfCubes()
 	// permutation()
 	// combination()
-	power()
+	// power()
+	logIdentity()
 }
 
 
