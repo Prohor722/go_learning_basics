@@ -118,4 +118,6 @@ func power(){
 	fmt.Scanln(&base)
 	print("Enter the exponent:")
 	fmt.Scanln(&exponent)
+
+	result := int(math.Pow(float64(base), float64(exponent)))
 }
