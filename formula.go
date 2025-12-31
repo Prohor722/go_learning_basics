@@ -131,5 +131,7 @@ func logIdentity(){
 		println("Logarithm is undefined for non-positive numbers.")
 		return
 	}
-	
+	result := math.Log(x * x)
+	println("log(x^2) is:", result)
+
 }
