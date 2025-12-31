@@ -125,4 +125,6 @@ func power(){
 
 func logIdentity(){
 	var x float64
+	print("Enter a positive number:")
+	
 }
