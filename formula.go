@@ -111,3 +111,7 @@ func combination(){
 	result := numerator / denominator
 	println("Number of combinations (C(n,r)) is:", result)
 }
+
+func power(){
+	
+}
