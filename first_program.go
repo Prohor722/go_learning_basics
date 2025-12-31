@@ -31,7 +31,8 @@ func main() {
 	// SumOfSquares();
 	// sumOfCubes()
 	// permutation()
-	combination()
+	// combination()
+	power()
 }
 
 
