@@ -113,5 +113,9 @@ func combination(){
 }
 
 func power(){
-	
+	var base, exponent int
+	print("Enter the base:")
+	fmt.Scanln(&base)
+	print("Enter the exponent:")
+	fmt.Scanln(&exponent)
 }
