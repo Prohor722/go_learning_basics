@@ -140,3 +140,4 @@ func changeOfBase(){
 	print("Enter a positive number (x):")}
 	fmt.Scanln(&x)
 	print("Enter the base (b):")
+	fmt.Scanln(&base)
