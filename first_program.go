@@ -33,7 +33,8 @@ func main() {
 	// permutation()
 	// combination()
 	// power()
-	logIdentity()
+	// logIdentity()
+	changeOfBase()
 }
 
 
