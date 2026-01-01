@@ -133,5 +133,8 @@ func logIdentity(){
 	}
 	result := math.Log(x * x)
 	println("log(x^2) is:", result)
-
 }
+
+func changeOfBase(){
+	var x, base float64
+	print("Enter a positive number (x):")}
