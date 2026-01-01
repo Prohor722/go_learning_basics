@@ -146,3 +146,5 @@ func changeOfBase(){
 		return
 	}
 	result := math.Log(x) / math.Log(base)
+	println("log_b(x) is:", result)
+}
