@@ -153,6 +153,7 @@ func addition(){
 	var a, b int
 	print("Enter first number (a):")
 	fmt.Scanln(&a)
+	print("Enter second number (b):")
 }
 
 //testing 1...
