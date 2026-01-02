@@ -149,11 +149,15 @@ func changeOfBase(){
 	println("log_b(x) is:", result)
 }
 
-func addition(){
-	var a, b int
-	print("Enter first number (a):")
+func additionFormula(){		//(a+b)%m=((a%m)+(b%m))%m
+	var a, b, m int
+	print("Enter a:")
 	fmt.Scanln(&a)
-	print("Enter second number (b):")
+	print("Enter b:")
+	fmt.Scanln(&b)
+	print("Enter m:")
+	fmt.Scanln(&m)
+	
 }
 
 //testing 1...
