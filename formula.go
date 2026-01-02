@@ -149,6 +149,10 @@ func changeOfBase(){
 	println("log_b(x) is:", result)
 }
 
+func addition(){
+	var a, b int
+}
+
 //testing 1...
 //testing 2...
 //testing 3...
