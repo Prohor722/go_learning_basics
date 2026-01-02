@@ -34,7 +34,8 @@ func main() {
 	// combination()
 	// power()
 	// logIdentity()
-	changeOfBase()
+	// changeOfBase()
+	additionFormula()
 }
 
 
