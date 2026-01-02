@@ -151,6 +151,7 @@ func changeOfBase(){
 
 func addition(){
 	var a, b int
+	print("Enter first number (a):")
 }
 
 //testing 1...
