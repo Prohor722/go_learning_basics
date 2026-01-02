@@ -157,7 +157,8 @@ func additionFormula(){		//(a+b)%m=((a%m)+(b%m))%m
 	fmt.Scanln(&b)
 	print("Enter m:")
 	fmt.Scanln(&m)
-	
+	result := ((a % m) + (b % m)) % m
+	println("(a+b)%m is:", result)
 }
 
 //testing 1...
