@@ -152,6 +152,7 @@ func changeOfBase(){
 func addition(){
 	var a, b int
 	print("Enter first number (a):")
+	fmt.Scanln(&a)
 }
 
 //testing 1...
