@@ -48,3 +48,8 @@ func Tests() {
 	print(sum)
 }
 
+func additionFormula(){
+	var n int
+	print("Enter the value of n:")
+	fmt.Scanln(&n)
+
