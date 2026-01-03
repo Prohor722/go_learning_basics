@@ -35,7 +35,8 @@ func main() {
 	// power()
 	// logIdentity()
 	// changeOfBase()
-	additionFormula()
+	// additionFormula()
+	multiplicationFormula()
 }
 
 
