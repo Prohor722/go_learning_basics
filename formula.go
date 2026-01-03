@@ -163,3 +163,7 @@ func additionFormula(){		//(a+b)%m=((a%m)+(b%m))%m
 
 func multiplicationFormula(){		//(a*b)%m=((a%m)*(b%m))%m
 	var a, b, m int
+	print("Enter a:")
+	fmt.Scanln(&a)
+	print("Enter b:")
+	fmt.Scanln(&b)
