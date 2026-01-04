@@ -191,3 +191,7 @@ func changeOfBase(){
 	fmt.Scanln(&x)
 	print("Enter the base (b):")
 	fmt.Scanln(&base)
+	if x <= 0 || base <= 1 {
+		println("Invalid input for logarithm.")
+		return
+	}
