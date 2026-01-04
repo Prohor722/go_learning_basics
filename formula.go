@@ -190,3 +190,6 @@ func moduloInverse(prime m)
 	var a, m int
 	print("Enter a:")
 	fmt.Scanln(&a)
+	print("Enter m (prime):")
+	fmt.Scanln(&m)
+	inverse := 1
