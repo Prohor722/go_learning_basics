@@ -185,8 +185,7 @@ func logIdentity(){
 	println("log(x^2) is:", result)
 }
 
-func moduloInverse(prime m)
-{
+func moduloInverse(){
 	var a, m int
 	print("Enter a:")
 	fmt.Scanln(&a)
