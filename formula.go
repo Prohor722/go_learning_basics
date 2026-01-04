@@ -195,3 +195,6 @@ func changeOfBase(){
 		println("Invalid input for logarithm.")
 		return
 	}
+	result := math.Log(x) / math.Log(base)
+	println("log_b(x) is:", result)
+}
