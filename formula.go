@@ -174,3 +174,6 @@ func multiplicationFormula(){		//(a*b)%m=((a%m)*(b%m))%m
 }
 
 func logIdentity(){
+	var x float64
+	print("Enter a positive number:")
+	fmt.Scanln(&x)
