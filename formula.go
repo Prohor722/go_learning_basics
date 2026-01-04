@@ -177,3 +177,7 @@ func logIdentity(){
 	var x float64
 	print("Enter a positive number:")
 	fmt.Scanln(&x)
+	if x <= 0 {
+		println("Logarithm is undefined for non-positive numbers.")
+		return
+	}
