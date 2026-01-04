@@ -185,16 +185,7 @@ func logIdentity(){
 	println("log(x^2) is:", result)
 }
 
-func changeOfBase(){
-	var x, base float64
-	print("Enter a positive number (x):")
-	fmt.Scanln(&x)
-	print("Enter the base (b):")
-	fmt.Scanln(&base)
-	if x <= 0 || base <= 1 {
-		println("Invalid input for logarithm.")
-		return
-	}
-	result := math.Log(x) / math.Log(base)
-	println("log_b(x) is:", result)
-}
+func moduloInverse(prime m)
+{
+	var a, m int
+	print("Enter a:")
