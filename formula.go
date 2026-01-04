@@ -193,3 +193,8 @@ func moduloInverse(prime m)
 	print("Enter m (prime):")
 	fmt.Scanln(&m)
 	inverse := 1
+	for i := 1; i < m; i++ {
+		if (a*i)%m == 1 {
+			inverse = i
+			break
+		}
