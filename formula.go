@@ -184,3 +184,5 @@ func logIdentity(){
 	result := math.Log(x * x)
 	println("log(x^2) is:", result)
 }
+
+func changeOfBase(){
