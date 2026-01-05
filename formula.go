@@ -221,4 +221,8 @@ func LCM(){
 	fmt.Scanln(&b)
 	gcd := a
 	bTemp := b
+
+	for bTemp != 0 {
+		gcd, bTemp = bTemp, gcd%bTemp
+	}
 }
