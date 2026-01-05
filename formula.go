@@ -210,4 +210,5 @@ func GCD(){
 	for b != 0 {
 		a, b = b, a%b
 	}
+	println("The GCD is:", a)
 }
