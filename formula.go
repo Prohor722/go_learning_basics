@@ -201,10 +201,13 @@ func moduloInverse(){
 	println("The modulo inverse of", a, "mod", m, "is:", inverse)
 }
 
-func GCD(Euclidean){
+func GCD(){
 	var a, b int
 	print("Enter a:")
 	fmt.Scanln(&a)
 	print("Enter b:")
 	fmt.Scanln(&b)
+	for b != 0 {
+		a, b = b, a%b
+	}
 }
