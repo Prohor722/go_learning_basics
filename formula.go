@@ -213,4 +213,12 @@ func GCD(){
 	println("The GCD is:", a)
 }
 
-func LCM(){}
+func LCM(){
+	var a, b int
+	print("Enter a:")
+	fmt.Scanln(&a)
+	print("Enter b:")
+	fmt.Scanln(&b)
+	gcd := a
+	bTemp := b
+}
