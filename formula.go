@@ -173,17 +173,17 @@ func multiplicationFormula(){		//(a*b)%m=((a%m)*(b%m))%m
 	println("(a*b)%m is:", result)
 }
 
-func logIdentity(){
-	var x float64
-	print("Enter a positive number:")
-	fmt.Scanln(&x)
-	if x <= 0 {
-		println("Logarithm is undefined for non-positive numbers.")
-		return
-	}
-	result := math.Log(x * x)
-	println("log(x^2) is:", result)
-}
+// func logIdentity(){
+// 	var x float64
+// 	print("Enter a positive number:")
+// 	fmt.Scanln(&x)
+// 	if x <= 0 {
+// 		println("Logarithm is undefined for non-positive numbers.")
+// 		return
+// 	}
+// 	result := math.Log(x * x)
+// 	println("log(x^2) is:", result)
+// }
 
 func moduloInverse(){
 	var a, m int
@@ -212,3 +212,4 @@ func GCD(){
 	}
 	println("The GCD is:", a)
 }
+
