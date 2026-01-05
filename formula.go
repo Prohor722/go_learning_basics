@@ -213,3 +213,4 @@ func GCD(){
 	println("The GCD is:", a)
 }
 
+func LCM(){}
