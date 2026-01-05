@@ -225,4 +225,7 @@ func LCM(){
 	for bTemp != 0 {
 		gcd, bTemp = bTemp, gcd%bTemp
 	}
+
+	lcm := (a * b) / gcd
+	println("The LCM is:", lcm)
 }
