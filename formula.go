@@ -231,5 +231,7 @@ func LCM(){
 }
 
 func primeNumberFormulas(){
-	
+	var n int
+	print("Enter a positive integer:")
+	fmt.Scanln(&n)
 }
