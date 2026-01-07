@@ -262,3 +262,10 @@ func moduloExponentiation(){
 	fmt.Scanln(&mod)
 	result := 1
 	base = base % mod
+	for exponent > 0 {
+		if exponent%2 == 1 {
+			result = (result * base) % mod
+		}
+		exponent = exponent >> 1
+		base = (base * base) % mod
+	}
