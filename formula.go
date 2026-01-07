@@ -269,3 +269,5 @@ func moduloExponentiation(){
 		exponent = exponent >> 1
 		base = (base * base) % mod
 	}
+	println("Result of (base^exponent) % mod is:", result)
+}
