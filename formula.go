@@ -234,4 +234,15 @@ func primeNumberFormulas(){
 	var n int
 	print("Enter a positive integer:")
 	fmt.Scanln(&n)
+	isPrime := true
+	if n <= 1 {
+		isPrime = false
+	} else {
+		for i := 2; i*i <= n; i++ {
+			if n%i == 0 {
+				isPrime = false
+				break
+			}
+		}
+	}
 }
