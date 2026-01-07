@@ -229,3 +229,7 @@ func LCM(){
 	lcm := (a * b) / gcd
 	println("The LCM is:", lcm)
 }
+
+func primeNumberFormulas(){
+	
+}
