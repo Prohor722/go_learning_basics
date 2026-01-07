@@ -251,3 +251,5 @@ func primeNumberFormulas(){
 		println(n, "is not a prime number.")
 	}
 }
+
+func moduloExponentiation(){
