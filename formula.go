@@ -253,3 +253,10 @@ func primeNumberFormulas(){
 }
 
 func moduloExponentiation(){
+	var base, exponent, mod int
+	print("Enter the base:")
+	fmt.Scanln(&base)
+	print("Enter the exponent:")
+	fmt.Scanln(&exponent)
+	print("Enter the modulus:")
+	fmt.Scanln(&mod)
