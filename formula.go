@@ -260,3 +260,5 @@ func moduloExponentiation(){
 	fmt.Scanln(&exponent)
 	print("Enter the modulus:")
 	fmt.Scanln(&mod)
+	result := 1
+	base = base % mod
