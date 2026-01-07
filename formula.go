@@ -247,5 +247,7 @@ func primeNumberFormulas(){
 	}
 	if isPrime {
 		println(n, "is a prime number.")
+	}else {
+		println(n, "is not a prime number.")
 	}
 }
