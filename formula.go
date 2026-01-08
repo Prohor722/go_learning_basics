@@ -292,4 +292,11 @@ func chineseRemainderTheorem(){
 			break
 		}
 	}
-	
+
+	inv2 := 1
+	for i := 1; i < m2; i++ {
+		if (M2*i)%m2 == 1 {
+			inv2 = i
+			break
+		}
+	}
