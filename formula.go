@@ -272,4 +272,5 @@ func moduloExponentiation(){
 	println("Result of (base^exponent) % mod is:", result)
 }
 
-// func chineseRemainderTheorem(){
+func chineseRemainderTheorem(){
+	var a1, a2, m1, m2 int
