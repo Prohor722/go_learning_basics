@@ -274,3 +274,11 @@ func moduloExponentiation(){
 
 func chineseRemainderTheorem(){
 	var a1, a2, m1, m2 int
+	print("Enter a1:")
+	fmt.Scanln(&a1)
+	print("Enter m1:")
+	fmt.Scanln(&m1)
+	print("Enter a2:")
+	fmt.Scanln(&a2)
+	print("Enter m2:")
+	fmt.Scanln(&m2)
