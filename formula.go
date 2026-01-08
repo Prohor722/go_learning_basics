@@ -285,3 +285,11 @@ func chineseRemainderTheorem(){
 	M := m1 * m2
 	M1 := M / m1
 	M2 := M / m2
+	inv1 := 1
+	for i := 1; i < m1; i++ {
+		if (M1*i)%m1 == 1 {
+			inv1 = i
+			break
+		}
+	}
+	
