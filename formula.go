@@ -282,3 +282,6 @@ func chineseRemainderTheorem(){
 	fmt.Scanln(&a2)
 	print("Enter m2:")
 	fmt.Scanln(&m2)
+	M := m1 * m2
+	M1 := M / m1
+	M2 := M / m2
