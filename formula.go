@@ -28,7 +28,7 @@ func arithmeticProgression() {
 	println("The sum of the arithmetic progression is:", sum)
 }
 
-func GeometricProgression(){
+func GeometricProgression() {
 	var a, r, n int
 	print("Enter the first term (a):")
 	fmt.Scanln(&a)
@@ -40,7 +40,7 @@ func GeometricProgression(){
 	println("The sum of the geometric progression is:", sum)
 }
 
-func fibonacciSeries(){
+func fibonacciSeries() {
 	var n int
 	print("Enter the number of terms:")
 	fmt.Scanln(&n)
@@ -52,7 +52,7 @@ func fibonacciSeries(){
 	}
 }
 
-func sumOfFirstNNumbers(){
+func sumOfFirstNNumbers() {
 	var n int
 	print("Enter a positive integer:")
 	fmt.Scanln(&n)
@@ -60,7 +60,7 @@ func sumOfFirstNNumbers(){
 	println("Sum of the first", n, "natural numbers is:", sum)
 }
 
-func SumOfSquares(){
+func SumOfSquares() {
 	var n int
 	print("Enter a positive integer:")
 	fmt.Scanln(&n)
@@ -68,7 +68,7 @@ func SumOfSquares(){
 	println("Sum of squares of the first", n, "natural numbers is:", sum)
 }
 
-func sumOfCubes(){
+func sumOfCubes() {
 	var n int
 	print("Enter a positive integer:")
 	fmt.Scanln(&n)
@@ -87,7 +87,7 @@ func factorial(n int) int {
 	return result
 }
 
-func permutation(){
+func permutation() {
 	var n, r int
 	print("Enter n (total items):")
 	fmt.Scanln(&n)
@@ -99,7 +99,7 @@ func permutation(){
 	println("Number of permutations (P(n,r)) is:", result)
 }
 
-func combination(){
+func combination() {
 	var n, r int
 	print("Enter n (total items):")
 	fmt.Scanln(&n)
@@ -107,12 +107,12 @@ func combination(){
 	print("Enter r (items to choose):")
 	fmt.Scanln(&r)
 	numerator := factorial(n)
-	denominator := factorial(r) * factorial(n - r)
+	denominator := factorial(r) * factorial(n-r)
 	result := numerator / denominator
 	println("Number of combinations (C(n,r)) is:", result)
 }
 
-func power(){
+func power() {
 	var base, exponent int
 	print("Enter the base:")
 	fmt.Scanln(&base)
@@ -123,7 +123,7 @@ func power(){
 	println(base, "raised to the power of", exponent, "is:", result)
 }
 
-func logIdentity(){
+func logIdentity() {
 	var x float64
 	print("Enter a positive number:")
 	fmt.Scanln(&x)
@@ -135,7 +135,7 @@ func logIdentity(){
 	println("log(x^2) is:", result)
 }
 
-func changeOfBase(){
+func changeOfBase() {
 	var x, base float64
 	print("Enter a positive number (x):")
 	fmt.Scanln(&x)
@@ -149,7 +149,7 @@ func changeOfBase(){
 	println("log_b(x) is:", result)
 }
 
-func additionFormula(){		//(a+b)%m=((a%m)+(b%m))%m
+func additionFormula() { //(a+b)%m=((a%m)+(b%m))%m
 	var a, b, m int
 	print("Enter a:")
 	fmt.Scanln(&a)
@@ -161,7 +161,7 @@ func additionFormula(){		//(a+b)%m=((a%m)+(b%m))%m
 	println("(a+b)%m is:", result)
 }
 
-func multiplicationFormula(){		//(a*b)%m=((a%m)*(b%m))%m
+func multiplicationFormula() { //(a*b)%m=((a%m)*(b%m))%m
 	var a, b, m int
 	print("Enter a:")
 	fmt.Scanln(&a)
@@ -185,7 +185,7 @@ func multiplicationFormula(){		//(a*b)%m=((a%m)*(b%m))%m
 // 	println("log(x^2) is:", result)
 // }
 
-func moduloInverse(){
+func moduloInverse() {
 	var a, m int
 	print("Enter a:")
 	fmt.Scanln(&a)
@@ -201,7 +201,7 @@ func moduloInverse(){
 	println("The modulo inverse of", a, "mod", m, "is:", inverse)
 }
 
-func GCD(){
+func GCD() {
 	var a, b int
 	print("Enter a:")
 	fmt.Scanln(&a)
@@ -213,7 +213,7 @@ func GCD(){
 	println("The GCD is:", a)
 }
 
-func LCM(){
+func LCM() {
 	var a, b int
 	print("Enter a:")
 	fmt.Scanln(&a)
@@ -230,7 +230,7 @@ func LCM(){
 	println("The LCM is:", lcm)
 }
 
-func primeNumberFormulas(){
+func primeNumberFormulas() {
 	var n int
 	print("Enter a positive integer:")
 	fmt.Scanln(&n)
@@ -247,12 +247,12 @@ func primeNumberFormulas(){
 	}
 	if isPrime {
 		println(n, "is a prime number.")
-	}else {
+	} else {
 		println(n, "is not a prime number.")
 	}
 }
 
-func moduloExponentiation(){
+func moduloExponentiation() {
 	var base, exponent, mod int
 	print("Enter the base:")
 	fmt.Scanln(&base)
@@ -272,7 +272,7 @@ func moduloExponentiation(){
 	println("Result of (base^exponent) % mod is:", result)
 }
 
-func chineseRemainderTheorem(){
+func chineseRemainderTheorem() {
 	var a1, a2, m1, m2 int
 	print("Enter a1:")
 	fmt.Scanln(&a1)
@@ -303,7 +303,16 @@ func chineseRemainderTheorem(){
 	println("The solution to the system of congruences is:", (a1*M1*inv1+a2*M2*inv2)%M)
 }
 
-func bitManipulation(){
+func countSetBits(n int) int {
+	count := 0
+	for n > 0 {
+		count += n & 1
+		n >>= 1
+	}
+	return count
+}
+
+func bitManipulation() {
 	var n int
 	print("Enter an integer:")
 	fmt.Scanln(&n)
