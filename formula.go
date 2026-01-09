@@ -303,18 +303,9 @@ func chineseRemainderTheorem(){
 	println("The solution to the system of congruences is:", (a1*M1*inv1+a2*M2*inv2)%M)
 }
 
-func moduloInverse(){
-	var a, m int
-	print("Enter a:")
-	fmt.Scanln(&a)
-	print("Enter m (prime):")
-	fmt.Scanln(&m)
-	inverse := 1
-	for i := 1; i < m; i++ {
-		if (a*i)%m == 1 {
-			inverse = i
-			break
-		}
-	}
-	println("The modulo inverse of", a, "mod", m, "is:", inverse)
+func bitManipulation(){
+	var n int
+	print("Enter an integer:")
+	fmt.Scanln(&n)
+	println("Number of set bits in", n, "is:", countSetBits(n))
 }
