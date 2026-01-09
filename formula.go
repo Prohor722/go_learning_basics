@@ -318,3 +318,5 @@ func bitManipulation() {
 	fmt.Scanln(&n)
 	println("Number of set bits in", n, "is:", countSetBits(n))
 }
+
+
