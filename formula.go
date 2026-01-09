@@ -303,4 +303,7 @@ func chineseRemainderTheorem(){
 	println("The solution to the system of congruences is:", (a1*M1*inv1+a2*M2*inv2)%M)
 }
 
-func moduloInverse(){}
+func moduloInverse(){
+	var a, m int
+	print("Enter a:")
+	
