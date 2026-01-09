@@ -315,3 +315,6 @@ func moduloInverse(){
 			inverse = i
 			break
 		}
+	}
+	println("The modulo inverse of", a, "mod", m, "is:", inverse)
+}
