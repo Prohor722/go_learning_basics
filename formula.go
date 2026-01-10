@@ -331,3 +331,8 @@ func BitManipulationCheckEven(){
 }
 
 func BitManipulationSwap(){
+	var a, b int
+	print("Enter value of a:")
+	fmt.Scanln(&a)
+	print("Enter value of b:")
+	fmt.Scanln(&b)
