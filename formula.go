@@ -336,3 +336,4 @@ func BitManipulationSwap(){
 	fmt.Scanln(&a)
 	print("Enter value of b:")
 	fmt.Scanln(&b)
+	println("Before swapping: a =", a, ", b =", b)
