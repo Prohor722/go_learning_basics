@@ -328,3 +328,4 @@ func BitManipulationCheckEven(){
 	} else {
 		println(n, "is odd.")
 	}
+}
