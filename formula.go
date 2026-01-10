@@ -319,4 +319,6 @@ func bitManipulation() {
 	println("Number of set bits in", n, "is:", countSetBits(n))
 }
 
-
+func BitManipulationCheckEven(){
+	
+} 
