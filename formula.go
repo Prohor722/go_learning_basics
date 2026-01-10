@@ -323,4 +323,8 @@ func BitManipulationCheckEven(){
 	var n int
 	print("Enter an integer:")
 	fmt.Scanln(&n)
-	
+	if n&1 == 0 {
+		println(n, "is even.")
+	} else {
+		println(n, "is odd.")
+	}
