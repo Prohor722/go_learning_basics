@@ -320,5 +320,7 @@ func bitManipulation() {
 }
 
 func BitManipulationCheckEven(){
+	var n int
+	print("Enter an integer:")
+	fmt.Scanln(&n)
 	
-} 
