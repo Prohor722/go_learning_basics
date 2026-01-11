@@ -364,3 +364,4 @@ func bitManipulationClearBits(){
 	result := n & mask
 	println("Result after clearing", k, "least significant bits of", n, "is:", result)
 }
+
