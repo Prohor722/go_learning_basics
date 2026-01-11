@@ -350,3 +350,7 @@ func BitManipulationPowerOfTwo(){
 	if n > 0 && (n&(n-1)) == 0 {
 		println(n, "is a power of two.")
 	}
+	else {
+		println(n, "is not a power of two.")
+	}
+}
