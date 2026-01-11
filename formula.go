@@ -342,3 +342,5 @@ func BitManipulationSwap(){
 	a = a ^ b
 	println("After swapping: a =", a, ", b =", b)
 }
+
+func BitManipulationPowerOfTwo(){
