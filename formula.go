@@ -347,3 +347,6 @@ func BitManipulationPowerOfTwo(){
 	var n int
 	print("Enter an integer:")
 	fmt.Scanln(&n)
+	if n > 0 && (n&(n-1)) == 0 {
+		println(n, "is a power of two.")
+	}
