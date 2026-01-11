@@ -353,3 +353,7 @@ func BitManipulationPowerOfTwo(){
 		println(n, "is not a power of two.")
 	}
 }
+
+func bitManipulationClearBits(){
+	var n, k int
+	print("Enter an integer:")
