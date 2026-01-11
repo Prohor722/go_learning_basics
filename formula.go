@@ -357,3 +357,10 @@ func BitManipulationPowerOfTwo(){
 func bitManipulationClearBits(){
 	var n, k int
 	print("Enter an integer:")
+	fmt.Scanln(&n)
+	print("Enter number of least significant bits to clear (k):")
+	fmt.Scanln(&k)
+	mask := ^((1 << k) - 1)
+	result := n & mask
+	println("Result after clearing", k, "least significant bits of", n, "is:", result)
+}
