@@ -344,3 +344,6 @@ func BitManipulationSwap(){
 }
 
 func BitManipulationPowerOfTwo(){
+	var n int
+	print("Enter an integer:")
+	fmt.Scanln(&n)
