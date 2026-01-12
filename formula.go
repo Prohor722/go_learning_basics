@@ -375,4 +375,5 @@ func bitManipulationToggleBits(){
 	result := n ^ mask
 	println("Result after toggling", k, "least significant bits of", n, "is:", result)
 }
-// func bitManipulationTurnOffRightmostSetBit(){}
+
+func bitManipulationTurnOffRightmostSetBit(){
