@@ -365,3 +365,7 @@ func bitManipulationClearBits(){
 	println("Result after clearing", k, "least significant bits of", n, "is:", result)
 }
 
+func bitManipulationToggleBits(){
+	var n, k int
+
+// func bitManipulationTurnOffRightmostSetBit(){}
