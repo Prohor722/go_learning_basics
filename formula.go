@@ -379,3 +379,4 @@ func bitManipulationToggleBits(){
 func bitManipulationTurnOffRightmostSetBit(){
 	var n int
 	print("Enter an integer:")
+	fmt.Scanln(&n)
