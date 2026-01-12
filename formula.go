@@ -380,3 +380,6 @@ func bitManipulationTurnOffRightmostSetBit(){
 	var n int
 	print("Enter an integer:")
 	fmt.Scanln(&n)
+	result := n & (n - 1)
+	println("Result after turning off the rightmost set bit of", n, "is:", result)
+}
