@@ -369,4 +369,6 @@ func bitManipulationToggleBits(){
 	var n, k int
 	print("Enter an integer:")
 	fmt.Scanln(&n)
+	print("Enter number of least significant bits to toggle (k):")
+	fmt.Scanln(&k)
 // func bitManipulationTurnOffRightmostSetBit(){}
