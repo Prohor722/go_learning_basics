@@ -371,4 +371,8 @@ func bitManipulationToggleBits(){
 	fmt.Scanln(&n)
 	print("Enter number of least significant bits to toggle (k):")
 	fmt.Scanln(&k)
+	mask := (1 << k) - 1
+	result := n ^ mask
+	println("Result after toggling", k, "least significant bits of", n, "is:", result)
+}
 // func bitManipulationTurnOffRightmostSetBit(){}
