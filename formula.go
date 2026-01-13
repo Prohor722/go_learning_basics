@@ -384,9 +384,6 @@ func bitManipulationTurnOffRightmostSetBit(){
 	println("Result after turning off the rightmost set bit of", n, "is:", result)
 }
 
-func logIdentity(){
-	var n int
-	print("Enter an integer:")
-	fmt.Scanln(&n)
-	println("Log identity of", n, "is:", math.Log(float64(n)))
+func prefixSumFormula(){
+	var arrSize, queries int
 }
