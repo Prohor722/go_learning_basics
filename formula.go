@@ -390,4 +390,7 @@ func prefixSumFormula(){
 	fmt.Scanln(&arrSize)
 	arr := make([]int, arrSize)
 	print("Enter the elements of the array:")
+	for i := 0; i < arrSize; i++ {
+		fmt.Scanln(&arr[i])
+	}
 }
