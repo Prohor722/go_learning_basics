@@ -388,4 +388,6 @@ func prefixSumFormula(){
 	var arrSize, queries int
 	print("Enter the size of the array:")
 	fmt.Scanln(&arrSize)
+	arr := make([]int, arrSize)
+	print("Enter the elements of the array:")
 }
