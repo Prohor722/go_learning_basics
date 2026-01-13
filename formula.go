@@ -386,4 +386,6 @@ func bitManipulationTurnOffRightmostSetBit(){
 
 func prefixSumFormula(){
 	var arrSize, queries int
+	print("Enter the size of the array:")
+	fmt.Scanln(&arrSize)
 }
