@@ -393,4 +393,10 @@ func prefixSumFormula(){
 	for i := 0; i < arrSize; i++ {
 		fmt.Scanln(&arr[i])
 	}
+	prefixSum := make([]int, arrSize+1)
+	for i := 1; i <= arrSize; i++ {
+		prefixSum[i] = prefixSum[i-1] + arr[i-1]
+	}
+	print("Enter the number of queries:")
+	fmt.Scanln(&queries)
 }
