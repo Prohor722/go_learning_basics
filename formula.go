@@ -401,13 +401,13 @@ func prefixSumFormula(){
 	fmt.Scanln(&queries)
 }
 
-func timeComplexityPatterns(){
-	println("Common Time Complexity Patterns:")
-	println("1. O(1) - Constant Time")
-	println("2. O(log n) - Logarithmic Time")
-	println("3. O(n) - Linear Time")
-	println("4. O(n log n) - Linearithmic Time")
-	println("5. O(n^2) - Quadratic Time")
-	println("6. O(2^n) - Exponential Time")
-	println("7. O(n!) - Factorial Time")
-}
+// func timeComplexityPatterns(){
+// 	println("Common Time Complexity Patterns:")
+// 	println("1. O(1) - Constant Time")
+// 	println("2. O(log n) - Logarithmic Time")
+// 	println("3. O(n) - Linear Time")
+// 	println("4. O(n log n) - Linearithmic Time")
+// 	println("5. O(n^2) - Quadratic Time")
+// 	println("6. O(2^n) - Exponential Time")
+// 	println("7. O(n!) - Factorial Time")
+// }
