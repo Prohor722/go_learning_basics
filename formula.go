@@ -403,5 +403,6 @@ func prefixSumFormula(){
 
 func timeComplexityPatterns(){
 	println("Common Time Complexity Patterns:")
-	
+	println("1. O(1) - Constant Time")
+	println("2. O(log n) - Logarithmic Time")
 }
