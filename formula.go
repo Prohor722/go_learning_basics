@@ -406,4 +406,5 @@ func timeComplexityPatterns(){
 	println("1. O(1) - Constant Time")
 	println("2. O(log n) - Logarithmic Time")
 	println("3. O(n) - Linear Time")
+	println("4. O(n log n) - Linearithmic Time")
 }
