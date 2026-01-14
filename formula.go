@@ -400,3 +400,8 @@ func prefixSumFormula(){
 	print("Enter the number of queries:")
 	fmt.Scanln(&queries)
 }
+
+func timeComplexityPatterns(){
+	println("Common Time Complexity Patterns:")
+	
+}
