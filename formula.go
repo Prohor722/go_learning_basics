@@ -402,6 +402,7 @@ func prefixSumFormula(){
 }
 
 func prefixSumQuery(prefixSum []int){
+	var l, r int
 
 // func timeComplexityPatterns(){
 // 	println("Common Time Complexity Patterns:")
