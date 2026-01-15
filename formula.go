@@ -403,6 +403,7 @@ func prefixSumFormula(){
 
 func prefixSumQuery(prefixSum []int){
 	var l, r int
+	print("Enter the left index (l):")
 
 // func timeComplexityPatterns(){
 // 	println("Common Time Complexity Patterns:")
