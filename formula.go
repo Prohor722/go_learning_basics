@@ -405,6 +405,8 @@ func prefixSumQuery(prefixSum []int){
 	var l, r int
 	print("Enter the left index (l):")
 	fmt.Scanln(&l)
+	print("Enter the right index (r):")
+	fmt.Scanln(&r)
 
 // func timeComplexityPatterns(){
 // 	println("Common Time Complexity Patterns:")
