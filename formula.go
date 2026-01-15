@@ -401,6 +401,8 @@ func prefixSumFormula(){
 	fmt.Scanln(&queries)
 }
 
+func prefixSumQuery(prefixSum []int){
+
 // func timeComplexityPatterns(){
 // 	println("Common Time Complexity Patterns:")
 // 	println("1. O(1) - Constant Time")
