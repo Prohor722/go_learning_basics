@@ -11,3 +11,4 @@ type Rectangle struct {
 func (r Rectangle) Area() float64 {
 	return r.W * r.H
 }
+
