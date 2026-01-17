@@ -4,3 +4,7 @@ package main
 import (
 	"fmt"
 )
+
+func isLeapYear(year int) bool {
+	if year%4 == 0 {
+		if year%100 == 0 {
