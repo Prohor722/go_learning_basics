@@ -12,3 +12,6 @@ func isPrime(num int) bool {
 		if num%i == 0 {
 			return false
 		}
+	}
+	return true
+}
