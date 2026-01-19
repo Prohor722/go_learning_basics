@@ -14,3 +14,6 @@ func allPrimesToN(n int) []int {
 		if isPrime {
 			primes = append(primes, i)
 		}
+	}
+	return primes
+}
