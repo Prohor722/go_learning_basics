@@ -10,3 +10,7 @@ func allPrimesToN(n int) []int {
 				isPrime = false
 				break
 			}
+		}
+		if isPrime {
+			primes = append(primes, i)
+		}
