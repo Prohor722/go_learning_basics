@@ -5,5 +5,12 @@ func findLargestSmallestElement(){
 	if len(numbers) == 0 {
 		return
 	}
+	largest := numbers[0]
+	smallest := numbers[0]
+	for _, num := range numbers {
+		if num > largest {
+			largest = num
+		}
+		
 
 }
