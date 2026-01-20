@@ -15,6 +15,6 @@ func findLargestSmallestElement(){
 			smallest = num
 		}
 	}
-
-
+	println("Largest element:", largest)
+	println("Smallest element:", smallest)
 }
