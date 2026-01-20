@@ -11,6 +11,10 @@ func findLargestSmallestElement(){
 		if num > largest {
 			largest = num
 		}
-		
+		if num < smallest {
+			smallest = num
+		}
+	}
+
 
 }
