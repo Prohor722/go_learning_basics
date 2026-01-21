@@ -11,3 +11,5 @@ func sumAndAverageOfElements() {
 	}
 	average := float64(sum) / float64(len(numbers))
 	println("Sum of elements:", sum)
+	println("Average of elements:", average)
+}
