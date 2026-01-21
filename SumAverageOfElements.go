@@ -5,3 +5,7 @@ func sumAndAverageOfElements() {
 	if len(numbers) == 0 {
 		return
 	}
+	sum := 0
+	for _, num := range numbers {
+		sum += num
+	}
