@@ -9,3 +9,4 @@ func sumAndAverageOfElements() {
 	for _, num := range numbers {
 		sum += num
 	}
+	average := float64(sum) / float64(len(numbers))
