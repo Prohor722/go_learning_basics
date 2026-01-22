@@ -38,10 +38,10 @@ func quizGame(){
 		if answer == correctAnswers[i] {
 			println("Correct!")
 			score++
-		}
-		else {
+		}else {
 			println("Wrong! The correct answer is", correctAnswers[i])
 		}
 	}
+	println("Quiz Over! Your total score is:", score, "out of", len(questions))
 
 }
