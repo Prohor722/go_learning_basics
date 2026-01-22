@@ -7,7 +7,7 @@ import (
 
 func quizGame() {
 	var name string
-	var age int
+	var age uint
 
 	println("Welcome to the Quiz Game!")
 	print("Enter your name: ")
@@ -38,7 +38,7 @@ func quizGame() {
 		var answer string
 		print("Your answer: ")
 		fmt.Scanln(&answer)
-		
+
 		if strings.ToUpper(answer) == correctAnswers[i] {
 			println("Correct!")
 			score++
@@ -47,5 +47,7 @@ func quizGame() {
 		}
 	}
 	println("Quiz Over! Your total score is:", score, "out of", len(questions))
+	fmt.Printf("Your answer is %v%% correct!", (score*100)/len(questions))
+	println("\nThank you for playing, ", name, "!")
 
 }
