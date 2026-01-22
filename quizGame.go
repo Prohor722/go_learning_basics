@@ -25,7 +25,12 @@ func quizGame(){
 		{"A) 3", "B) 4", "C) 5", "D) 6"},
 		{"A) Earth", "B) Jupiter", "C) Mars", "D) Saturn"},
 	}
-
-	
+	correctAnswers := []string{"C", "B", "B"}
+	score := 0
+	for i, question := range questions {
+		println(question)
+		for _, option := range options[i] {
+			println(option)
+		}	
 
 }
