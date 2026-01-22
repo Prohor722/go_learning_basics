@@ -13,4 +13,13 @@ func quizGame(){
 	fmt.Scanln(&age)
 
 	println("Hello", name, "age", age, "! Let's start the quiz.")
+
+	questions := []string{
+		"What is the capital of France?",
+		"What is 2 + 2?",
+		"What is the largest planet in our solar system?",
+	}
+
+	options := [][]string{
+		
 }
