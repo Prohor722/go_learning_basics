@@ -15,6 +15,14 @@ func quizGame() {
 	print("Enter your age: ")
 	fmt.Scanln(&age)
 
+	if(age <= 1) {
+		println("Invalid age entered. Please enter a valid age.")
+		return
+	}else if(age < 10) {
+		println("Sorry", name, ", you must be at least 10 years old to play this game.")
+		return
+	}
+
 	println("Hello", name, "age", age, "! Let's start the quiz.")
 
 	questions := []string{
