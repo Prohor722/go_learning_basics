@@ -21,5 +21,11 @@ func quizGame(){
 	}
 
 	options := [][]string{
-		
+		{"A) Berlin", "B) Madrid", "C) Paris", "D) Rome"},
+		{"A) 3", "B) 4", "C) 5", "D) 6"},
+		{"A) Earth", "B) Jupiter", "C) Mars", "D) Saturn"},
+	}
+
+	
+
 }
