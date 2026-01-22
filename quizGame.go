@@ -6,18 +6,37 @@ import (
 )
 
 func scanAge(name string) uint {
-	var age uint = 0
-	print("Enter your age: ")
-	fmt.Scanln(&age)
 
-	if(age <= 1) {
-		print("Invalid age entered. Please enter a valid age.")
-		age = scanAge(name)
-	}else if(age < 10) {
-		println("Sorry", name, ", you must be at least 10 years old to play this game.")
-		return 0
+	for {
+		var age uint
+		fmt.Print("Enter your age: ")
+		fmt.Scanln(&age)
+
+		if age <= 1 {
+			fmt.Println("Invalid age entered.")
+			continue
+		}
+
+		if age < 10 {
+			age = 0
+			println("Sorry", name, ", you must be at least 10 years old to play this game.")
+		}
+
+		return age
 	}
-	return age
+
+	// var age uint = 0
+	// print("Enter your age: ")
+	// fmt.Scanln(&age)
+
+	// if(age <= 1) {
+	// 	print("Invalid age entered. Please enter a valid age.")
+	// 	age = scanAge(name)
+	// }else if(age < 10) {
+	// 	println("Sorry", name, ", you must be at least 10 years old to play this game.")
+	// 	return 0
+	// }
+	// return age
 }
 
 func quizGame() {
