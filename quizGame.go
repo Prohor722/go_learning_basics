@@ -11,4 +11,6 @@ func quizGame(){
 	fmt.Scanln(&name)
 	print("Enter your age: ")
 	fmt.Scanln(&age)
+
+	println("Hello", name, "age", age, "! Let's start the quiz.")
 }
