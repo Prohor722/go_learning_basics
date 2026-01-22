@@ -36,7 +36,8 @@ func main() {
 	// logIdentity()
 	// changeOfBase()
 	// additionFormula()
-	multiplicationFormula()
+	// multiplicationFormula()
+	quizGame()
 }
 
 
