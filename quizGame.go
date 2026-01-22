@@ -39,5 +39,9 @@ func quizGame(){
 			println("Correct!")
 			score++
 		}
+		else {
+			println("Wrong! The correct answer is", correctAnswers[i])
+		}
+	}
 
 }
