@@ -5,6 +5,12 @@ import (
 	"strings"
 )
 
+func scanAge() uint {
+	var age uint
+	fmt.Scanln(&age)
+	return age
+}
+
 func quizGame() {
 	var name string
 	var age uint
@@ -13,7 +19,7 @@ func quizGame() {
 	print("Enter your name: ")
 	fmt.Scanln(&name)
 	print("Enter your age: ")
-	fmt.Scanln(&age)
+	age = scanAge()
 
 	if(age <= 1) {
 		println("Invalid age entered. Please enter a valid age.")
