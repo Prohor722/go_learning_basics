@@ -32,5 +32,12 @@ func quizGame(){
 		for _, option := range options[i] {
 			println(option)
 		}	
+		var answer string
+		print("Your answer: ")
+		fmt.Scanln(&answer)
+		if answer == correctAnswers[i] {
+			println("Correct!")
+			score++
+		}
 
 }
