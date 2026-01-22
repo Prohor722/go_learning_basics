@@ -6,7 +6,7 @@ import (
 )
 
 func scanAge() uint {
-	var age uint
+	var age uint = 0
 	print("Enter your age: ")
 	fmt.Scanln(&age)
 	return age
@@ -14,7 +14,7 @@ func scanAge() uint {
 
 func quizGame() {
 	var name string
-	var age uint
+	var age uint = 0
 
 	println("Welcome to the Quiz Game!")
 	print("Enter your name: ")
@@ -22,7 +22,7 @@ func quizGame() {
 	age = scanAge()
 
 	if(age <= 1) {
-		println("Invalid age entered. Please enter a valid age.")
+		print("Invalid age entered. Please enter a valid age.")
 		age = scanAge()
 		// return
 	}else if(age < 10) {
