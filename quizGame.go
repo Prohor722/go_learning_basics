@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-func quizGame(){
+func quizGame() {
 	var name string
 	var age int
 
@@ -31,14 +34,15 @@ func quizGame(){
 		println(question)
 		for _, option := range options[i] {
 			println(option)
-		}	
+		}
 		var answer string
 		print("Your answer: ")
 		fmt.Scanln(&answer)
-		if answer == correctAnswers[i] {
+		
+		if strings.ToUpper(answer) == correctAnswers[i] {
 			println("Correct!")
 			score++
-		}else {
+		} else {
 			println("Wrong! The correct answer is", correctAnswers[i])
 		}
 	}
