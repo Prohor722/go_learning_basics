@@ -37,7 +37,8 @@ func main() {
 	// changeOfBase()
 	// additionFormula()
 	// multiplicationFormula()
-	quizGame()
+	// quizGame()
+	factorialUsingRecursion()
 }
 
 
