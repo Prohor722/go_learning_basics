@@ -12,7 +12,8 @@ func factorialUsingRecursion() {
 		return n * factorial(n-1)
 	}
 	var num int
-	fmt.Scan()
+	print("Please enter the number:")
+	fmt.Scan(&num)
 	result := factorial(num)
-	println("Factorial of", num, "is", result)
+	println("\nFactorial of", num, "is", result)
 }
