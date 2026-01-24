@@ -1,6 +1,8 @@
 package main
 
-func factorialUsingRecursion(){
+import "fmt"
+
+func factorialUsingRecursion() {
 	// function to calculate factorial using recursion
 	var factorial func(n int) int
 	factorial = func(n int) int {
@@ -9,7 +11,8 @@ func factorialUsingRecursion(){
 		}
 		return n * factorial(n-1)
 	}
-	num := 5
+	var num int
+	fmt.Scan()
 	result := factorial(num)
 	println("Factorial of", num, "is", result)
 }
