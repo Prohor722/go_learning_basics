@@ -122,7 +122,10 @@ func todo(){
 		fmt.Println("Invalid choice.")
 	}
 
-	
-
-
+	fmt.Println("Do you want to perform another operation? (y/n): ")
+	var again string
+	fmt.Scanln(&again)
+	if again == "y" || again == "Y" {
+		todo()
+	}
 }
