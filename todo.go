@@ -73,7 +73,7 @@ func addTask() {
 
 func editTask(index int) {
 	var newDetails string
-	fmt.Scanln(&newDetails)
+	newDetails = sacnDetails()
 
 	if index < 0 || index >= len(list) {
 		fmt.Println("Invalid task index.")
