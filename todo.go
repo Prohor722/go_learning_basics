@@ -47,6 +47,38 @@ func addTask(title string, details string){
 	fmt.Println("Task added.")
 }
 
+func editTask(index int, newDetails string){
+	if index < 0 || index >= len(list) {
+		fmt.Println("Invalid task index.")
+		return
+	}
+	i := 0
+	for key := range list {
+		if i == index {
+			list[key] = newDetails
+			fmt.Println("Task updated.")
+			return
+		}
+		i++
+	}
+}
+
+func editTaskTitle(index int, newTitle string){
+	if index < 0 || index >= len(list) {
+		fmt.Println("Invalid task index.")
+		return
+	}
+	i := 0
+	for key, value := range list {
+		if i == index {
+			delete(list, key)
+			list[newTitle] = value
+			fmt.Println("Task title updated.")
+			return
+		}
+		i++
+	}
+}
 
 func todo(){
 	fmt.Println("Welcome to out Todo List Application!!")
