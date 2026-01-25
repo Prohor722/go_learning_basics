@@ -36,11 +36,11 @@ func removeTask(index int) {
 		if i == index {
 			delete(list, key)
 			fmt.Println("Task removed.")
+			fmt.Println()
 			return
 		}
 		i++
 	}
-	fmt.Println()
 }
 
 func sacnDetails() string {
@@ -122,6 +122,7 @@ func todo() {
 	var choice int
 	fmt.Print("Enter your choice (1-5): ")
 	fmt.Scanln(&choice)
+	fmt.Println()
 
 	switch choice {
 	case 1:
