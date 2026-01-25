@@ -43,6 +43,15 @@ func removeTask(index int) {
 	fmt.Println()
 }
 
+func sacnDetails() string {
+	scanner := bufio.NewScanner(os.Stdin)
+	var details string
+	fmt.Print("Enter the task details: ")
+	scanner.Scan()
+	details = scanner.Text()
+	return details
+}
+
 func scanTask() (string, string) {
 	scanner := bufio.NewScanner(os.Stdin)
 
@@ -50,11 +59,7 @@ func scanTask() (string, string) {
 	fmt.Print("Enter the task title: ")
 	scanner.Scan()
 	title = scanner.Text()
-
-	fmt.Print("Enter Task comment and press enter when complete: ")
-	var details string
-	scanner.Scan()
-	details = scanner.Text()
+	details := sacnDetails()
 
 	return title, details
 }
@@ -66,7 +71,10 @@ func addTask() {
 	fmt.Println()
 }
 
-func editTask(index int, newDetails string) {
+func editTask(index int) {
+	var newDetails string
+	fmt.Scanln(&newDetails)
+
 	if index < 0 || index >= len(list) {
 		fmt.Println("Invalid task index.")
 		return
@@ -132,10 +140,7 @@ func todo() {
 		var index int
 		fmt.Print("Enter the task index to edit: ")
 		fmt.Scanln(&index)
-		fmt.Print("Enter new task details: ")
-		var newDetails string
-		fmt.Scanln(&newDetails)
-		editTask(index-1, newDetails)
+		editTask(index-1)
 		todo()
 	case 5:
 		var index int
