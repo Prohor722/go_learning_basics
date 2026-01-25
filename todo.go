@@ -86,5 +86,43 @@ func todo(){
 	fmt.Println("1. View all tasks")
 	fmt.Println("2. Add a new task")
 	fmt.Println("3. Remove a task")
+	fmt.Println("4. Edit a task")
+	fmt.Println("5. Edit a task title")
+	var choice int
+	fmt.Print("Enter your choice (1-5): ")
+	fmt.Scanln(&choice)
+	switch choice { 
+	case 1:
+		readAllTodo()
+	case 2:
+		title, details := scanTask()
+		addTask(title, details)
+	case 3:
+		var index int
+		fmt.Print("Enter the task index to remove: ")
+		fmt.Scanln(&index)
+		removeTask(index - 1)
+	case 4:
+		var index int
+		fmt.Print("Enter the task index to edit: ")
+		fmt.Scanln(&index)
+		fmt.Print("Enter new task details: ")
+		var newDetails string
+		fmt.Scanln(&newDetails)
+		editTask(index - 1, newDetails)
+	case 5:
+		var index int
+		fmt.Print("Enter the task index to edit title: ")
+		fmt.Scanln(&index)
+		fmt.Print("Enter new task title: ")
+		var newTitle string
+		fmt.Scanln(&newTitle)
+		editTaskTitle(index - 1, newTitle)
+	default:
+		fmt.Println("Invalid choice.")
+	}
+
+	
+
 
 }
