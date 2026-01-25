@@ -8,10 +8,14 @@ var list = map[string]string{
 	}
 
 func readAllTodo(){
-	
+	if len(list) == 0 {
+		fmt.Println("No tasks found.")
+		return
+	}
+	fmt.Println("Your Todo List:")
 	i := 1
-	for _, item := range list {
-		fmt.Printf("%d. %s\n", i, item)
+	for key, value := range list {
+		fmt.Printf("%d. %s: %s\n", i, key, value)
 		i++
 	}
 }
@@ -42,7 +46,8 @@ func scanTask() (string,string) {
 	return title, details
 }
 
-func addTask(title string, details string){
+func addTask(){
+	title, details := scanTask()
 	list[title] = details
 	fmt.Println("Task added.")
 }
@@ -88,15 +93,16 @@ func todo(){
 	fmt.Println("3. Remove a task")
 	fmt.Println("4. Edit a task")
 	fmt.Println("5. Edit a task title")
+	
 	var choice int
 	fmt.Print("Enter your choice (1-5): ")
 	fmt.Scanln(&choice)
+
 	switch choice { 
 	case 1:
 		readAllTodo()
 	case 2:
-		title, details := scanTask()
-		addTask(title, details)
+		addTask()
 	case 3:
 		var index int
 		fmt.Print("Enter the task index to remove: ")
