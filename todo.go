@@ -23,6 +23,7 @@ func readAllTodo() {
 		fmt.Printf("%d. %s: %s\n", i, key, value)
 		i++
 	}
+	fmt.Println()
 }
 
 func removeTask(index int) {
@@ -39,6 +40,7 @@ func removeTask(index int) {
 		}
 		i++
 	}
+	fmt.Println()
 }
 
 func scanTask() (string, string) {
@@ -61,6 +63,7 @@ func addTask() {
 	title, details := scanTask()
 	list[title] = details
 	fmt.Println("Task added.")
+	fmt.Println()
 }
 
 func editTask(index int, newDetails string) {
@@ -77,6 +80,7 @@ func editTask(index int, newDetails string) {
 		}
 		i++
 	}
+	fmt.Println()
 }
 
 func editTaskTitle(index int, newTitle string) {
@@ -94,6 +98,7 @@ func editTaskTitle(index int, newTitle string) {
 		}
 		i++
 	}
+	fmt.Println()
 }
 
 func todo() {
