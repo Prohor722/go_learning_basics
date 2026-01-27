@@ -14,6 +14,10 @@ func age() int {
 	return 250;
 }
 
+func height() float64 {
+	return 9.9;
+}
+
 func variableActAsConstant() {
 	fmt.Println("Value of pi is:", pi())
 }
