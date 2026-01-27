@@ -39,7 +39,8 @@ func main() {
 	// multiplicationFormula()
 	// quizGame()
 	// factorialUsingRecursion()
-	todo()
+	// todo()
+	variableActAsConstant()
 }
 
 
