@@ -10,6 +10,10 @@ func name() string {
 	return "Prohor";
 }
 
+func age() int {
+	return 250;
+}
+
 func variableActAsConstant() {
 	fmt.Println("Value of pi is:", pi())
 }
