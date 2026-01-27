@@ -22,4 +22,5 @@ func variableActAsConstant() {
 	fmt.Println("Value of pi is:", pi())
 	fmt.Println("Name is:", name())
 	fmt.Println("Age is:", age())
+	fmt.Println("Height is:", height())
 }
