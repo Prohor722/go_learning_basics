@@ -21,4 +21,5 @@ func height() float64 {
 func variableActAsConstant() {
 	fmt.Println("Value of pi is:", pi())
 	fmt.Println("Name is:", name())
+	fmt.Println("Age is:", age())
 }
