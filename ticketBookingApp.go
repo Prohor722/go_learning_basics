@@ -39,7 +39,10 @@ func ticketBookingApp() {
 		return
 	}
 
-	
+	totalCost := float64(bookTickets) * ticketPrice
+	ticketsAvailable -= bookTickets
+	fmt.Printf("Thank you %s for booking %d tickets. Total cost: $%.2f\n", name, bookTickets, totalCost)
+	fmt.Printf("Tickets remaining: %d\n", ticketsAvailable)
 
 
 
