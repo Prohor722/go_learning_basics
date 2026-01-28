@@ -24,6 +24,11 @@ func ticketBookingApp() {
 	fmt.Print("Enter your age:")
 	fmt.Scanln(&age)
 
+	if(!validation("age", age)) {
+		fmt.Println("Invalid age. Please enter a valid age between 0 and 120.")
+		return
+	}
+
 	fmt.Print("Enter your email:")
 	fmt.Scanln(&email)
 
