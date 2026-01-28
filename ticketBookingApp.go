@@ -31,6 +31,10 @@ func ticketBookingApp() {
 
 	fmt.Print("Enter your email:")
 	fmt.Scanln(&email)
+	if(!validation("email", email)) {
+		fmt.Println("Invalid email. Please enter a valid email address.")
+		return
+	}
 
 	fmt.Print("Enter number of tickets to book:")
 	fmt.Scanln(&bookTickets)
