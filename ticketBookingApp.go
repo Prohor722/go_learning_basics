@@ -19,6 +19,9 @@ func ticketBookingApp() {
 	fmt.Print("Enter your email:")
 	fmt.Scanln(&email)
 
+	fmt.Print("Enter number of tickets to book:")
+	fmt.Scanln(&bookTickets)
+
 
 	if age < 18 {
 		fmt.Println("Sorry, you must be at least 18 years old to book tickets.")
@@ -28,5 +31,10 @@ func ticketBookingApp() {
 		fmt.Println("Sorry, no tickets are available.")
 		return
 	}
+	if bookTickets > ticketsAvailable {
+		fmt.Printf("Sorry, only %d tickets are available.\n", ticketsAvailable)
+		return
+	}
+
 
 }
