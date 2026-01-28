@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func ticketBookingApp() {
 	var name string
@@ -45,8 +48,8 @@ func ticketBookingApp() {
 	fmt.Printf("Tickets remaining: %d\n", ticketsAvailable)
 }
 
-func validation(type string, value interface{}) bool {
-	switch type { {
+func validation(validationType string, value interface{}) bool {
+	switch validationType {
 	case "age":
 		age, ok := value.(int)
 		if !ok || age < 0 || age > 120 {
@@ -55,12 +58,11 @@ func validation(type string, value interface{}) bool {
 		return true
 	case "email":
 		email, ok := value.(string)
-		if !ok || len(email) < 5 || !contains(email, "@") {
+		if !ok || len(email) < 5 || !strings.Contains(email, "@") {
 			return false
 		}
 		return true
 	default:
 		return false
 	}
-}
 }
