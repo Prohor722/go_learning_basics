@@ -43,8 +43,18 @@ func ticketBookingApp() {
 	ticketsAvailable -= bookTickets
 	fmt.Printf("Thank you %s for booking %d tickets. Total cost: $%.2f\n", name, bookTickets, totalCost)
 	fmt.Printf("Tickets remaining: %d\n", ticketsAvailable)
-
-
-
-
 }
+
+func validation(type string, value interface{}) bool {
+	switch type { {
+	case "age":
+		age, ok := value.(int)
+		if !ok || age < 0 || age > 120 {
+			return false
+		}
+		return true
+	case "email":
+		email, ok := value.(string)
+		if !ok || len(email) < 5 || !contains(email, "@") {
+			return false
+		}
