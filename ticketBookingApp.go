@@ -7,6 +7,8 @@ func ticketBookingApp() {
 	var age int
 	var email string
 	var ticketsAvailable int = 100
+	var ticketPrice float64 = 50.0
+	var bookTickets int
 
 	fmt.Print("Enter your name:")
 	fmt.Scanln(&name)
@@ -16,4 +18,15 @@ func ticketBookingApp() {
 
 	fmt.Print("Enter your email:")
 	fmt.Scanln(&email)
+
+
+	if age < 18 {
+		fmt.Println("Sorry, you must be at least 18 years old to book tickets.")
+		return
+	}
+	if ticketsAvailable <= 0 {
+		fmt.Println("Sorry, no tickets are available.")
+		return
+	}
+
 }
