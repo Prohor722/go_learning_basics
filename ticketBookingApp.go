@@ -64,6 +64,11 @@ func ticketBookingApp() {
 
 func validation(validationType string, value interface{}) bool {
 	switch validationType {
+	case "name":
+		name, ok := value.(string)
+		if !ok || len(name) < 2 {
+			return false
+		}
 	case "age":
 		age, ok := value.(int)
 		if !ok || age < 0 || age > 120 {
