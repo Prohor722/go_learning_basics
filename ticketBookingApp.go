@@ -9,4 +9,7 @@ func ticketBookingApp() {
 
 	fmt.Print("Enter your name:")
 	fmt.Scanln(&name)
+
+	fmt.Print("Enter your age:")
+	fmt.Scanln(&age)
 }
