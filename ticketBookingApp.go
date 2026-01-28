@@ -43,6 +43,15 @@ func ticketBookingApp() {
 
 	fmt.Printf("Welcome %s! There are %d tickets available at $%.2f each.\n", name, ticketsAvailable, ticketPrice)
 
+	fmt.Println("Available Movies and Prices:")
+	for movie, price := range availableMoviesAndPrices {
+		fmt.Printf("%s: $%.2f\n", movie, price)
+	}
+
+	fmt.Printf("Select Movie:")
+	// For simplicity, we are not validating movie selection here
+	var selectedMovie string
+	fmt.Scanln(&selectedMovie)
 	fmt.Print("Enter number of tickets to book:")
 	fmt.Scanln(&bookTickets)
 
