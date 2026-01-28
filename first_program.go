@@ -40,7 +40,8 @@ func main() {
 	// quizGame()
 	// factorialUsingRecursion()
 	// todo()
-	variableActAsConstant()
+	// variableActAsConstant()
+	ticketBookingApp()
 }
 
 
