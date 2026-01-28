@@ -58,3 +58,9 @@ func validation(type string, value interface{}) bool {
 		if !ok || len(email) < 5 || !contains(email, "@") {
 			return false
 		}
+		return true
+	default:
+		return false
+	}
+}
+}
