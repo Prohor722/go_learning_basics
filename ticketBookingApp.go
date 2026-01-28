@@ -34,7 +34,14 @@ func ticketBookingApp() {
 	if bookTickets > ticketsAvailable {
 		fmt.Printf("Sorry, only %d tickets are available.\n", ticketsAvailable)
 		return
+	}else if bookTickets <= 0 {
+		fmt.Println("Please enter a valid number of tickets to book.")
+		return
 	}
+
+	
+
+
 
 
 }
