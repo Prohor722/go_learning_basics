@@ -69,6 +69,7 @@ func validation(validationType string, value interface{}) bool {
 		if !ok || len(name) < 2 {
 			return false
 		}
+		return true
 	case "age":
 		age, ok := value.(int)
 		if !ok || age < 0 || age > 120 {
