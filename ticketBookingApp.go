@@ -36,6 +36,8 @@ func ticketBookingApp() {
 		return
 	}
 
+	fmt.Printf("Welcome %s! There are %d tickets available at $%.2f each.\n", name, ticketsAvailable, ticketPrice)
+
 	fmt.Print("Enter number of tickets to book:")
 	fmt.Scanln(&bookTickets)
 
