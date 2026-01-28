@@ -11,6 +11,11 @@ func ticketBookingApp() {
 	var email string
 	var ticketsAvailable int = 100
 	var ticketPrice float64 = 50.0
+	var availableMoviesAndPrices = map[string]float64{
+		"Movie A": 50.0,
+		"Movie B": 60.0,
+		"Movie C": 70.0,
+	}
 	var bookTickets int
 
 	fmt.Print("Enter your name:")
