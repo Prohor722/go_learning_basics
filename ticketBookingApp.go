@@ -11,11 +11,6 @@ func ticketBookingApp() {
 	var email string
 	var ticketsAvailable int = 100
 	var ticketPrice float64 = 50.0
-	var availableMoviesAndPrices = map[string]float64{
-		"Movie A": 50.0,
-		"Movie B": 60.0,
-		"Movie C": 70.0,
-	}
 	var bookTickets int
 
 	fmt.Print("Enter your name:")
@@ -43,15 +38,6 @@ func ticketBookingApp() {
 
 	fmt.Printf("Welcome %s! There are %d tickets available at $%.2f each.\n", name, ticketsAvailable, ticketPrice)
 
-	fmt.Println("Available Movies and Prices:")
-	for movie, price := range availableMoviesAndPrices {
-		fmt.Printf("%s: $%.2f\n", movie, price)
-	}
-
-	fmt.Printf("Select Movie:")
-	// For simplicity, we are not validating movie selection here
-	var selectedMovie string
-	fmt.Scanln(&selectedMovie)
 	fmt.Print("Enter number of tickets to book:")
 	fmt.Scanln(&bookTickets)
 
