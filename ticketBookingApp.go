@@ -63,6 +63,7 @@ func ticketBookingApp() {
 	for i, movie := range movies {
 		fmt.Printf("\n%d. %s ($%.2f) - %d tickets available", i+1, movie.Name, movie.Price, movie.AvailableTickets)
 	}
+	fmt.Print("\nEnter the movie number:")
 	var movieChoice int
 	fmt.Scanln(&movieChoice)
 	if movieChoice < 1 || movieChoice > len(movies) {
