@@ -74,7 +74,6 @@ func ticketBookingApp() {
 	selectedMovie := movies[movieChoice-1]
 	fmt.Printf("You have selected %s. There are %d tickets available.\n", selectedMovie.Name, selectedMovie.AvailableTickets)
 
-	
 	fmt.Print("Enter number of tickets to book:")
 	fmt.Scanln(&bookTickets)
 
