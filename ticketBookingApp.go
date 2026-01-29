@@ -5,6 +5,12 @@ import (
 	"strings"
 )
 
+type Movie struct {
+    Name            string
+    Price           float64
+    AvailableTickets int
+}
+
 func ticketBookingApp() {
 	var name string
 	var age int
@@ -12,6 +18,23 @@ func ticketBookingApp() {
 	var ticketsAvailable int = 100
 	var ticketPrice float64 = 50.0
 	var bookTickets int
+	movies := []Movie{
+        {
+            Name:             "The Matrix",
+            Price:            12.99,
+            AvailableTickets: 50,
+        },
+        {
+            Name:             "Inception",
+            Price:            14.99,
+            AvailableTickets: 30,
+        },
+        {
+            Name:             "Interstellar",
+            Price:            15.99,
+            AvailableTickets: 25,
+        },
+    }
 
 	fmt.Print("Enter your name:")
 	fmt.Scanln(&name)
@@ -38,6 +61,7 @@ func ticketBookingApp() {
 
 	fmt.Printf("Welcome %s! There are %d tickets available at $%.2f each.\n", name, ticketsAvailable, ticketPrice)
 
+	
 	fmt.Print("Enter number of tickets to book:")
 	fmt.Scanln(&bookTickets)
 
