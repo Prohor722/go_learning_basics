@@ -65,6 +65,16 @@ func ticketBookingApp() {
 	for i, movie := range movies {
 		fmt.Printf("\n%d. %s ($%.2f) - %d tickets available", i+1, movie.Name, movie.Price, movie.AvailableTickets)
 	}
+	var movieChoice int
+	fmt.Scanln(&movieChoice)
+	if movieChoice < 1 || movieChoice > len(movies) {
+		fmt.Println("Invalid movie choice. Please try again.")
+		return
+	}
+	selectedMovie := movies[movieChoice-1]
+	fmt.Printf("You have selected %s. There are %d tickets available.\n", selectedMovie.Name, selectedMovie.AvailableTickets)
+
+	
 	fmt.Print("Enter number of tickets to book:")
 	fmt.Scanln(&bookTickets)
 
