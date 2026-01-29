@@ -59,7 +59,7 @@ func ticketBookingApp() {
 		return
 	}
 
-	fmt.Printf("Welcome %s! There are %d tickets available at $%.2f each.\n", name, ticketsAvailable, ticketPrice)
+	// fmt.Printf("Welcome %s! There are %d tickets available at $%.2f each.\n", name, ticketsAvailable, ticketPrice)
 
 	fmt.Printf("Which movie do you want to watch?")
 	for i, movie := range movies {
@@ -72,7 +72,7 @@ func ticketBookingApp() {
 		return
 	}
 	selectedMovie := movies[movieChoice-1]
-	fmt.Printf("You have selected %s. There are %d tickets available.\n", selectedMovie.Name, selectedMovie.AvailableTickets)
+	fmt.Printf("You have selected %s. There are %d tickets available. Each ticket costs $%.2f.\n", selectedMovie.Name, selectedMovie.AvailableTickets, selectedMovie.Price)
 
 	fmt.Print("Enter number of tickets to book:")
 	fmt.Scanln(&bookTickets)
