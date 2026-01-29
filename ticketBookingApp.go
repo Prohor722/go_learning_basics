@@ -15,8 +15,6 @@ func ticketBookingApp() {
 	var name string
 	var age int
 	var email string
-	var ticketsAvailable int = 100
-	var ticketPrice float64 = 50.0
 	var bookTickets int
 	movies := []Movie{
         {
@@ -82,19 +80,20 @@ func ticketBookingApp() {
 		fmt.Println("Sorry, you must be at least 18 years old to book tickets.")
 		return
 	}
-	if ticketsAvailable <= 0 {
+	if selectedMovie.AvailableTickets <= 0 {
 		fmt.Println("Sorry, no tickets are available.")
 		return
 	}
-	if bookTickets > ticketsAvailable {
-		fmt.Printf("Sorry, only %d tickets are available.\n", ticketsAvailable)
+	if bookTickets > selectedMovie.AvailableTickets {
+		fmt.Printf("Sorry, only %d tickets are available.\n", selectedMovie.AvailableTickets)
 		return
 	}else if bookTickets <= 0 {
 		fmt.Println("Please enter a valid number of tickets to book.")
 		return
 	}
 
-	totalCost := float64(bookTickets) * ticketPrice
+	totalCost := float64(bookTickets) * selectedMovie.Price
+	ticketsAvailable := selectedMovie.AvailableTickets
 	ticketsAvailable -= bookTickets
 	fmt.Printf("Thank you %s for booking %d tickets. Total cost: $%.2f\n", name, bookTickets, totalCost)
 	fmt.Printf("Tickets remaining: %d\n", ticketsAvailable)
