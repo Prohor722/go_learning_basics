@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func addContact() {
 	var name string
@@ -42,3 +45,4 @@ func validation(inputType string, value interface{}) bool {
 	default:
 		return false
 	}
+}
