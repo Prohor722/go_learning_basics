@@ -178,7 +178,6 @@ func phoneBookApp() {
 				continue
 			}
 			deleteContact(contacts, index)
-			
 		case 5:
 			fmt.Println("Exiting Phone Book App.")
 			return
