@@ -85,3 +85,6 @@ func addContactIfNotExists(contacts []string, name string) []string {
 	}
 	return contacts
 }
+
+func printContacts(contacts []string) {
+	fmt.Println("Contact List:")
