@@ -5,6 +5,12 @@ import (
 	"strings"
 )
 
+type Contact struct {
+	Name  string
+	Phone string
+	Email string
+}
+
 func addContact() {
 	var name string
 	var phone string
@@ -71,3 +77,5 @@ func contactExists(contacts []string, name string) bool {
 	}
 	return false
 }
+
+func addContactIfNotExists(contacts []string, name string) []string {
