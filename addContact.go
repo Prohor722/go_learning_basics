@@ -27,6 +27,10 @@ func addContact() {
 		fmt.Println("Invalid name. Please try again.")
 		return
 	}
+	if(!contactDetailsValidation("phone", phone)) {
+		fmt.Println("Invalid phone number. Please try again.")
+		return
+	}
 	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
 }
 
