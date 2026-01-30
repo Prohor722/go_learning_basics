@@ -168,7 +168,10 @@ func phoneBookApp() {
 			}
 
 		case 4:
-			// deleteContact()
+			deleteContact(contacts, index)
+		case 5:
+			fmt.Println("Exiting Phone Book App.")
+			return
 		default:
 			fmt.Println("Invalid choice. Please try again.")
 		}
