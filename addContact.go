@@ -171,6 +171,9 @@ func phoneBookApp() {
 			fmt.Println("Which contact would you like to delete?")
 			printContacts(contacts)
 			var index int
+			fmt.Print("Enter contact number: ")
+			fmt.Scanln(&index)
+			
 			deleteContact(contacts, index)
 		case 5:
 			fmt.Println("Exiting Phone Book App.")
