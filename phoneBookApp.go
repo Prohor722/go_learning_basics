@@ -11,7 +11,7 @@ type Contact struct {
 	Email string
 }
 
-func addContact() {
+func addContact(contacts []*Contact) {
 	var name string
 	var phone string
 	var email string
@@ -41,7 +41,10 @@ func addContact() {
 		fmt.Println("Invalid email address. Please try again.")
 		return
 	}
+	contacts = append(contacts, &Contact{Name: name, Phone: phone, Email: email})
 	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
+	fmt.Println("Current Contacts:")
+	fmt.Println(contacts)
 }
 
 func editContact(contacts []*Contact, contact *Contact, index int) {
@@ -150,7 +153,7 @@ func phoneBookApp() {
 		fmt.Scanln(&choice)
 		switch choice {
 		case 1:
-			addContact()
+			addContact(contacts)
 		case 2:
 			printContacts(contacts)
 		case 3:
