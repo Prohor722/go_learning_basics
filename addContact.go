@@ -94,3 +94,12 @@ func printContacts(contacts []string) {
 }
 
 func phoneBookApp() {
+	var contacts []string
+	for {
+		var choice int
+		fmt.Println("\nPhone Book Menu:")
+		fmt.Println("1. Add Contact")
+		fmt.Println("2. View Contacts")
+		fmt.Println("3. Exit")
+		fmt.Print("Enter your choice: ")
+		fmt.Scanln(&choice)
