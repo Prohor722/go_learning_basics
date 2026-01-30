@@ -124,7 +124,7 @@ func contactExists(contacts []*Contact, name string) bool {
 	return false
 }
 
-func addContactIfNotExists(contacts []*Contact, name string) []*Contact {
+func addContactIfNotExists(contacts []*Contact, name string, phone string, email string) []*Contact {
 	if !contactExists(contacts, name) {
 		contacts = append(contacts, &Contact{Name: name})
 		fmt.Printf("Contact %s added successfully.\n", name)
