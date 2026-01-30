@@ -1,6 +1,6 @@
 package main
 
-imort "fmt"
+import "fmt"
 
 func addContact() {
 	var name string
@@ -12,4 +12,9 @@ func addContact() {
 
 	fmt.Print("Enter contact phone: ")
 	fmt.Scanln(&phone)
+
+	fmt.Print("Enter contact email: ")
+	fmt.Scanln(&email)
+
+	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
 }
