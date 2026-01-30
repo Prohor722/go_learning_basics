@@ -88,3 +88,9 @@ func addContactIfNotExists(contacts []string, name string) []string {
 
 func printContacts(contacts []string) {
 	fmt.Println("Contact List:")
+	for i, contact := range contacts {
+		fmt.Printf("%d. %s\n", i+1, contact)
+	}
+}
+
+func phoneBookApp() {
