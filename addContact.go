@@ -1,5 +1,9 @@
 package main
 
+imort "fmt"
+
 func addContact() {
-	// Functionality to add a contact
+	var name string
+	var phone string
+	var email string
 }
