@@ -10,8 +10,9 @@ type Contact struct {
 	Phone string
 	Email string
 }
+var contacts []*Contact
 
-func addContact(contacts []*Contact) {
+func addContact() {
 	var name string
 	var phone string
 	var email string
@@ -47,7 +48,7 @@ func addContact(contacts []*Contact) {
 	fmt.Println(contacts)
 }
 
-func editContact(contacts []*Contact, contact *Contact, index int) {
+func editContact(contact *Contact, index int) {
 	var name string
 	var phone string
 	var email string
@@ -85,7 +86,7 @@ func editContact(contacts []*Contact, contact *Contact, index int) {
 	fmt.Printf("Contact updated: %s, Phone: %s, Email: %s\n", contact.Name, contact.Phone, contact.Email)
 }
 
-func deleteContact(contacts []*Contact, index int) {
+func deleteContact(index int) {
 	contacts = append(contacts[:index], contacts[index+1:]...)
 	fmt.Println("Contact deleted successfully.")
 }
@@ -115,7 +116,7 @@ func contactDetailsValidation(inputType string, value interface{}) bool {
 	}
 }
 
-func contactExists(contacts []*Contact, name string) bool {
+func contactExists(name string) bool {
 	for _, contact := range contacts {
 		if contact.Name == name {
 			return true
@@ -124,15 +125,15 @@ func contactExists(contacts []*Contact, name string) bool {
 	return false
 }
 
-func addContactIfNotExists(contacts []*Contact, name string, phone string, email string) []*Contact {
-	if !contactExists(contacts, name) {
+func addContactIfNotExists(name string, phone string, email string) []*Contact {
+	if !contactExists(name) {
 		contacts = append(contacts, &Contact{Name: name})
 		fmt.Printf("Contact %s added successfully.\n", name)
 	}
 	return contacts
 }
 
-func printContacts(contacts []*Contact) {
+func printContacts() {
 	fmt.Println("Contact List:")
 	for i, contact := range contacts {
 		fmt.Printf("%d. %s\n", i+1, contact.Name)
@@ -140,7 +141,6 @@ func printContacts(contacts []*Contact) {
 }
 
 func phoneBookApp() {
-	contacts := []*Contact{}
 	for {
 		var choice int
 		fmt.Println("\nPhone Book Menu:")
@@ -153,26 +153,26 @@ func phoneBookApp() {
 		fmt.Scanln(&choice)
 		switch choice {
 		case 1:
-			addContact(contacts)
+			addContact()
 		case 2:
-			printContacts(contacts)
+			printContacts()
 		case 3:
 			fmt.Println("Which contact would you like to edit?")
-			printContacts(contacts)
+			printContacts()
 			var index int
 			fmt.Print("Enter contact number: ")
 			fmt.Scanln(&index)
 			if index > 0 && index <= len(contacts) {
 				// In a real app, we would retrieve the actual Contact struct by index
 				contact := contacts[index-1]
-				editContact(contacts, contact, index-1)
+				editContact(contact, index-1)
 			} else {
 				fmt.Println("Invalid contact number.")
 			}
 
 		case 4:
 			fmt.Println("Which contact would you like to delete?")
-			printContacts(contacts)
+			printContacts()
 			var index int
 			fmt.Print("Enter contact number: ")
 			fmt.Scanln(&index)
@@ -180,7 +180,7 @@ func phoneBookApp() {
 				fmt.Println("Invalid contact number.")
 				continue
 			}
-			deleteContact(contacts, index)
+			deleteContact(index)
 		case 5:
 			fmt.Println("Exiting Phone Book App.")
 			return
