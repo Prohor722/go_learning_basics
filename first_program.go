@@ -41,7 +41,8 @@ func main() {
 	// factorialUsingRecursion()
 	// todo()
 	// variableActAsConstant()
-	ticketBookingApp()
+	// ticketBookingApp()
+	phoneBookApp()
 }
 
 
