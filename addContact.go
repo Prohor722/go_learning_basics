@@ -173,8 +173,12 @@ func phoneBookApp() {
 			var index int
 			fmt.Print("Enter contact number: ")
 			fmt.Scanln(&index)
-			
+			if index <= 0 || index > len(contacts) {
+				fmt.Println("Invalid contact number.")
+				continue
+			}
 			deleteContact(contacts, index)
+			
 		case 5:
 			fmt.Println("Exiting Phone Book App.")
 			return
