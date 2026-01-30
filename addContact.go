@@ -46,7 +46,9 @@ func addContact() {
 
 func editContact(conatct Contact) {
 	// Implementation for editing a contact
-	
+	var name string
+	var phone string
+	var email string
 
 }
 
