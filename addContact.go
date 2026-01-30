@@ -62,3 +62,12 @@ func contactDetailsValidation(inputType string, value interface{}) bool {
 		return false
 	}
 }
+
+func contactExists(contacts []string, name string) bool {
+	for _, contact := range contacts {
+		if contact == name {
+			return true
+		}
+	}
+	return false
+}
