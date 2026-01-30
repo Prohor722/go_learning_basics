@@ -44,6 +44,10 @@ func addContact() {
 	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
 }
 
+func editContact() {
+	// Implementation for editing a contact
+}
+
 func contactDetailsValidation(inputType string, value interface{}) bool {
 	switch inputType {
 	case "name":
