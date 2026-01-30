@@ -18,3 +18,7 @@ func addContact() {
 
 	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
 }
+
+func validation(inputType string, value interface{}) bool {
+	switch inputType {
+	case "name":
