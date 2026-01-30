@@ -108,8 +108,11 @@ func phoneBookApp() {
 			addContact()
 		case 2:
 			printContacts(contacts)
-
 		case 3:
 			fmt.Println("Exiting Phone Book App.")
 			return
 		default:
+			fmt.Println("Invalid choice. Please try again.")
+		}
+	}
+}
