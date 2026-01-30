@@ -44,8 +44,7 @@ func addContact() {
 	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
 }
 
-func editContact(conatct Contact) {
-	// Implementation for editing a contact
+func editContact(contact *Contact) {
 	var name string
 	var phone string
 	var email string
@@ -73,6 +72,12 @@ func editContact(conatct Contact) {
 		fmt.Println("Invalid email address. Please try again.")
 		return
 	}
+
+	contact.Name = name
+	contact.Phone = phone
+	contact.Email = email
+	
+	fmt.Printf("Contact updated: %s, Phone: %s, Email: %s\n", contact.Name, contact.Phone, contact.Email)
 }
 
 func contactDetailsValidation(inputType string, value interface{}) bool {
@@ -142,7 +147,19 @@ func phoneBookApp() {
 		case 2:
 			printContacts(contacts)
 		case 3:
-			// editContact()
+			fmt.Println("Which contact would you like to edit?")
+			printContacts(contacts)
+			var index int
+			fmt.Print("Enter contact number: ")
+			fmt.Scanln(&index)
+			if index > 0 && index <= len(contacts) {
+				// In a real app, we would retrieve the actual Contact struct by index
+				contact := &Contact{Name: contacts[index-1]}
+				editContact(contact)
+			} else {
+				fmt.Println("Invalid contact number.")
+			}
+
 		case 4:
 			// deleteContact()
 		default:
