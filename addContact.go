@@ -85,6 +85,7 @@ func editContact(contacts []*Contact, contact *Contact, index int) {
 func deleteContact(contacts []*Contact, index int) {
 	// Implementation for deleting a contact
 	contacts = append(contacts[:index], contacts[index+1:]...)
+	fmt.Println("Contact deleted successfully.")
 }
 
 func contactDetailsValidation(inputType string, value interface{}) bool {
