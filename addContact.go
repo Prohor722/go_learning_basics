@@ -32,3 +32,13 @@ func validation(inputType string, value interface{}) bool {
 		if !ok || len(phone) < 7 {
 			return false
 		}
+		return true
+	case "email":
+		email, ok := value.(string)
+		if !ok || len(email) < 5 || !strings.Contains(email, "@") {
+			return false
+		}
+		return true
+	default:
+		return false
+	}
