@@ -22,3 +22,13 @@ func addContact() {
 func validation(inputType string, value interface{}) bool {
 	switch inputType {
 	case "name":
+		name, ok := value.(string)
+		if !ok || len(name) < 2 {
+			return false
+		}
+		return true
+	case "phone":
+		phone, ok := value.(string)
+		if !ok || len(phone) < 7 {
+			return false
+		}
