@@ -79,3 +79,7 @@ func contactExists(contacts []string, name string) bool {
 }
 
 func addContactIfNotExists(contacts []string, name string) []string {
+	if !contactExists(contacts, name) {
+		contacts = append(contacts, name)
+		fmt.Printf("Contact %s added successfully.\n", name)
+	}
