@@ -44,7 +44,7 @@ func addContact() {
 	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
 }
 
-func editContact(contact *Contact, index int) {
+func editContact(contacts []*Contact, contact *Contact, index int) {
 	var name string
 	var phone string
 	var email string
@@ -77,11 +77,12 @@ func editContact(contact *Contact, index int) {
 	contact.Phone = phone
 	contact.Email = email
 
-	//update contact in the list at index if needed
-	
+	contacts[index] = contact
 	
 	fmt.Printf("Contact updated: %s, Phone: %s, Email: %s\n", contact.Name, contact.Phone, contact.Email)
 }
+
+
 
 func contactDetailsValidation(inputType string, value interface{}) bool {
 	switch inputType {
@@ -108,32 +109,32 @@ func contactDetailsValidation(inputType string, value interface{}) bool {
 	}
 }
 
-func contactExists(contacts []string, name string) bool {
+func contactExists(contacts []*Contact, name string) bool {
 	for _, contact := range contacts {
-		if contact == name {
+		if contact.Name == name {
 			return true
 		}
 	}
 	return false
 }
 
-func addContactIfNotExists(contacts []string, name string) []string {
+func addContactIfNotExists(contacts []*Contact, name string) []*Contact {
 	if !contactExists(contacts, name) {
-		contacts = append(contacts, name)
+		contacts = append(contacts, &Contact{Name: name})
 		fmt.Printf("Contact %s added successfully.\n", name)
 	}
 	return contacts
 }
 
-func printContacts(contacts []string) {
+func printContacts(contacts []*Contact) {
 	fmt.Println("Contact List:")
 	for i, contact := range contacts {
-		fmt.Printf("%d. %s\n", i+1, contact)
+		fmt.Printf("%d. %s\n", i+1, contact.Name)
 	}
 }
 
 func phoneBookApp() {
-	var contacts []string
+	contacts := []*Contact{}
 	for {
 		var choice int
 		fmt.Println("\nPhone Book Menu:")
@@ -157,8 +158,8 @@ func phoneBookApp() {
 			fmt.Scanln(&index)
 			if index > 0 && index <= len(contacts) {
 				// In a real app, we would retrieve the actual Contact struct by index
-				contact := &Contact{Name: contacts[index-1]}
-				editContact(contact, index-1)
+				contact := contacts[index-1]
+				editContact(contacts, contact, index-1)
 			} else {
 				fmt.Println("Invalid contact number.")
 			}
