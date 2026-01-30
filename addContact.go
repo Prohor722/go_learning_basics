@@ -44,7 +44,7 @@ func addContact() {
 	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
 }
 
-func editContact(contact *Contact) {
+func editContact(contact *Contact, index int) {
 	var name string
 	var phone string
 	var email string
@@ -76,6 +76,9 @@ func editContact(contact *Contact) {
 	contact.Name = name
 	contact.Phone = phone
 	contact.Email = email
+
+	//update contact in the list at index if needed
+	
 	
 	fmt.Printf("Contact updated: %s, Phone: %s, Email: %s\n", contact.Name, contact.Phone, contact.Email)
 }
@@ -155,7 +158,7 @@ func phoneBookApp() {
 			if index > 0 && index <= len(contacts) {
 				// In a real app, we would retrieve the actual Contact struct by index
 				contact := &Contact{Name: contacts[index-1]}
-				editContact(contact)
+				editContact(contact, index-1)
 			} else {
 				fmt.Println("Invalid contact number.")
 			}
