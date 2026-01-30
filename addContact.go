@@ -82,7 +82,9 @@ func editContact(contacts []*Contact, contact *Contact, index int) {
 	fmt.Printf("Contact updated: %s, Phone: %s, Email: %s\n", contact.Name, contact.Phone, contact.Email)
 }
 
-
+func deleteContact(contacts []*Contact, index int) {
+	// Implementation for deleting a contact
+}
 
 func contactDetailsValidation(inputType string, value interface{}) bool {
 	switch inputType {
