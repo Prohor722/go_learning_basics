@@ -103,3 +103,13 @@ func phoneBookApp() {
 		fmt.Println("3. Exit")
 		fmt.Print("Enter your choice: ")
 		fmt.Scanln(&choice)
+		switch choice {
+		case 1:
+			addContact()
+		case 2:
+			printContacts(contacts)
+
+		case 3:
+			fmt.Println("Exiting Phone Book App.")
+			return
+		default:
