@@ -44,8 +44,10 @@ func addContact() {
 	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
 }
 
-func editContact() {
+func editContact(conatct Contact) {
 	// Implementation for editing a contact
+	
+
 }
 
 func contactDetailsValidation(inputType string, value interface{}) bool {
@@ -104,7 +106,9 @@ func phoneBookApp() {
 		fmt.Println("\nPhone Book Menu:")
 		fmt.Println("1. Add Contact")
 		fmt.Println("2. View Contacts")
-		fmt.Println("3. Exit")
+		fmt.Println("3. Edit Contact")
+		fmt.Println("4. Delete contact")
+		fmt.Println("5. Exit")
 		fmt.Print("Enter your choice: ")
 		fmt.Scanln(&choice)
 		switch choice {
@@ -113,8 +117,9 @@ func phoneBookApp() {
 		case 2:
 			printContacts(contacts)
 		case 3:
-			fmt.Println("Exiting Phone Book App.")
-			return
+			// editContact()
+		case 4:
+			// deleteContact()
 		default:
 			fmt.Println("Invalid choice. Please try again.")
 		}
