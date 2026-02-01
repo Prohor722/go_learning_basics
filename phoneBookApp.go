@@ -154,6 +154,9 @@ func printContacts() {
 	}
 }
 
+func printDeletedContacts() {
+	fmt.Println("Deleted Contacts:")
+
 func phoneBookApp() {
 	for {
 		var choice int
