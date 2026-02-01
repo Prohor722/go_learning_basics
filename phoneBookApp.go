@@ -156,6 +156,11 @@ func printContacts() {
 
 func printDeletedContacts() {
 	fmt.Println("Deleted Contacts:")
+	for i, contact := range deletedContacts {
+		fmt.Printf("%d. %s\n", i+1, contact.Name)
+		fmt.Printf("   Phone: %s\n", contact.Phone)
+		fmt.Printf("   Email: %s\n", contact.Email)
+	}
 
 func phoneBookApp() {
 	for {
