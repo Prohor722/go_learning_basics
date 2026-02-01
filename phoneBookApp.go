@@ -93,6 +93,10 @@ func deleteContact(index int) {
 	var confirmation string
 	fmt.Print("Type 'yes' to confirm: ")
 	fmt.Scanln(&confirmation)
+	if strings.ToLower(confirmation) != "yes" {
+		fmt.Println("Deletion cancelled.")
+		return
+	}
 	contacts = append(contacts[:index], contacts[index+1:]...)
 	fmt.Println("Contact deleted successfully.")
 }
