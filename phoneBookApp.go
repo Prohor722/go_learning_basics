@@ -149,7 +149,7 @@ func phoneBookApp() {
 		fmt.Println("\nPhone Book Menu:")
 		fmt.Println("1. Add Contact")
 		fmt.Println("2. View Contacts")
-		fmt.Println("3. Edit Contact")
+		fmt.Println("3. Update Contact")
 		fmt.Println("4. Delete contact")
 		fmt.Println("5. Exit")
 		fmt.Print("Enter your choice: ")
