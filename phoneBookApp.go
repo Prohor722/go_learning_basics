@@ -160,10 +160,10 @@ func phoneBookApp() {
 			printContacts()
 		case 3:
 			fmt.Println("Which contact would you like to edit?")
+			printContacts()
 			var index int
 			// fmt.Print("Enter contact number: ")
 			fmt.Scanln(&index)
-			printContacts()
 			if index > 0 && index <= len(contacts) {
 				// In a real app, we would retrieve the actual Contact struct by index
 				contact := contacts[index-1]
