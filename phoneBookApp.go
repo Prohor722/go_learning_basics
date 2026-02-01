@@ -171,7 +171,8 @@ func phoneBookApp() {
 		fmt.Println("2. View Contacts")
 		fmt.Println("3. Update Contact")
 		fmt.Println("4. Delete contact")
-		fmt.Println("5. Exit")
+		fmt.Println("5. View Deleted Contacts")
+		fmt.Println("6. Exit")
 		fmt.Print("Enter your choice: ")
 		fmt.Scanln(&choice)
 		switch choice {
