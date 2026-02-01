@@ -182,7 +182,7 @@ func phoneBookApp() {
 				fmt.Println("Invalid contact number.")
 				continue
 			}
-			deleteContact(index)
+			deleteContact(index-1)
 		case 5:
 			fmt.Println("Exiting Phone Book App.")
 			return
