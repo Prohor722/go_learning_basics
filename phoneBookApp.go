@@ -11,6 +11,7 @@ type Contact struct {
 	Email string
 }
 var contacts []*Contact
+var deletedContacts []*Contact
 
 func addContact() {
 	var name string
