@@ -88,6 +88,8 @@ func editContact(contact *Contact, index int) {
 }
 
 func deleteContact(index int) {
+	fmt.Printf("Deleting contact: %s\n", contacts[index].Name)
+	
 	contacts = append(contacts[:index], contacts[index+1:]...)
 	fmt.Println("Contact deleted successfully.")
 }
