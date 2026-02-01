@@ -137,6 +137,8 @@ func printContacts() {
 	fmt.Println("Contact List:")
 	for i, contact := range contacts {
 		fmt.Printf("%d. %s\n", i+1, contact.Name)
+		fmt.Printf("   Phone: %s\n", contact.Phone)
+		fmt.Printf("   Email: %s\n", contact.Email)
 	}
 }
 
