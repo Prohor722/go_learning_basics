@@ -98,6 +98,7 @@ func deleteContact(index int) {
 		fmt.Println("Deletion cancelled.")
 		return
 	}
+	deletedContacts = append(deletedContacts, contacts[index])
 	contacts = append(contacts[:index], contacts[index+1:]...)
 	fmt.Println("Contact deleted successfully.")
 }
