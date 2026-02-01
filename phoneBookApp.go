@@ -159,8 +159,8 @@ func phoneBookApp() {
 		case 2:
 			printContacts()
 		case 3:
-			fmt.Println("Which contact would you like to edit?")
 			printContacts()
+			fmt.Println("Which contact would you like to edit?")
 			var index int
 			// fmt.Print("Enter contact number: ")
 			fmt.Scanln(&index)
