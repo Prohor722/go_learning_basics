@@ -206,6 +206,8 @@ func phoneBookApp() {
 			}
 			deleteContact(index-1)
 		case 5:
+			printDeletedContacts()
+		case 6:
 			fmt.Println("Exiting Phone Book App.")
 			return
 		default:
