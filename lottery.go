@@ -70,3 +70,5 @@ func addContact() {
 		fmt.Println("Invalid email address. Please try again.")
 		return
 	}
+
+	contacts = append(contacts, &Contact{Name: name, Phone: phone, Email: email})
