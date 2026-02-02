@@ -54,3 +54,6 @@ func addContact() {
 	fmt.Scanln(&phone)
 	fmt.Print("Enter contact email: ")
 	fmt.Scanln(&email)
+	contactDetailsValidation("name", name)
+	contactDetailsValidation("phone", phone)
+	contactDetailsValidation("email", email)
