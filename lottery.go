@@ -45,3 +45,6 @@ func drawLottery(winningNumbers []int, userNumbers []int, contact *Contact) {
 }
 
 func addContact() {
+	var name string
+	var phone string
+	var email string
