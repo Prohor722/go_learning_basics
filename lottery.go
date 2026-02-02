@@ -52,3 +52,5 @@ func addContact() {
 	fmt.Scanln(&name)
 	fmt.Print("Enter contact phone: ")
 	fmt.Scanln(&phone)
+	fmt.Print("Enter contact email: ")
+	fmt.Scanln(&email)
