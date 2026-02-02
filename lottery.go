@@ -7,3 +7,5 @@ func drawLottery(winningNumbers []int, userNumbers []int) {
 	for _, userNum := range userNumbers {
 		for _, winNum := range winningNumbers {
 			if userNum == winNum {
+				matchingNumbers = append(matchingNumbers, userNum)
+			}
