@@ -43,3 +43,5 @@ func drawLottery(winningNumbers []int, userNumbers []int, contact *Contact) {
 	fmt.Println("Current Contacts:")
 	printContacts()
 }
+
+func addContact() {
