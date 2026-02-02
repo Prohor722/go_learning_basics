@@ -35,4 +35,10 @@ func drawLottery(winningNumbers []int, userNumbers []int) {
 		fmt.Println("Invalid email address. Please try again.")
 		return
 	}
-	
+	contact.Name = name
+	contact.Phone = phone
+	contact.Email = email
+	fmt.Printf("Contact updated: %s, Phone: %s, Email: %s\n", name, phone, email)
+	fmt.Println("Current Contacts:")
+	printContacts()
+}
