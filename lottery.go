@@ -21,3 +21,5 @@ func drawLottery(winningNumbers []int, userNumbers []int) {
 	fmt.Print("Enter new contact email: ")
 	fmt.Scanln(&email)
 	contactDetailsValidation("name", name)
+	contactDetailsValidation("phone", phone)
+	contactDetailsValidation("email", email)
