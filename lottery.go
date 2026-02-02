@@ -31,3 +31,8 @@ func drawLottery(winningNumbers []int, userNumbers []int) {
 		fmt.Println("Invalid phone number. Please try again.")
 		return
 	}
+	if(!contactDetailsValidation("email", email)) {
+		fmt.Println("Invalid email address. Please try again.")
+		return
+	}
+	
