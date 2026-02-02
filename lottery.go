@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func drawLottery(winningNumbers []int, userNumbers []int) {
+func drawLottery(winningNumbers []int, userNumbers []int, contact *Contact) {
 	matchingNumbers := []int{}
 	for _, userNum := range userNumbers {
 		for _, winNum := range winningNumbers {
@@ -17,6 +17,7 @@ func drawLottery(winningNumbers []int, userNumbers []int) {
 	if len(matchingNumbers) > 0 {
 		fmt.Printf("Congratulations! You have %d matching numbers: %v\n", len(matchingNumbers), matchingNumbers)
 	}
+	var name, phone, email string
 	fmt.Scanln(&phone)
 	fmt.Print("Enter new contact email: ")
 	fmt.Scanln(&email)
