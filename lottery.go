@@ -17,3 +17,6 @@ func drawLottery(winningNumbers []int, userNumbers []int) {
 	if len(matchingNumbers) > 0 {
 		fmt.Printf("Congratulations! You have %d matching numbers: %v\n", len(matchingNumbers), matchingNumbers)
 	}
+	fmt.Scanln(&phone)
+	fmt.Print("Enter new contact email: ")
+	fmt.Scanln(&email)
