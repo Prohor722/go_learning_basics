@@ -72,3 +72,5 @@ func addContact() {
 	}
 
 	contacts = append(contacts, &Contact{Name: name, Phone: phone, Email: email})
+	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
+	fmt.Println("Current Contacts:")
