@@ -23,3 +23,7 @@ func drawLottery(winningNumbers []int, userNumbers []int) {
 	contactDetailsValidation("name", name)
 	contactDetailsValidation("phone", phone)
 	contactDetailsValidation("email", email)
+	if(!contactDetailsValidation("name", name)) {
+		fmt.Println("Invalid name. Please try again.")
+		return
+	}
