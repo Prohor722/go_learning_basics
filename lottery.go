@@ -44,7 +44,7 @@ func drawLottery(winningNumbers []int, userNumbers []int, contact *Contact) {
 	printContacts()
 }
 
-func addContact() {
+func addContactData() {
 	var name string
 	var phone string
 	var email string
@@ -74,3 +74,5 @@ func addContact() {
 	contacts = append(contacts, &Contact{Name: name, Phone: phone, Email: email})
 	fmt.Printf("Contact added: %s, Phone: %s, Email: %s\n", name, phone, email)
 	fmt.Println("Current Contacts:")
+	printContacts()
+}
