@@ -28,6 +28,8 @@ func getTicket(lastSoldTicketIndex int, numberOfTickets int) *Tickets {
 }
 
 func buyTickets(){
-	
+	var buyTickets int
+	fmt.Print("How many tickets would you like to buy?")
+	fmt.Scan(&buyTickets)
 }
 
