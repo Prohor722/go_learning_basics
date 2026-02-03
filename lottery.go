@@ -41,8 +41,14 @@ func buyTickets(){
 	var phone string
 	fmt.Print("\nEnter the name of the ticket buyer:")
 	fmt.Scan(&name)
+	if !validateName(name) {
+		return
+	}	
 	fmt.Print("\nEnter the phone number of the ticket buyer:")
 	fmt.Scan(&phone)
+	if !validatePhone(phone) {
+		return
+	}
 	fmt.Print("\nHow many tickets would you like to buy?")
 	fmt.Scan(&buyTickets)
 
