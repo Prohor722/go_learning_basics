@@ -7,6 +7,7 @@ type Tickets struct {
 }
 
 tickets := []Tickets{}
+var lastSoldTicketIndex int = -1
 
 func drawLottery(winningNumbers []int, userNumbers []int, contact *Contact) {
 
@@ -20,10 +21,9 @@ func generateTickets(){
 	}
 }
 
-func getTicket(index int) *Tickets {
-	if index < 0 || index >= len(tickets) {
+func getTicket(lastSoldTicketIndex int, numberOfTickets int) *Tickets {
+	if( lastSoldTicketIndex+1 >= len(tickets) ) {
 		return nil
 	}
-	return &tickets[index]
 }
 
