@@ -22,17 +22,17 @@ func generateTickets(){
 	}
 }
 
-func getTicket(numberOfTickets int, name string, phone string) *Tickets {
+func getTicket(numberOfTickets int, name string, phone string) bool {
 
 	for i := 0; i < numberOfTickets; i++ {
-		if( lastSoldTicketIndex+1 >= len(tickets) || tickets[lastSoldTicketIndex+1].Name != "" || tickets[lastSoldTicketIndex+1]+numberOfTickets > len(tickets) ){ {
-			return nil
+		if( lastSoldTicketIndex+1 >= len(tickets) || tickets[lastSoldTicketIndex+1].Name != "" || lastSoldTicketIndex+1+numberOfTickets > len(tickets) ){ 
+			return false
 		}
 		lastSoldTicketIndex++
 		tickets[lastSoldTicketIndex].Name = name
 		tickets[lastSoldTicketIndex].Phone = phone
 	}
-	return tickets[lastSoldTicketIndex]
+	return true
 }
 
 func buyTickets(){
@@ -46,8 +46,8 @@ func buyTickets(){
 	fmt.Print("\nHow many tickets would you like to buy?")
 	fmt.Scan(&buyTickets)
 
-	if( getTicket(buyTickets,name,phone) != nil ) {
-		fmt.Printf("You have successfully bought ticket with numbers: %v\n", ticket.Numbers)
+	if( getTicket(buyTickets,name,phone) != false ) {
+		fmt.Printf("You have successfully bought ticket with name: %s and phone: %s\n", name, phone)
 	}else{
 		fmt.Println("Sorry, not enough tickets available.")
 	}
