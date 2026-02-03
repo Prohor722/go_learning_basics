@@ -19,3 +19,11 @@ func generateTickets(){
 		tickets = append(tickets, ticket)
 	}
 }
+
+func getTicket(index int) *Tickets {
+	if index < 0 || index >= len(tickets) {
+		return nil
+	}
+	return &tickets[index]
+}
+
