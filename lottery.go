@@ -27,3 +27,7 @@ func getTicket(lastSoldTicketIndex int, numberOfTickets int) *Tickets {
 	}
 }
 
+func buyTickets(){
+	
+}
+
