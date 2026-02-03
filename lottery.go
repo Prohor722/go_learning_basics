@@ -25,7 +25,7 @@ func generateTickets(){
 func getTicket(numberOfTickets int, name string, phone string) *Tickets {
 
 	for i := 0; i < numberOfTickets; i++ {
-		if( lastSoldTicketIndex+1 >= len(tickets) ) {
+		if( lastSoldTicketIndex+1 >= len(tickets) || tickets[lastSoldTicketIndex+1].Name != "" || tickets[lastSoldTicketIndex+1]+numberOfTickets > len(tickets) ){ {
 			return nil
 		}
 		lastSoldTicketIndex++
