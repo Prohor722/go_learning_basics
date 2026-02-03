@@ -21,10 +21,12 @@ func generateTickets(){
 	}
 }
 
-func getTicket(lastSoldTicketIndex int, numberOfTickets int) *Tickets {
+func getTicket(numberOfTickets int) *Tickets {
 	if( lastSoldTicketIndex+1 >= len(tickets) ) {
 		return nil
 	}
+	lastSoldTicketIndex += numberOfTickets
+	return &tickets[lastSoldTicketIndex]
 }
 
 func buyTickets(){
