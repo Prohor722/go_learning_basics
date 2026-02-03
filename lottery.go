@@ -53,3 +53,16 @@ func buyTickets(){
 	}
 }
 
+func validateName(name string) bool {
+	if len(name) < 2 {
+		fmt.Println("Name is too short.")
+		return false
+	}
+	return true
+}
+func validatePhone(phone string) bool {
+	if len(phone) < 10 {
+		return false
+	}
+	return true
+}
