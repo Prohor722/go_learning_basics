@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
-	"math/rand")
+	"math/rand"
+	"time"
+)
 
 type Tickets struct {
 	Number string
@@ -11,6 +13,15 @@ type Tickets struct {
 }
 var tickets []*Tickets
 var lastSoldTicketIndex int = -1
+
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
+
+func randomSixDigitString() string {
+	n := rand.Intn(1000000) // 0..999999
+	return fmt.Sprintf("%06d", n)
+}
 
 func drawLottery() {
 	var numberOfTickets int
@@ -43,7 +54,7 @@ func winningNumber() int {
 func generateTickets(numberOfTickets int) {
 	fmt.Println("Generating lottery tickets...")
 	for i := 0; i < numberOfTickets; i++ {
-		ticket := Tickets{Number: string{i+""+i+1+i + 2, i + 3, i + 4}, Name: "", Phone: ""}
+		ticket := Tickets{Number: randomSixDigitString(), Name: "", Phone: ""}
 		tickets = append(tickets, &ticket)
 	}
 }
