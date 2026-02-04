@@ -6,10 +6,12 @@ import (
 
 func drawLottery() {
 	var winningTicketIndex int
-	fmt.Printf("Number of Tickets to play the Game:")
-	fmt.Scan(&numberOfTickets)
 	validateFunctionReturns(generateTickets(numberOfTickets))
 	validateFunctionReturns(buyTickets())
+
+	if(lastSoldTicketIndex < len(tickets)-1){
+		drawLottery()
+	}
 
 	winningTicketIndex = winningNumber()
 
