@@ -14,18 +14,23 @@ var lastSoldTicketIndex int = -1
 
 func drawLottery() {
 	var numberOfTickets int
+	var winningTicketIndex int
 	fmt.Print("Welcome To the Lottery Game !!\n")
 	fmt.Printf("Number of Tickets to play the Game:")
 	fmt.Scan(&numberOfTickets)
-	generateTickets(numberOfTickets)
+
+	winningTicketIndex = winningNumber()
+
+
 
 	// fmt.Printf("Winning Numbers: %v\n", winningNumbers)
 }
-func winningNumbers() []int {
+func winningNumber() int {
 	if len(tickets) < 2 {
-		return []int{}
+		fmt.Println("Not enough tickets sold to draw a winner.")
+		return 0
 	}
-	return rand.Intn(len(tickets)-1)
+	return rand.Intn(len(tickets))
 }
 
 func generateTickets(numberOfTickets int) {
