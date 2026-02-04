@@ -28,10 +28,3 @@ func validNumber(number int) bool {
 	}
 	return true
 }
-
-func validateFunctionReturns(response bool){
-	if response != true {
-		fmt.Println("Validation failed.")
-		return
-	}
-}
