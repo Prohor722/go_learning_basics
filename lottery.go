@@ -12,7 +12,7 @@ var lastSoldTicketIndex int = -1
 
 func drawLottery(winningNumbers []int, userNumbers []int, contact *Contact) {
 	fmt.Print("Welcome To the Lottery Game !!\n")
-	
+	fmt.Printf("Winning Numbers: %v\n", winningNumbers)
 }
 
 func generateTickets(numberOfTickets int) {
