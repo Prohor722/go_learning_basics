@@ -27,26 +27,7 @@ func randomSixDigitString(id int) string {
 	return fmt.Sprintf("%06d", n)
 }
 
-func drawLottery() {
-	var winningTicketIndex int
-	fmt.Print("Welcome To the Lottery Game !!\n")
-	fmt.Printf("Number of Tickets to play the Game:")
-	fmt.Scan(&numberOfTickets)
-	validateFunctionReturns(generateTickets(numberOfTickets))
-	validateFunctionReturns(buyTickets())
-	winningTicketIndex = winningNumber()
 
-	if( winningTicketIndex < 1 ) {
-		fmt.Println("Not enough tickets sold to draw a winner.")
-	}else{
-		fmt.Printf("The winning ticket number is: %s\n", tickets[winningTicketIndex-1].Number)
-	}
-
-
-
-
-	// fmt.Printf("Winning Numbers: %v\n", winningNumbers)
-}
 func winningNumber() int {
 	if len(tickets) < 2 {
 		fmt.Println("Not enough tickets sold to draw a winner.")
@@ -107,36 +88,4 @@ func buyTickets() bool {
 		fmt.Println("Sorry, not enough tickets available.")
 	}
 	return true
-}
-
-func validateName(name string) bool {
-	var minLength = 2
-	if len(name) < minLength {
-		fmt.Println("Name is too short.(Min:", minLength, ")")
-		return false
-	}
-	return true
-}
-func validatePhone(phone string) bool {
-	var minLength = 5
-	if len(phone) < minLength {
-		fmt.Printf("Phone number is too short.(Min: %d)\n", minLength)
-		return false
-	}
-	return true
-}
-
-func validNumber(number int) bool {
-	if( number < 1 ){
-		fmt.Println("Number must be greater than zero.")
-		return false
-	}
-	return true
-}
-
-func validateFunctionReturns(response bool){
-	if response != true {
-		fmt.Println("Validation failed.")
-		return
-	}
 }
