@@ -20,7 +20,6 @@ func drawLottery() {
 	// fmt.Printf("Winning Numbers: %v\n", winningNumbers)
 }
 func winningNumbers() []int {
-	// For simplicity, let's assume the winning numbers are the first 5 numbers
 	if len(tickets) < 5 {
 		return []int{}
 	}
