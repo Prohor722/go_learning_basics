@@ -33,6 +33,7 @@ func buyTickets() bool {
 		fmt.Println()
 	}else{
 		fmt.Println("Sorry, not enough tickets available.")
+		return false
 	}
 	return true
 }

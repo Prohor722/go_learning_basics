@@ -11,7 +11,7 @@ type Tickets struct {
 }
 var tickets []*Tickets
 var lastSoldTicketIndex int = -1
-var numberOfTickets int
+var totalLotteryTickets int
 
 func main(){
 	startGame()
@@ -19,13 +19,13 @@ func main(){
 
 func startGame() {
 	fmt.Printf("Number of Tickets to play the Game:")
-	fmt.Scan(&numberOfTickets)
+	fmt.Scan(&totalLotteryTickets)
 	
-	if(!validNumber(numberOfTickets)){
+	if(!validNumber(totalLotteryTickets)){
 		fmt.Println("Invalid number of tickets. Exiting the game.")
 		return
 	}
-	if(!generateTickets(numberOfTickets)) {
+	if(!generateTickets(totalLotteryTickets)) {
 		fmt.Println("Failed to generate tickets. Restarting the game.")
 		startGame()
 		return

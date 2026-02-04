@@ -1,9 +1,9 @@
 package main
 
-func getTicket(numberOfTickets int, name string, phone string) bool {
+func getTicket(buyTickets int, name string, phone string) bool {
 
-	for i := 0; i < numberOfTickets; i++ {
-		if( lastSoldTicketIndex+1 >= len(tickets) || tickets[lastSoldTicketIndex+1].Name != "" || lastSoldTicketIndex+1+numberOfTickets > len(tickets) ){ 
+	for i := 0; i < buyTickets; i++ {
+		if( lastSoldTicketIndex >= len(tickets)-1 || tickets[lastSoldTicketIndex+1].Name != "" || lastSoldTicketIndex+1+buyTickets > totalLotteryTickets ){ 
 			return false
 		}
 		lastSoldTicketIndex++

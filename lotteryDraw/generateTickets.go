@@ -13,7 +13,7 @@ func init() {
 func randomSixDigitString(id int) string {
 	n := rand.Intn(1000000)+id // 0..999999
 	if( n > 999999 ) {
-		n -= numberOfTickets*2
+		n -= totalLotteryTickets*2
 	}
 	return fmt.Sprintf("%06d", n)
 }
