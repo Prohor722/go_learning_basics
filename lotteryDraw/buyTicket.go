@@ -26,6 +26,11 @@ func buyTickets() bool {
 
 	if( getTicket(buyTickets,name,phone) != false ) {
 		fmt.Printf("You have successfully bought ticket with name: %s and phone: %s\n", name, phone)
+		fmt.Printf("Your Ticket numbers are:")
+		for i := lastSoldTicketIndex - buyTickets + 1; i <= lastSoldTicketIndex; i++ {
+			fmt.Printf(" %s ", tickets[i].Number)
+		}
+		fmt.Println()
 	}else{
 		fmt.Println("Sorry, not enough tickets available.")
 	}
