@@ -32,8 +32,8 @@ func drawLottery() {
 	fmt.Print("Welcome To the Lottery Game !!\n")
 	fmt.Printf("Number of Tickets to play the Game:")
 	fmt.Scan(&numberOfTickets)
-	generateTickets(numberOfTickets)
-	buyTickets()
+	validateFunctionReturns(generateTickets(numberOfTickets))
+	validateFunctionReturns(buyTickets())
 	winningTicketIndex = winningNumber()
 
 	if( winningTicketIndex < 1 ) {
@@ -81,24 +81,24 @@ func getTicket(numberOfTickets int, name string, phone string) bool {
 	return true
 }
 
-func buyTickets(){
+func buyTickets() bool {
 	var buyTickets int
 	var name string
 	var phone string
 	fmt.Print("\nEnter the name of the ticket buyer:")
 	fmt.Scan(&name)
 	if !validateName(name) {
-		return
+		return false
 	}	
 	fmt.Print("\nEnter the phone number of the ticket buyer:")
 	fmt.Scan(&phone)
 	if !validatePhone(phone) {
-		return
+		return false
 	}
 	fmt.Print("\nHow many tickets would you like to buy?")
 	fmt.Scan(&buyTickets)
 	if !validNumber(buyTickets) {
-		return
+		return false
 	}
 
 	if( getTicket(buyTickets,name,phone) != false ) {
@@ -106,6 +106,7 @@ func buyTickets(){
 	}else{
 		fmt.Println("Sorry, not enough tickets available.")
 	}
+	return true
 }
 
 func validateName(name string) bool {
