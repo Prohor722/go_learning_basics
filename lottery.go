@@ -14,7 +14,7 @@ func drawLottery(winningNumbers []int, userNumbers []int, contact *Contact) {
 
 }
 
-func generateTickets(){
+func generateTickets(numberOfTickets int) {
 	fmt.Println("Generating lottery tickets...")
 	for i := 0; i < 5; i++ {
 		ticket := Tickets{Numbers: []int{i, i + 1, i + 2, i + 3, i + 4}, Name: "", Phone: ""}
