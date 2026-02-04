@@ -10,9 +10,13 @@ type Tickets struct {
 var tickets []*Tickets
 var lastSoldTicketIndex int = -1
 
-func drawLottery(winningNumbers []int, userNumbers []int, contact *Contact) {
+func drawLottery() {
+	var numberOfTickets int
 	fmt.Print("Welcome To the Lottery Game !!\n")
-	fmt.Printf("Winning Numbers: %v\n", winningNumbers)
+	fmt.Printf("Number of Tickets to play the Game:")
+	fmt.Scan(&numberOfTickets)
+
+	// fmt.Printf("Winning Numbers: %v\n", winningNumbers)
 }
 
 func generateTickets(numberOfTickets int) {
