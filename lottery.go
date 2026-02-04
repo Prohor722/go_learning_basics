@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand")
 
 type Tickets struct {
 	Numbers []int
@@ -20,10 +22,10 @@ func drawLottery() {
 	// fmt.Printf("Winning Numbers: %v\n", winningNumbers)
 }
 func winningNumbers() []int {
-	if len(tickets) < 5 {
+	if len(tickets) < 2 {
 		return []int{}
 	}
-	return tickets[0].Numbers
+	return rand.Intn(len(tickets)-1)
 }
 
 func generateTickets(numberOfTickets int) {
