@@ -91,6 +91,9 @@ func buyTickets(){
 	}
 	fmt.Print("\nHow many tickets would you like to buy?")
 	fmt.Scan(&buyTickets)
+	if !validNumber(buyTickets) {
+		return
+	}
 
 	if( getTicket(buyTickets,name,phone) != false ) {
 		fmt.Printf("You have successfully bought ticket with name: %s and phone: %s\n", name, phone)
@@ -115,3 +118,12 @@ func validatePhone(phone string) bool {
 	}
 	return true
 }
+
+func validNumber(number int) bool {
+	if( number < 1 ){
+		fmt.Println("Number must be greater than zero.")
+		return false
+	}
+	return true
+}
+
