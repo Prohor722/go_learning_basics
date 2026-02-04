@@ -13,18 +13,21 @@ type Tickets struct {
 }
 var tickets []*Tickets
 var lastSoldTicketIndex int = -1
+var numberOfTickets int
 
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
-func randomSixDigitString() string {
-	n := rand.Intn(1000000) // 0..999999
+func randomSixDigitString(id int) string {
+	n := rand.Intn(1000000)+id // 0..999999
+	if( n > 999999 ) {
+		n -= numberOfTickets*2
+	}
 	return fmt.Sprintf("%06d", n)
 }
 
 func drawLottery() {
-	var numberOfTickets int
 	var winningTicketIndex int
 	fmt.Print("Welcome To the Lottery Game !!\n")
 	fmt.Printf("Number of Tickets to play the Game:")
@@ -54,7 +57,7 @@ func winningNumber() int {
 func generateTickets(numberOfTickets int) {
 	fmt.Println("Generating lottery tickets...")
 	for i := 0; i < numberOfTickets; i++ {
-		ticket := Tickets{Number: randomSixDigitString(), Name: "", Phone: ""}
+		ticket := Tickets{Number: randomSixDigitString(i), Name: "", Phone: ""}
 		tickets = append(tickets, &ticket)
 	}
 }
