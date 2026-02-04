@@ -15,6 +15,7 @@ func drawLottery() {
 	fmt.Print("Welcome To the Lottery Game !!\n")
 	fmt.Printf("Number of Tickets to play the Game:")
 	fmt.Scan(&numberOfTickets)
+	generateTickets(numberOfTickets)
 
 	// fmt.Printf("Winning Numbers: %v\n", winningNumbers)
 }
