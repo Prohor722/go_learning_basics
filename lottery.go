@@ -5,7 +5,7 @@ import (
 	"math/rand")
 
 type Tickets struct {
-	Numbers []int
+	Number string
 	Name string
 	Phone string
 }
@@ -25,7 +25,7 @@ func drawLottery() {
 	if( winningTicketIndex < 1 ) {
 		fmt.Println("Not enough tickets sold to draw a winner.")
 	}else{
-		fmt.Printf("The winning ticket number is: %d\n", winningTicketIndex)
+		fmt.Printf("The winning ticket number is: %d\n", tickets[winningTicketIndex-1].Number)
 	}
 
 
@@ -43,7 +43,7 @@ func winningNumber() int {
 func generateTickets(numberOfTickets int) {
 	fmt.Println("Generating lottery tickets...")
 	for i := 0; i < numberOfTickets; i++ {
-		ticket := Tickets{Numbers: []int{i, i + 1, i + 2, i + 3, i + 4}, Name: "", Phone: ""}
+		ticket := Tickets{Number: string{i+""+i+1+i + 2, i + 3, i + 4}, Name: "", Phone: ""}
 		tickets = append(tickets, &ticket)
 	}
 }
