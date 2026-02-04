@@ -44,6 +44,7 @@ func drawLottery() {
 
 
 
+
 	// fmt.Printf("Winning Numbers: %v\n", winningNumbers)
 }
 func winningNumber() int {
@@ -54,12 +55,17 @@ func winningNumber() int {
 	return rand.Intn(len(tickets))
 }
 
-func generateTickets(numberOfTickets int) {
+func generateTickets(numberOfTickets int) bool {
 	fmt.Println("Generating lottery tickets...")
 	for i := 0; i < numberOfTickets; i++ {
 		ticket := Tickets{Number: randomSixDigitString(i), Name: "", Phone: ""}
 		tickets = append(tickets, &ticket)
 	}
+
+	if( len(tickets)>0 ){
+		return true
+	}
+	return false
 }
 
 func getTicket(numberOfTickets int, name string, phone string) bool {
@@ -127,3 +133,9 @@ func validNumber(number int) bool {
 	return true
 }
 
+func validateFunctionReturns(response bool){
+	if response != true {
+		fmt.Println("Validation failed.")
+		return
+	}
+}
