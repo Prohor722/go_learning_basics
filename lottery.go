@@ -11,12 +11,13 @@ var tickets []*Tickets
 var lastSoldTicketIndex int = -1
 
 func drawLottery(winningNumbers []int, userNumbers []int, contact *Contact) {
-
+	fmt.Print("Welcome To the Lottery Game !!\n")
+	
 }
 
 func generateTickets(numberOfTickets int) {
 	fmt.Println("Generating lottery tickets...")
-	for i := 0; i < 5; i++ {
+	for i := 0; i < numberOfTickets; i++ {
 		ticket := Tickets{Numbers: []int{i, i + 1, i + 2, i + 3, i + 4}, Name: "", Phone: ""}
 		tickets = append(tickets, &ticket)
 	}
