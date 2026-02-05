@@ -7,7 +7,7 @@ func startGame() {
 	fmt.Printf("Number of Tickets to play the Game:")
 	fmt.Scan(&totalLotteryTickets)
 	
-	if(!validNumber(totalLotteryTickets) && totalLotteryTickets >= 2){
+	if(!validNumber(totalLotteryTickets) || totalLotteryTickets < 2){
 		fmt.Println("Invalid number of tickets. Exiting the game. (Min:2)")
 		return
 	}
