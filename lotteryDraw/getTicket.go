@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func getTicket(buyTickets int, name string, phone string) bool {
 	var logic1 bool = lastSoldTicketIndex >= len(tickets)-1
 	var logic2 bool = tickets[lastSoldTicketIndex+1].Name != ""
