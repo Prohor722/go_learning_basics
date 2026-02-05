@@ -3,11 +3,12 @@ package main
 import "fmt"
 
 func startGame() {
+	fmt.Print("Welcome To the Lottery Game !!\n")
 	fmt.Printf("Number of Tickets to play the Game:")
 	fmt.Scan(&totalLotteryTickets)
 	
-	if(!validNumber(totalLotteryTickets)){
-		fmt.Println("Invalid number of tickets. Exiting the game.")
+	if(!validNumber(totalLotteryTickets) && totalLotteryTickets < 2){
+		fmt.Println("Invalid number of tickets. Exiting the game. (Min:2)")
 		return
 	}
 	if(!generateTickets(totalLotteryTickets)) {
@@ -15,7 +16,6 @@ func startGame() {
 		startGame()
 		return
 	}
-
-	fmt.Print("Welcome To the Lottery Game !!\n")
+	fmt.Println()
 	drawLottery()
 }

@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 type Tickets struct {
 	Number string
 	Name string
