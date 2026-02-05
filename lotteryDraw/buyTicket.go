@@ -18,7 +18,7 @@ func buyTickets() bool {
 	if !validatePhone(phone) {
 		return false
 	}
-	fmt.Print("\nHow many tickets would you like to buy?")
+	fmt.Print("\nHow many tickets would you like to buy:")
 	fmt.Scan(&buyTickets)
 	if !validNumber(buyTickets) {
 		return false
