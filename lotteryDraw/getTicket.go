@@ -9,8 +9,8 @@ func getTicket(buyTickets int, name string, phone string) bool {
 
 	for i := 0; i < buyTickets; i++ {
 		if logic1 || logic2 || logic3 {
-			// fmt.Printf("lastSoldTicketIndex >= len(tickets)-1: %v",lastSoldTicketIndex >= len(tickets)-1)
-			// fmt.Printf("tickets[lastSoldTicketIndex+1].Name != \"\": %v", tickets[lastSoldTicketIndex+1].Name != "")
+			fmt.Printf("lastSoldTicketIndex >= len(tickets)-1: %v\n", logic1)
+			fmt.Printf("tickets[lastSoldTicketIndex+1].Name != \"\": %v\n", logic2)
 			fmt.Printf("lastSoldTicketIndex+buyTickets > totalLotteryTickets: %v\n", logic3)
 			fmt.Printf("lastSoldTicketIndex: %d\n",lastSoldTicketIndex)
 			fmt.Printf("buyTickets: %d\n", buyTickets)
