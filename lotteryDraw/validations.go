@@ -36,3 +36,7 @@ func getPhone() string {
 	validatePhone(phone)
 	return phone
 }
+
+func getName() string {
+	var name string
+	fmt.Print("Enter your name:")
