@@ -30,27 +30,19 @@ func startGame() {
 	case 1:
 		if(!buyTickets()){
 			fmt.Println("Ticket purchase failed. Restarting ticket purchase.")
-			return
 		}
 	case 2:
 		availableTickets()
-		return
 	case 3:
 		fmt.Printf("Enter your phone number to check your tickets:")
 		showUserTickets(getName(), getPhone())
-		return
 	case 4:
-		if(drawLottery()){
-			return
-		}
-		return
+		drawLottery()
 	case 5:
 		fmt.Println("Thank you for playing the Lottery Game. Goodbye!")
 		return
 	default:
 		fmt.Println("Invalid choice. Restarting the game.")
-		startGame()
-		return
 	}
 	
 	// if(!validNumber(totalLotteryTickets) || totalLotteryTickets < 2){
