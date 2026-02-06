@@ -18,8 +18,14 @@ func getTicket(buyTickets int, name string, phone string) bool {
 	return true
 }
 
-func availableTickets() int {
-	return totalLotteryTickets - (lastSoldTicketIndex + 1)
+func availableTickets() {
+	availableTickets := totalLotteryTickets - (lastSoldTicketIndex + 1)
+
+	if( availableTickets < 1 ) {
+		fmt.Println("No tickets available!! You can run draw to check the Winner.")
+		return
+	}
+	fmt.Printf("Currently available tickets: %d\n", availableTickets)
 }
 
 func showUserTickets(name string, phone string) {

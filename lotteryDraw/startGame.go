@@ -23,11 +23,12 @@ func startGame() {
 			return
 		}
 	case 2:
-		fmt.Printf("Available Tickets: %d\n", totalLotteryTickets-(lastSoldTicketIndex+1))
+		availableTickets()
 		return
 	case 3:
 		fmt.Printf("Enter your phone number to check your tickets:")
 		showUserTickets(getName(), getPhone())
+		return
 	case 4:
 		drawLottery()
 		return
