@@ -16,7 +16,7 @@ func drawLottery() bool {
 
 	winningTicketIndex = winningNumber()
 
-	if( winningTicketIndex < 1 ) {
+	if( len(tickets) < 2) {
 		fmt.Println("Not enough tickets sold to draw a winner.")
 	}else{
 		fmt.Printf("The winning ticket number is: %s\n Winner Name: %s & Phone: %s\n", winningTicket.Number, winningTicket.Name, winningTicket.Phone)
