@@ -28,3 +28,11 @@ func validNumber(number int) bool {
 	}
 	return true
 }
+
+func getPhone() string {
+	var phone string
+	fmt.Print("Enter your phone number:")
+	fmt.Scan(&phone)
+	validatePhone(phone)
+	return phone
+}
