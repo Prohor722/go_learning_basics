@@ -7,7 +7,12 @@ import (
 func startGame() {
 	fmt.Print("Welcome To the Lottery Game !!\n")
 	fmt.Printf("Number of Tickets to play the Game:")
-	fmt.Scan(&totalLotteryTickets)
+	totalLotteryTickets = getNumber()
+	if(!generateTickets(totalLotteryTickets)) {
+		fmt.Println("Failed to generate tickets. Restarting the game.")
+		startGame()
+		return
+	}
 
 	fmt.Printf("Select a option:\n")
 	fmt.Printf("1. Buy Tickets\n")
