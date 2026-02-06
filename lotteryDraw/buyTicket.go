@@ -5,6 +5,11 @@ import (
 )
 
 func buyTickets() bool {
+	if( lastSoldTicketIndex >= len(tickets)-1 ) {
+		fmt.Printf("Sorry, all tickets are sold out!! \n")
+		return false
+	}
+	
 	var buyTickets int
 	var name string
 	var phone string
