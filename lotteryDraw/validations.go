@@ -31,7 +31,6 @@ func validNumber(number int) bool {
 
 func getNumber() int {
 	var number int
-	fmt.Print("Enter the number of tickets you want to buy:")
 	fmt.Scan(&number)
 	if !validNumber(number) {
 		return getNumber()
