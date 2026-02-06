@@ -10,6 +10,7 @@ func startGame() {
 	fmt.Printf("Select a option:\n")
 	fmt.Printf("1. Buy Tickets\n")
 	fmt.Printf("2. Show No of Available Tickets\n")
+	fmt.Printf("3. Run Draw\n")
 	fmt.Print("Enter your choice:")
 	var choice int
 	fmt.Scan(&choice)
