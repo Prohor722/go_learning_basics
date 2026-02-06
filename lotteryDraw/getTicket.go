@@ -20,3 +20,6 @@ func getTicket(buyTickets int, name string, phone string) bool {
 func availableTickets() int {
 	return totalLotteryTickets - (lastSoldTicketIndex + 1)
 }
+
+func showUserTickets(name string, phone string) {
+	var userTickets []string
