@@ -6,11 +6,6 @@ import (
 
 func drawLottery() {
 	var winningTicketIndex int
-	if(!buyTickets()){
-		fmt.Println("Ticket purchase failed. Restarting ticket purchase.")
-		drawLottery()
-		return
-	}
 
 	if(lastSoldTicketIndex < len(tickets)-1){
 		drawLottery()
