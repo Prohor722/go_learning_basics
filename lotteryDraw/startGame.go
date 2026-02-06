@@ -9,7 +9,10 @@ func startGame() {
 
 	fmt.Printf("Select a option:\n")
 	fmt.Printf("1. Buy Tickets\n")
-	fmt.Printf("2. Draw Lottery\n")
+	fmt.Printf("2. Show No of Available Tickets\n")
+	fmt.Print("Enter your choice:")
+	var choice int
+	fmt.Scan(&choice)
 	
 	if(!validNumber(totalLotteryTickets) || totalLotteryTickets < 2){
 		fmt.Println("Invalid number of tickets. Exiting the game. (Min:2)")
