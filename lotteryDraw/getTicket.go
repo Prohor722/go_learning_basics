@@ -23,3 +23,17 @@ func availableTickets() int {
 
 func showUserTickets(name string, phone string) {
 	var userTickets []string
+	for i := 0; i <= lastSoldTicketIndex; i++ {
+		if tickets[i].Name == name && tickets[i].Phone == phone {
+			userTickets = append(userTickets, tickets[i].Number)
+		}
+	}
+	if len(userTickets) == 0 {
+		println("No tickets found for the provided name and phone number.")
+	} else {
+		println("Your Tickets:")
+		for _, ticket := range userTickets {
+			println(ticket)
+		}
+	}
+}
