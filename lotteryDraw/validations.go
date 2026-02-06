@@ -33,7 +33,9 @@ func getPhone() string {
 	var phone string
 	fmt.Print("Enter your phone number:")
 	fmt.Scan(&phone)
-	validatePhone(phone)
+	if(!validatePhone(phone)) {
+		return getPhone()
+	}
 	return phone
 }
 
@@ -41,6 +43,8 @@ func getName() string {
 	var name string
 	fmt.Print("Enter your name:")
 	fmt.Scan(&name)
-	validateName(name)
+	if(!validateName(name)) {
+		return getName()
+	}
 	return name
 }
