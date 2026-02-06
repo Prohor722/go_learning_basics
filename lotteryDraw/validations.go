@@ -29,6 +29,11 @@ func validNumber(number int) bool {
 	return true
 }
 
+func getNumber() int {
+	var number int
+	fmt.Print("Enter the number of tickets you want to buy:")
+	fmt.Scan(&number)
+
 func getPhone() string {
 	var phone string
 	fmt.Print("Enter your phone number:")
