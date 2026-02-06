@@ -10,7 +10,8 @@ func startGame() {
 	fmt.Printf("Select a option:\n")
 	fmt.Printf("1. Buy Tickets\n")
 	fmt.Printf("2. Show No of Available Tickets\n")
-	fmt.Printf("3. Run Draw\n")
+	fmt.Printf("3. Check your Tickets\n")
+	fmt.Printf("4. Run Draw\n")
 	fmt.Print("Enter your choice:")
 	var choice int
 	fmt.Scan(&choice)
@@ -24,7 +25,7 @@ func startGame() {
 	case 2:
 		fmt.Printf("Available Tickets: %d\n", totalLotteryTickets-(lastSoldTicketIndex+1))
 		return
-	case 3:
+	case 4:
 		drawLottery()
 		return
 	default:
