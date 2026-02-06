@@ -40,3 +40,7 @@ func getPhone() string {
 func getName() string {
 	var name string
 	fmt.Print("Enter your name:")
+	fmt.Scan(&name)
+	validateName(name)
+	return name
+}
