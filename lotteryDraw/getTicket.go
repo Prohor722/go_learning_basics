@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func getTicket(buyTickets int, name string, phone string) bool {
 	var logic1 bool = lastSoldTicketIndex >= len(tickets)-1
 	var logic2 bool = tickets[lastSoldTicketIndex+1].Name != ""
@@ -16,7 +18,6 @@ func getTicket(buyTickets int, name string, phone string) bool {
 	return true
 }
 
-
 func availableTickets() int {
 	return totalLotteryTickets - (lastSoldTicketIndex + 1)
 }
@@ -31,7 +32,8 @@ func showUserTickets(name string, phone string) {
 	if len(userTickets) == 0 {
 		println("No tickets found for the provided name and phone number.")
 	} else {
-		println("Your Tickets:")
+		fmt.Printf("You have bought %v tickets.\n", len(userTickets))
+			println("Your Tickets:")
 		for _, ticket := range userTickets {
 			println(ticket)
 		}
