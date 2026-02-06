@@ -8,7 +8,7 @@ func startGame() {
 	fmt.Print("Welcome To the Lottery Game !!\n")
 	fmt.Printf("Number of Tickets to play the Game:")
 	totalLotteryTickets = getNumber()
-	
+
 	if(!generateTickets(totalLotteryTickets)) {
 		fmt.Println("Failed to generate tickets. Restarting the game.")
 		fmt.Println()
@@ -18,7 +18,7 @@ func startGame() {
 
 	fmt.Printf("Select a option:\n")
 	fmt.Printf("1. Buy Tickets\n")
-	fmt.Printf("2. Show No of Available Tickets\n")
+	fmt.Printf("2. Show Number of Available Tickets\n")
 	fmt.Printf("3. Check your Tickets\n")
 	fmt.Printf("4. Run Draw\n")
 	fmt.Printf("5. Exit")
