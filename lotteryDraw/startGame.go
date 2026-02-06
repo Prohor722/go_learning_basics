@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"golang.org/x/text/cases"
+)
 
 func startGame() {
 	fmt.Print("Welcome To the Lottery Game !!\n")
@@ -12,6 +16,7 @@ func startGame() {
 	fmt.Printf("2. Show No of Available Tickets\n")
 	fmt.Printf("3. Check your Tickets\n")
 	fmt.Printf("4. Run Draw\n")
+	fmt.Printf("5. Exit")
 	fmt.Print("Enter your choice:")
 	var choice int
 	fmt.Scan(&choice)
@@ -32,26 +37,29 @@ func startGame() {
 	case 4:
 		drawLottery()
 		return
+	case 5:
+		fmt.Println("Thank you for playing the Lottery Game. Goodbye!")
+		return
 	default:
 		fmt.Println("Invalid choice. Restarting the game.")
 		startGame()
 		return
 	}
 	
-	if(!validNumber(totalLotteryTickets) || totalLotteryTickets < 2){
-		fmt.Println("Invalid number of tickets. Exiting the game. (Min:2)")
-		return
-	}
-	if(!generateTickets(totalLotteryTickets)) {
-		fmt.Println("Failed to generate tickets. Restarting the game.")
-		startGame()
-		return
-	}
-	if(!buyTickets()){
-		fmt.Println("Ticket purchase failed. Restarting ticket purchase.")
-		drawLottery()
-		return
-	}
-	fmt.Println()
-	drawLottery()
+	// if(!validNumber(totalLotteryTickets) || totalLotteryTickets < 2){
+	// 	fmt.Println("Invalid number of tickets. Exiting the game. (Min:2)")
+	// 	return
+	// }
+	// if(!generateTickets(totalLotteryTickets)) {
+	// 	fmt.Println("Failed to generate tickets. Restarting the game.")
+	// 	startGame()
+	// 	return
+	// }
+	// if(!buyTickets()){
+	// 	fmt.Println("Ticket purchase failed. Restarting ticket purchase.")
+	// 	drawLottery()
+	// 	return
+	// }
+	// fmt.Println()
+	startGame()
 }
