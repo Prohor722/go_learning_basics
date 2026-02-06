@@ -14,6 +14,25 @@ func startGame() {
 	fmt.Print("Enter your choice:")
 	var choice int
 	fmt.Scan(&choice)
+
+	switch choice {
+	case 1:
+		if(!buyTickets()){
+			fmt.Println("Ticket purchase failed. Restarting ticket purchase.")
+			drawLottery()
+			return
+		}
+	case 2:
+		fmt.Printf("Available Tickets: %d\n", totalLotteryTickets-(lastSoldTicketIndex+1))
+		return
+	case 3:
+		drawLottery()
+		return
+	default:
+		fmt.Println("Invalid choice. Restarting the game.")
+		startGame()
+		return
+	}
 	
 	if(!validNumber(totalLotteryTickets) || totalLotteryTickets < 2){
 		fmt.Println("Invalid number of tickets. Exiting the game. (Min:2)")
