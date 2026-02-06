@@ -19,7 +19,6 @@ func startGame() {
 	case 1:
 		if(!buyTickets()){
 			fmt.Println("Ticket purchase failed. Restarting ticket purchase.")
-			drawLottery()
 			return
 		}
 	case 2:
