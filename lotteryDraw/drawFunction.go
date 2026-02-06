@@ -5,18 +5,16 @@ import (
 )
 
 func drawLottery() bool {
-	var winningTicketIndex int
-	winningTicket := tickets[winningTicketIndex-1]
-	winnerName := winningTicket.Name
-	winnerPhone := winningTicket.Phone
-
 	if(lastSoldTicketIndex < len(tickets)-1){
 		fmt.Printf("Sorry all tickets are not sold yet!! \n")
 		availableTickets()
 		return false
 	}
 
-	winningTicketIndex = winningNumber()
+	winningTicketIndex := winningNumber()
+	winningTicket := tickets[winningTicketIndex-1]
+	winnerName := winningTicket.Name
+	winnerPhone := winningTicket.Phone
 
 	if( len(tickets) < 2) {
 		fmt.Println("Not enough tickets sold to draw a winner.")
