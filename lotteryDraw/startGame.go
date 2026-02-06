@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-
-	"golang.org/x/text/cases"
 )
 
 func startGame() {
@@ -35,7 +33,9 @@ func startGame() {
 		showUserTickets(getName(), getPhone())
 		return
 	case 4:
-		drawLottery()
+		if(drawLottery()){
+			return
+		}
 		return
 	case 5:
 		fmt.Println("Thank you for playing the Lottery Game. Goodbye!")
