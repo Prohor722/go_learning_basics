@@ -9,7 +9,9 @@ func drawLottery() bool {
 	winningTicket := tickets[winningTicketIndex-1]
 
 	if(lastSoldTicketIndex < len(tickets)-1){
-		drawLottery()
+		fmt.Printf("Sorry all tickets are not sold yet!! \n")
+		availableTickets()
+		return false
 	}
 
 	winningTicketIndex = winningNumber()
