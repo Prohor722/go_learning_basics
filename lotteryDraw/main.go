@@ -11,7 +11,7 @@ type Tickets struct {
 var tickets []*Tickets
 var lastSoldTicketIndex int = -1
 var totalLotteryTickets int
-var winningTicketIndex int
+var winningTicketIndex int = -1
 
 func main() {
 	fmt.Print("Welcome To the Lottery Game !!\n")
