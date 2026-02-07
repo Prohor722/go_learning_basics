@@ -20,6 +20,9 @@ func randomSixDigitString(id int) string {
 
 
 func winningNumber() int {
+	if(winningTicketIndex >= 0){
+		return winningTicketIndex;
+	}
 	if len(tickets) < 2 {
 		fmt.Println("Not enough tickets sold to draw a winner.")
 		return 0
