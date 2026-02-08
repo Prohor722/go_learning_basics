@@ -25,15 +25,9 @@ func phoneBookApp() {
 			printContacts()
 			fmt.Println("Which contact would you like to edit?")
 			var index int
-			fmt.Scanln(&index)
-			
-			if index > 0 && index <= len(contacts) {
-				contact := contacts[index-1]
-				editContact(contact, index-1)
-			} else {
-				fmt.Println("Invalid contact number.")
-			}
-
+			index = getIndex()
+			editContact(contacts[index-1], index-1)
+		
 		case 4:
 			fmt.Println("Which contact would you like to delete?")
 			printContacts()
@@ -44,7 +38,7 @@ func phoneBookApp() {
 				fmt.Println("Invalid contact number.")
 				continue
 			}
-			deleteContact(index-1)
+			deleteContact(index - 1)
 		case 5:
 			printDeletedContacts()
 		case 6:
