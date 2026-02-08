@@ -9,12 +9,7 @@ func editContact(contact *Contact, index int) {
 	var phone string
 	var email string
 
-	fmt.Print("Enter new contact name: ")
-	fmt.Scanln(&name)
-	fmt.Print("Enter new contact phone: ")
-	fmt.Scanln(&phone)
-	fmt.Print("Enter new contact email: ")
-	fmt.Scanln(&email)
+	
 
 	contact.Name = name
 	contact.Phone = phone
