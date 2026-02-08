@@ -5,6 +5,14 @@ import (
 	"strings"
 )
 
+func validateChoice(choice int) bool {
+	if choice < 1 || choice > 6 {
+		fmt.Println("Invalid choice. Please try again.")
+		return false
+	}
+	return true
+}
+
 func validateName(name string) bool {
 	if len(name) < 2 {
 		fmt.Println("Invalid name. Please try again.")
