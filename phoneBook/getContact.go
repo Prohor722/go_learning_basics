@@ -8,7 +8,10 @@ func getSelectedMenuOptionNumber() int {
 	var choice int
 	fmt.Print("Enter your choice: ")
 	fmt.Scanln(&choice)
-	
+	if !validateChoice(choice) {
+		fmt.Println("Invalid choice. Please try again.")
+		return getSelectedMenuOptionNumber()
+	}
 	return choice
 }
 

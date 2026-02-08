@@ -7,7 +7,6 @@ import (
 
 func validateChoice(choice int) bool {
 	if choice < 1 || choice > 6 {
-		fmt.Println("Invalid choice. Please try again.")
 		return false
 	}
 	return true
