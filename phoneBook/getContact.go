@@ -36,3 +36,6 @@ func getEmail() string {
 	}
 	return email
 }
+
+func getIndex() int {
+	
