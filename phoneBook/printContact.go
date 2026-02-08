@@ -5,13 +5,9 @@ import (
 )
 
 func printMenuOptions() {
-	fmt.Println("\nPhone Book Menu:")
-	fmt.Println("1. Add Contact")
-	fmt.Println("2. View Contacts")
-	fmt.Println("3. Update Contact")
-	fmt.Println("4. Delete contact")
-	fmt.Println("5. View Deleted Contacts")
-	fmt.Println("6. Exit")
+	for i, option := range options {
+		fmt.Printf("%d. %s\n", i+1, option)
+	}
 }
 func printContacts() {
 	fmt.Println("Contact List:")
