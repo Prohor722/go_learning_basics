@@ -7,13 +7,8 @@ import (
 func phoneBookApp() {
 	for {
 		var choice int
-		fmt.Println("\nPhone Book Menu:")
-		fmt.Println("1. Add Contact")
-		fmt.Println("2. View Contacts")
-		fmt.Println("3. Update Contact")
-		fmt.Println("4. Delete contact")
-		fmt.Println("5. View Deleted Contacts")
-		fmt.Println("6. Exit")
+		printMenuOptions()
+		
 		fmt.Print("Enter your choice: ")
 		fmt.Scanln(&choice)
 		switch choice {
