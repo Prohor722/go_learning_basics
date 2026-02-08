@@ -1,0 +1,39 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func validateName(name string) bool {
+	if len(name) < 2 {
+		fmt.Println("Invalid name. Please try again.")
+		return false
+	}
+	return true
+}
+
+func validatePhone(phone string) bool {
+	if len(phone) < 7 {
+		fmt.Println("Invalid phone number. Please try again.")
+		return false
+	}
+	return true
+}
+
+func validateEmail(email string) bool {
+	if len(email) < 5 || !strings.Contains(email, "@") {
+		fmt.Println("Invalid email address. Please try again.")
+		return false
+	}
+	return true
+}
+
+func contactExists(name string, phone string) bool {
+	for _, contact := range contacts {
+		if contact.Name == name && contact.Phone == phone {
+			return true
+		}
+	}
+	return false
+}

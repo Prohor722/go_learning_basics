@@ -42,7 +42,6 @@ func main() {
 	// todo()
 	// variableActAsConstant()
 	// ticketBookingApp()
-	phoneBookApp()
 }
 
 
