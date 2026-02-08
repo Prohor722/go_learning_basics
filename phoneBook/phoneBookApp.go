@@ -8,9 +8,8 @@ func phoneBookApp() {
 	for {
 		var choice int
 		printMenuOptions()
-		
-		fmt.Print("Enter your choice: ")
-		fmt.Scanln(&choice)
+		choice =getSelectedMenuOptionNumber()
+
 		switch choice {
 		case 1:
 			addContact()
