@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+func getSelectedMenuOptionNumber() int {
+
 func getName() string {
 	var name string
 	fmt.Print("Enter contact name: ")
