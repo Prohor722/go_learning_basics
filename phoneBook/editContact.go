@@ -16,19 +16,6 @@ func editContact(contact *Contact, index int) {
 	fmt.Print("Enter new contact email: ")
 	fmt.Scanln(&email)
 
-	if(!contactDetailsValidation("name", name)) {
-		fmt.Println("Invalid name. Please try again.")
-		return
-	}
-	if(!contactDetailsValidation("phone", phone)) {
-		fmt.Println("Invalid phone number. Please try again.")
-		return
-	}
-	if(!contactDetailsValidation("email", email)) {
-		fmt.Println("Invalid email address. Please try again.")
-		return
-	}
-
 	contact.Name = name
 	contact.Phone = phone
 	contact.Email = email
