@@ -40,12 +40,9 @@ func getEmail() string {
 func getIndex() int {
 	var index int
 	fmt.Scanln(&index)
-
-	
-
-	{
-	} else {
-		fmt.Println("Invalid contact number.")
+	if !validateIndex(index) {
+		fmt.Println("Invalid index. Please try again.")
+		return getIndex()
 	}
 	return index
 }

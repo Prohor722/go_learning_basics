@@ -38,3 +38,10 @@ func contactExists(name string, phone string) bool {
 	}
 	return false
 }
+
+func validateIndex(index int) bool {
+	if index < 0 || index > len(contacts) {
+		return false
+	}
+	return true
+}
