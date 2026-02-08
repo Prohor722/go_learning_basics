@@ -8,7 +8,7 @@ func getName() string {
 	var name string
 	fmt.Print("Enter contact name: ")
 	fmt.Scanln(&name)
-	if(!validateName(name)) {
+	if !validateName(name) {
 		fmt.Println("Invalid name. Please try again.")
 		return getName()
 	}
@@ -19,7 +19,7 @@ func getPhone() string {
 	var phone string
 	fmt.Print("Enter contact phone: ")
 	fmt.Scanln(&phone)
-	if(!validatePhone(phone)) {
+	if !validatePhone(phone) {
 		fmt.Println("Invalid phone number. Please try again.")
 		return getPhone()
 	}
@@ -30,7 +30,7 @@ func getEmail() string {
 	var email string
 	fmt.Print("Enter contact email: ")
 	fmt.Scanln(&email)
-	if(!validateEmail(email)) {
+	if !validateEmail(email) {
 		fmt.Println("Invalid email address. Please try again.")
 		return getEmail()
 	}
@@ -39,13 +39,13 @@ func getEmail() string {
 
 func getIndex() int {
 	var index int
-			fmt.Scanln(&index)
-			
-			if index > 0 && index <= len(contacts) {
-				contact := contacts[index-1]
-				editContact(contact, index-1)
-			} else {
-				fmt.Println("Invalid contact number.")
-			}
+	fmt.Scanln(&index)
+
+	
+
+	{
+	} else {
+		fmt.Println("Invalid contact number.")
+	}
 	return index
 }
