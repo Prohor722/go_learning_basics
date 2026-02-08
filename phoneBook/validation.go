@@ -32,6 +32,7 @@ func validateEmail(email string) bool {
 func contactExists(name string, phone string) bool {
 	for _, contact := range contacts {
 		if contact.Name == name && contact.Phone == phone {
+			fmt.Printf("Contact already exists! Name: %s, Phone: %s, Email: %s\n", contact.Name, contact.Phone, contact.Email)
 			return true
 		}
 	}
