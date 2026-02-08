@@ -9,7 +9,9 @@ func editContact(contact *Contact, index int) {
 	var phone string
 	var email string
 
-	
+	name = getName()
+	phone = getPhone()
+	email = getEmail()
 
 	contact.Name = name
 	contact.Phone = phone
