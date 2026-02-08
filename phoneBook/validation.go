@@ -40,7 +40,7 @@ func contactExists(name string, phone string) bool {
 }
 
 func validateIndex(index int) bool {
-	if index < 0 || index > len(contacts) {
+	if index < 1 || index > len(contacts) {
 		return false
 	}
 	return true

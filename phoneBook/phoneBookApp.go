@@ -32,12 +32,7 @@ func phoneBookApp() {
 			fmt.Println("Which contact would you like to delete?")
 			printContacts()
 			var index int
-			fmt.Print("\nEnter contact serial number: ")
-			fmt.Scanln(&index)
-			if index <= 0 || index > len(contacts) {
-				fmt.Println("Invalid contact number.")
-				continue
-			}
+			index = getIndex()
 			deleteContact(index - 1)
 		case 5:
 			printDeletedContacts()
