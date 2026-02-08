@@ -18,7 +18,7 @@ func phoneBookApp() {
 		fmt.Scanln(&choice)
 		switch choice {
 		case 1:
-			addContactIfNotExists()
+			addContact()
 		case 2:
 			printContacts()
 		case 3:
