@@ -6,7 +6,7 @@ import (
 )
 
 func validateChoice(choice int) bool {
-	if choice < 1 || choice > 6 {
+	if choice < 1 || choice > len(options)-1 {
 		return false
 	}
 	return true
