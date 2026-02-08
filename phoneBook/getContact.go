@@ -38,4 +38,14 @@ func getEmail() string {
 }
 
 func getIndex() int {
-	
+	var index int
+			fmt.Scanln(&index)
+			
+			if index > 0 && index <= len(contacts) {
+				contact := contacts[index-1]
+				editContact(contact, index-1)
+			} else {
+				fmt.Println("Invalid contact number.")
+			}
+	return index
+}
