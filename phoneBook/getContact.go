@@ -5,6 +5,11 @@ import (
 )
 
 func getSelectedMenuOptionNumber() int {
+	var choice int
+	fmt.Print("Enter your choice: ")
+	fmt.Scanln(&choice)
+	return choice
+}
 
 func getName() string {
 	var name string
