@@ -39,6 +39,7 @@ func getEmail() string {
 
 func getIndex() int {
 	var index int
+	fmt.Print("Enter contact number serial: ")
 	fmt.Scanln(&index)
 	if !validateIndex(index) {
 		fmt.Println("Invalid index. Please try again.")
