@@ -23,3 +23,8 @@ func getAge() []int {
 	}
 	return []int{age}
 }
+
+func getEmail() []string {
+	var email string
+	fmt.Print("Enter your email: ")
+	fmt.Scanln(&email)
