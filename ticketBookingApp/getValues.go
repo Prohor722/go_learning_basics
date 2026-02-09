@@ -17,3 +17,7 @@ func getAge() []int {
 	var age int
 	fmt.Print("Enter your age: ")
 	fmt.Scanln(&age)
+	if !ageValidation(age) {
+		fmt.Println("Invalid age. Please enter a valid age between 0 and 120.")
+		return getAge()
+	}
