@@ -11,18 +11,7 @@ func ticketBookingApp() {
 
 	name = getName()
 	age = getAge()
-
-	if(!validation("age", age)) {
-		fmt.Println("Invalid age. Please enter a valid age between 0 and 120.")
-		return
-	}
-
-	fmt.Print("Enter your email:")
-	fmt.Scanln(&email)
-	if(!validation("email", email)) {
-		fmt.Println("Invalid email. Please enter a valid email address.")
-		return
-	}
+	email = getEmail()
 
 	// fmt.Printf("Welcome %s! There are %d tickets available at $%.2f each.\n", name, ticketsAvailable, ticketPrice)
 
