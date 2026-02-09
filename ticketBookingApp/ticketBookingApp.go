@@ -27,8 +27,7 @@ func ticketBookingApp() {
 	selectedMovie := movies[movieChoice-1]
 	fmt.Printf("You have selected %s. There are %d tickets available. Each ticket costs $%.2f.\n", selectedMovie.Name, selectedMovie.AvailableTickets, selectedMovie.Price)
 
-	fmt.Print("Enter number of tickets to book:")
-	fmt.Scanln(&bookTickets)
+	bookTickets = getNoOfTickets()
 
 
 	if age < 18 {
