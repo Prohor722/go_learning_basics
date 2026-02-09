@@ -31,3 +31,10 @@ func noOfTicketsValidation(noOfTickets int) bool {
 	}
 	return true
 }
+
+func validateMovieChoice(choice int) bool {
+	if choice < 1 || choice > len(movies) {
+		return false
+	}
+	return true
+}
