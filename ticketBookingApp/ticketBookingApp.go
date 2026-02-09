@@ -10,9 +10,7 @@ func ticketBookingApp() {
 	
 
 	name = getName()
-
-	fmt.Print("Enter your age:")
-	fmt.Scanln(&age)
+	age = getAge()
 
 	if(!validation("age", age)) {
 		fmt.Println("Invalid age. Please enter a valid age between 0 and 120.")
