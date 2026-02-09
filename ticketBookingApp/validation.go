@@ -18,6 +18,13 @@ func ageValidation(age int) bool {
 	return true
 }
 
+func emailValidation(email string) bool {
+	if len(email) < 5 || !strings.Contains(email, "@") {
+		return false
+	}
+	return true
+}
+
 func validation(validationType string, value interface{}) bool {
 	switch validationType {
 	case "name":
