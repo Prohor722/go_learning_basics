@@ -28,3 +28,7 @@ func getEmail() []string {
 	var email string
 	fmt.Print("Enter your email: ")
 	fmt.Scanln(&email)
+	if !emailValidation(email) {
+		fmt.Println("Invalid email. Please enter a valid email address.")
+		return getEmail()
+	}
