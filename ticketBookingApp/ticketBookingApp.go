@@ -13,8 +13,6 @@ func ticketBookingApp() {
 	age = getAge()
 	email = getEmail()
 
-	// fmt.Printf("Welcome %s! There are %d tickets available at $%.2f each.\n", name, ticketsAvailable, ticketPrice)
-
 	fmt.Printf("Which movie do you want to watch?")
 	for i, movie := range movies {
 		fmt.Printf("\n%d. %s ($%.2f) - %d tickets available", i+1, movie.Name, movie.Price, movie.AvailableTickets)
