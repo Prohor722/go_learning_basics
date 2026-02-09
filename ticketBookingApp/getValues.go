@@ -43,3 +43,5 @@ func getNoOfTickets() int {
 		fmt.Println("Invalid number of tickets. Please enter a positive integer.")
 		return getNoOfTickets()
 	}
+	return noOfTickets
+}
