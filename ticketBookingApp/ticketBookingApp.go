@@ -54,7 +54,7 @@ func ticketBookingApp() {
 	ticketsAvailable := selectedMovie.AvailableTickets
 	ticketsAvailable -= bookTickets
 	
-	boughtTickets = append(boughtTickets, BoughtTicket{
+	boughtTickets = append(boughtTickets, {
 		id: selectedMovie.id,
 		Name: name,
 		email: email,
