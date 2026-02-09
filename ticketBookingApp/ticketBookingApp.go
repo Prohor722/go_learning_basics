@@ -16,6 +16,7 @@ func ticketBookingApp() {
 	showMoviesList()
 
 	fmt.Print("\nEnter the movie number:")
+
 	var movieChoice int
 	movieChoice = getChoice()
 
@@ -25,19 +26,7 @@ func ticketBookingApp() {
 	bookTickets = getNoOfTickets()
 
 
-	if age < 18 {
-		fmt.Println("Sorry, you must be at least 18 years old to book tickets.")
-		return
-	}
-	if selectedMovie.AvailableTickets <= 0 {
-		fmt.Println("Sorry, no tickets are available.")
-		return
-	}
-	if bookTickets > selectedMovie.AvailableTickets {
-		fmt.Printf("Sorry, only %d tickets are available.\n", selectedMovie.AvailableTickets)
-		return
-	}else if bookTickets <= 0 {
-		fmt.Println("Please enter a valid number of tickets to book.")
+	if(!buyTicketValidation()){
 		return
 	}
 
