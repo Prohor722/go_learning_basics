@@ -13,10 +13,8 @@ func ticketBookingApp() {
 	age = getAge()
 	email = getEmail()
 
-	fmt.Printf("Which movie do you want to watch?")
-	for i, movie := range movies {
-		fmt.Printf("\n%d. %s ($%.2f) - %d tickets available", i+1, movie.Name, movie.Price, movie.AvailableTickets)
-	}
+	showMoviesList()
+	
 	fmt.Print("\nEnter the movie number:")
 	var movieChoice int
 	fmt.Scanln(&movieChoice)

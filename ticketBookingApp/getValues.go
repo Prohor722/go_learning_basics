@@ -45,3 +45,8 @@ func getNoOfTickets() int {
 	}
 	return noOfTickets
 }
+
+func getChoice() int {
+	var choice int
+	fmt.Print("Enter your choice: ")
+	fmt.Scanln(&choice)
