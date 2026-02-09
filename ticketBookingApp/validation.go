@@ -4,6 +4,13 @@ import (
 	"strings"
 )
 
+func nameValidation(name string) bool {
+	if len(name) < 2 {
+		return false
+	}
+	return true
+}
+
 func validation(validationType string, value interface{}) bool {
 	switch validationType {
 	case "name":
