@@ -39,3 +39,7 @@ func getNoOfTickets() int {
 	var noOfTickets int
 	fmt.Print("Enter number of tickets to book: ")
 	fmt.Scanln(&noOfTickets)
+	if !noOfTicketsValidation(noOfTickets) {
+		fmt.Println("Invalid number of tickets. Please enter a positive integer.")
+		return getNoOfTickets()
+	}
