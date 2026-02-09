@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-type BoughtTicket struct {
-	id          int
-	Name        string
-	email       string
-	noOfTickets int
-}
+// type BoughtTicket struct {
+// 	id          int
+// 	Name        string
+// 	email       string
+// 	noOfTickets int
+// }
 
-// var boughtTickets []BoughtTicket // Removed duplicate declaration
+// var boughtTickets []BoughtTicket // Declare boughtTickets as a slice of BoughtTicket
 
 func ticketBookingApp() {
 	var name string
@@ -54,7 +54,7 @@ func ticketBookingApp() {
 	ticketsAvailable := selectedMovie.AvailableTickets
 	ticketsAvailable -= bookTickets
 	
-	boughtTickets = append(boughtTickets, {
+	boughtTickets = append(boughtTickets, BoughtTickets{
 		id: selectedMovie.id,
 		Name: name,
 		email: email,
