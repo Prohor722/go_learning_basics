@@ -9,13 +9,7 @@ func ticketBookingApp() {
 	var bookTickets int
 	
 
-	fmt.Print("Enter your name:")
-	fmt.Scanln(&name)
-
-	if(!validation("name", name)) {
-		fmt.Println("Invalid name. Please try again.")
-		return
-	}
+	name = getName()
 
 	fmt.Print("Enter your age:")
 	fmt.Scanln(&age)

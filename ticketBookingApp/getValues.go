@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func getName() []string {
+func getName() string {
 	var name string
 	fmt.Print("Enter your name: ")
 	fmt.Scanln(&name)
@@ -10,10 +10,10 @@ func getName() []string {
 		fmt.Println("Invalid name. Please try again.")
 		return getName()
 	}
-	return []string{name}
+	return name
 }
 
-func getAge() []int {
+func getAge() int {
 	var age int
 	fmt.Print("Enter your age: ")
 	fmt.Scanln(&age)
@@ -21,10 +21,10 @@ func getAge() []int {
 		fmt.Println("Invalid age. Please enter a valid age between 0 and 120.")
 		return getAge()
 	}
-	return []int{age}
+	return age
 }
 
-func getEmail() []string {
+func getEmail() string {
 	var email string
 	fmt.Print("Enter your email: ")
 	fmt.Scanln(&email)
@@ -32,5 +32,5 @@ func getEmail() []string {
 		fmt.Println("Invalid email. Please enter a valid email address.")
 		return getEmail()
 	}
-	return []string{email}
+	return email
 }
