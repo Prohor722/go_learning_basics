@@ -12,3 +12,5 @@ func getName() []string {
 	}
 	return []string{name}
 }
+
+func getAge() []int {
