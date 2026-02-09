@@ -32,3 +32,5 @@ func getEmail() []string {
 		fmt.Println("Invalid email. Please enter a valid email address.")
 		return getEmail()
 	}
+	return []string{email}
+}
