@@ -12,6 +12,8 @@ type Movie struct {
 }
 
 
+
+
 func validation(validationType string, value interface{}) bool {
 	switch validationType {
 	case "name":
