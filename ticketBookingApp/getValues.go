@@ -50,3 +50,9 @@ func getChoice() int {
 	var choice int
 	fmt.Print("Enter your choice: ")
 	fmt.Scanln(&choice)
+	if !validateMovieChoice(choice) {
+		fmt.Println("Invalid choice. Please select a valid movie number.")
+		return getChoice()
+	}
+	return choice
+}
