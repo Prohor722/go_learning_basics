@@ -14,3 +14,6 @@ func getName() []string {
 }
 
 func getAge() []int {
+	var age int
+	fmt.Print("Enter your age: ")
+	fmt.Scanln(&age)
