@@ -1,6 +1,12 @@
 package main
 
-var movies := []Movie{
+type Movie struct {
+    Name            string
+    Price           float64
+    AvailableTickets int
+}
+
+var movies = []Movie{
         {
             Name:             "The Matrix",
             Price:            12.99,
