@@ -51,5 +51,6 @@ func ticketBookingApp() {
 	ticketsAvailable := selectedMovie.AvailableTickets
 	ticketsAvailable -= bookTickets
 	fmt.Printf("Thank you %s for booking %d tickets. Total cost: $%.2f\n", name, bookTickets, totalCost)
+	fmt.Printf("Against %s this email address.\n", email)
 	fmt.Printf("Tickets remaining: %d\n", ticketsAvailable)	
 }
