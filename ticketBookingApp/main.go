@@ -7,7 +7,7 @@ type Movie struct {
     AvailableTickets int
 }
 
-type boughtTickets struct {
+type BoughtTickets struct {
 	id	int
 	Name	string
 	email	string
@@ -35,7 +35,7 @@ var movies = []Movie{
         },
     }
 
-var boughtTickets []boughtTickets
+var boughtTickets []BoughtTickets
 
 func main() {
 	ticketBookingApp()

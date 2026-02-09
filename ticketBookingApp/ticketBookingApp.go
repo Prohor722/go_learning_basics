@@ -2,6 +2,15 @@ package main
 
 import "fmt"
 
+type BoughtTicket struct {
+	id          int
+	Name        string
+	email       string
+	noOfTickets int
+}
+
+// var boughtTickets []BoughtTicket // Removed duplicate declaration
+
 func ticketBookingApp() {
 	var name string
 	var age int
@@ -14,14 +23,11 @@ func ticketBookingApp() {
 	email = getEmail()
 
 	showMoviesList()
-	
+
 	fmt.Print("\nEnter the movie number:")
 	var movieChoice int
-	fmt.Scanln(&movieChoice)
-	if movieChoice < 1 || movieChoice > len(movies) {
-		fmt.Println("Invalid movie choice. Please try again.")
-		return
-	}
+	movieChoice = getChoice()
+
 	selectedMovie := movies[movieChoice-1]
 	fmt.Printf("You have selected %s. There are %d tickets available. Each ticket costs $%.2f.\n", selectedMovie.Name, selectedMovie.AvailableTickets, selectedMovie.Price)
 
@@ -48,7 +54,7 @@ func ticketBookingApp() {
 	ticketsAvailable := selectedMovie.AvailableTickets
 	ticketsAvailable -= bookTickets
 	
-	boughtTickets = append(boughtTickets, boughtTickets{
+	boughtTickets = append(boughtTickets, BoughtTicket{
 		id: selectedMovie.id,
 		Name: name,
 		email: email,
