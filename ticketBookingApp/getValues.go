@@ -34,3 +34,8 @@ func getEmail() string {
 	}
 	return email
 }
+
+func getNoOfTickets() int {
+	var noOfTickets int
+	fmt.Print("Enter number of tickets to book: ")
+	fmt.Scanln(&noOfTickets)

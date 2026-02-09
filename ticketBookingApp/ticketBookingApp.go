@@ -50,6 +50,14 @@ func ticketBookingApp() {
 	totalCost := float64(bookTickets) * selectedMovie.Price
 	ticketsAvailable := selectedMovie.AvailableTickets
 	ticketsAvailable -= bookTickets
+	
+	boughtTickets = append(boughtTickets, boughtTickets{
+		id: selectedMovie.id,
+		Name: name,
+		email: email,
+		noOfTickets: bookTickets,
+	})
+
 	fmt.Printf("Thank you %s for booking %d tickets. Total cost: $%.2f\n", name, bookTickets, totalCost)
 	fmt.Printf("Against %s this email address.\n", email)
 	fmt.Printf("Tickets remaining: %d\n", ticketsAvailable)	

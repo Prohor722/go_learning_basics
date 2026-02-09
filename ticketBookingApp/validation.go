@@ -24,3 +24,10 @@ func emailValidation(email string) bool {
 	}
 	return true
 }
+
+func noOfTicketsValidation(noOfTickets int) bool {
+	if noOfTickets <= 0 {
+		return false
+	}
+	return true
+}
