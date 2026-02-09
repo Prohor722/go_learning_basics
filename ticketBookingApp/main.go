@@ -1,6 +1,7 @@
 package main
 
 type Movie struct {
+	id			  int
     Name            string
     Price           float64
     AvailableTickets int
