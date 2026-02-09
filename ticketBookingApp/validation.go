@@ -11,6 +11,13 @@ func nameValidation(name string) bool {
 	return true
 }
 
+func ageValidation(age int) bool {
+	if age < 0 || age > 120 {
+		return false
+	}
+	return true
+}
+
 func validation(validationType string, value interface{}) bool {
 	switch validationType {
 	case "name":
