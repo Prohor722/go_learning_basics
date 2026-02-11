@@ -27,24 +27,24 @@ func getAge(name string) uint {
 	return age
 }
 
-func getUserAnswer(questions []string, options [][]string, correctAnswers []string) {
+func getUserAnswer(questions []Question) {
 	var score int = 0
-	for i, question := range questions {
-		println(question)
-		for _, option := range options[i] {
+	for _, question := range questions {
+		println(question.question)
+		for _, option := range question.options {
 			println(option)
 		}
 		var answer string
 		print("Your answer: ")
 		fmt.Scanln(&answer)
 
-		if strings.ToUpper(answer) == correctAnswers[i] {
+		if strings.ToUpper(answer) == question.correctAnswer {
 			println("Correct!")
 			score++
 		} else {
-			println("Wrong! The correct answer is", correctAnswers[i])
+			println("Wrong! The correct answer is", question.correctAnswer)
 		}
 	}
-	println("Quiz Over! Your total score is:", score, "out of", len(questionsA))
-	fmt.Printf("Your answer is %v%% correct!", (score*100)/len(questionsA))
+	println("Quiz Over! Your total score is:", score, "out of", len(questions))
+	fmt.Printf("Your answer is %v%% correct!", (score*100)/len(questions))
 }
