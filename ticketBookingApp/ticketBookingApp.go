@@ -26,7 +26,7 @@ func ticketBookingApp() {
 	bookTickets = getNoOfTickets()
 
 
-	if(!buyTicketValidation(age, selectedMovie.AvailableTickets, bookTickets)) {
+	if(!buyTicketValidation(age, selectedMovie.AvailableTickets, bookTickets, selectedMovie.ageLimit)) {
 		return
 	}
 

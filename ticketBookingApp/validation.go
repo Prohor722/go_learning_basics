@@ -40,9 +40,9 @@ func validateMovieChoice(choice int) bool {
 	return true
 }
 
-func buyTicketValidation(age,availableTickets, bookTickets int) bool {
-	if age < 18 {
-		fmt.Println("Sorry, you must be at least 18 years old to book tickets.")
+func buyTicketValidation(age,availableTickets, bookTickets,ageLimit int) bool {
+	if age < ageLimit {
+		fmt.Println("Sorry, you must be at least", ageLimit, "years old to book tickets.")
 		return false
 	}
 	if availableTickets <= 0 {
