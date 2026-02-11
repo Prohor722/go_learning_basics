@@ -21,18 +21,35 @@ var movies = []Movie{
             Name:             "The Matrix",
             Price:            12.99,
             AvailableTickets: 50,
+            ageLimit:        13,
         },
         {
 			id:			   2,
             Name:             "Inception",
             Price:            14.99,
             AvailableTickets: 30,
+            ageLimit:        16,
         },
         {
 			id:			   3,
             Name:             "Interstellar",
             Price:            15.99,
             AvailableTickets: 25,
+            ageLimit:        12,
+        },
+        {
+            id:			   4,
+            Name:             "The Dark Knight",
+            Price:            13.99,
+            AvailableTickets: 40,
+            ageLimit:        13,
+        },
+        {
+            id:			   5,
+            Name:             "Titanic",
+            Price:            12.99,
+            AvailableTickets: 35,
+            ageLimit:        15,
         },
     }
 
