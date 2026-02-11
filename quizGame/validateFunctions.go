@@ -18,5 +18,9 @@ func validateAge(age uint) bool {
 		println("Invalid age entered. Please enter a valid age.")
 		return false
 	}
+	if age < 10 {
+		println("Sorry, you must be at least 10 years old to play this game.")
+		return false
+	}
 	return true
 }
