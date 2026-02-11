@@ -6,3 +6,5 @@ func validateName (name string) bool {
 		println("Name cannot be empty. Please enter a valid name.")
 		return false
 	}
+	return true
+}
