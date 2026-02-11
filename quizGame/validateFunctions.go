@@ -12,3 +12,11 @@ func validateName (name string) bool {
 	}
 	return true
 }
+
+func validateAge(age uint) bool {
+	if age <= 1 {
+		println("Invalid age entered. Please enter a valid age.")
+		return false
+	}
+	return true
+}
