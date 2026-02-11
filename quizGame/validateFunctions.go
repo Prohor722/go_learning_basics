@@ -1,5 +1,9 @@
 package main
 
+import (
+	"strings"
+)
+
 func validateName (name string) bool {
 	name = strings.TrimSpace(name)
 	if len(name) == 0 {
