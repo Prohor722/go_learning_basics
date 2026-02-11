@@ -13,7 +13,7 @@ func nameValidation(name string) bool {
 }
 
 func ageValidation(age int) bool {
-	if age < 0 || age > 120 {
+	if age < 1 || age > 120 {
 		return false
 	}
 	return true
