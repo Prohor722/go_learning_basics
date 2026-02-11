@@ -25,3 +25,25 @@ func getAge(name string) uint {
 	}
 	return age
 }
+
+func getUserAnswer(questions []string, options [][]string, correctAnswers []string) int {
+	var score int = 0
+	for i, question := range questions {
+		println(question)
+		for _, option := range options[i] {
+			println(option)
+		}
+		var answer string
+		print("Your answer: ")
+		fmt.Scanln(&answer)
+
+		if strings.ToUpper(answer) == correctAnswers[i] {
+			println("Correct!")
+			score++
+		} else {
+			println("Wrong! The correct answer is", correctAnswers[i])
+		}
+	}
+
+	return score
+}
