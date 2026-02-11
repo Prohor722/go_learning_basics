@@ -1,11 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
-
-
 func quizGame() {
 	var name string
 	var age uint = 0
@@ -16,7 +10,7 @@ func quizGame() {
 
 	println("Hello", name, "age", age, "! Let's start the quiz.")
 
-	score := getUserAnswer(questionsA, optionsA, correctAnswersA)
+	getUserAnswer(questionsA, optionsA, correctAnswersA)
 	
 	println("\nThank you for playing, ", name, "!")
 
