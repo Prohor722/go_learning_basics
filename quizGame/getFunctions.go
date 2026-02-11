@@ -31,8 +31,8 @@ func getUserAnswer(questions []Question) {
 	var score int = 0
 	for _, question := range questions {
 		println(question.question)
-		for _, option := range question.options {
-			println(option)
+		for i, option := range question.options {
+			println(fmt.Sprintf("%d) %s", i+1, option))
 		}
 		var answer string
 		print("Your answer: ")
