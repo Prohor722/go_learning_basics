@@ -12,6 +12,8 @@ var optionsA = [][]string{
 		{"A) Earth", "B) Jupiter", "C) Mars", "D) Saturn"},
 	}
 
+var correctAnswersA = []string{"C", "B", "B"}
+
 func main() {
 	quizGame()
 }

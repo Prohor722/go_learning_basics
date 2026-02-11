@@ -14,14 +14,8 @@ func quizGame() {
 	name = getName()
 	age = getAge(name)
 
-	if(age == 0) {
-		return
-	}
-
 	println("Hello", name, "age", age, "! Let's start the quiz.")
 
-	
-	correctAnswers := []string{"C", "B", "B"}
 	score := 0
 	for i, question := range questions {
 		println(question)
