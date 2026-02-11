@@ -17,6 +17,15 @@ func quizGame() {
 	println("Hello", name, "age", age, "! Let's start the quiz.")
 
 	score := 0
+	
+	println("Quiz Over! Your total score is:", score, "out of", len(questions))
+	fmt.Printf("Your answer is %v%% correct!", (score*100)/len(questions))
+	println("\nThank you for playing, ", name, "!")
+
+}
+
+func getUserAnswer(questions []string, options [][]string) int {
+	var score int = 0
 	for i, question := range questions {
 		println(question)
 		for _, option := range options[i] {
@@ -33,8 +42,4 @@ func quizGame() {
 			println("Wrong! The correct answer is", correctAnswers[i])
 		}
 	}
-	println("Quiz Over! Your total score is:", score, "out of", len(questions))
-	fmt.Printf("Your answer is %v%% correct!", (score*100)/len(questions))
-	println("\nThank you for playing, ", name, "!")
-
 }
