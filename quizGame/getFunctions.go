@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"strings"
 )
 
 func getName() string {
@@ -26,7 +27,7 @@ func getAge(name string) uint {
 	return age
 }
 
-func getUserAnswer(questions []string, options [][]string, correctAnswers []string) int {
+func getUserAnswer(questions []string, options [][]string, correctAnswers []string) {
 	var score int = 0
 	for i, question := range questions {
 		println(question)
@@ -44,6 +45,6 @@ func getUserAnswer(questions []string, options [][]string, correctAnswers []stri
 			println("Wrong! The correct answer is", correctAnswers[i])
 		}
 	}
-
-	return score
+	println("Quiz Over! Your total score is:", score, "out of", len(questionsA))
+	fmt.Printf("Your answer is %v%% correct!", (score*100)/len(questionsA))
 }

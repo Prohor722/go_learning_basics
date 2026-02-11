@@ -16,10 +16,8 @@ func quizGame() {
 
 	println("Hello", name, "age", age, "! Let's start the quiz.")
 
-	score := 0
+	score := getUserAnswer(questionsA, optionsA, correctAnswersA)
 	
-	println("Quiz Over! Your total score is:", score, "out of", len(questions))
-	fmt.Printf("Your answer is %v%% correct!", (score*100)/len(questions))
 	println("\nThank you for playing, ", name, "!")
 
 }
