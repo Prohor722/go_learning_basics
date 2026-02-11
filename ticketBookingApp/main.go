@@ -51,6 +51,13 @@ var movies = []Movie{
             AvailableTickets: 35,
             ageLimit:        15,
         },
+        {
+            id:			   6,
+            Name:             "50 Shades of Grey",
+            Price:            20.99,
+            AvailableTickets: 20,
+            ageLimit:        18,
+        },
     }
 
 var boughtTickets []BoughtTickets
