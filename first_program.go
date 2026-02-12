@@ -42,6 +42,7 @@ func main() {
 	// todo()
 	// variableActAsConstant()
 	// ticketBookingApp()
+	pointerExample()
 }
 
 
