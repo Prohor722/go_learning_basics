@@ -22,4 +22,6 @@ func pointerExample() {
 	fmt.Printf("Before modification: %+v\n", person1)
 	person1.incresseAge(5)
 	fmt.Printf("After modification: %+v\n", person1)
+	person2 := person1.namehonorific("Dr.")
+	fmt.Printf("After adding honorific: %+v\n", person2)
 }
