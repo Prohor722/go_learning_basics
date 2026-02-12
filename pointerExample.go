@@ -28,6 +28,6 @@ func pointerExample() {
 	fmt.Println("After modification:")
 	printPersonInfo(person1)
 	person2 := person1.namehonorific("Dr.")
-	fmt.Println("After adding honorific:\n")
+	fmt.Println("After adding honorific:")
 	printPersonInfo(person2)
 }
