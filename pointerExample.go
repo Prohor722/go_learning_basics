@@ -27,7 +27,7 @@ func pointerExample() {
 	person1.incresseAge(5)
 	fmt.Println("After modification:")
 	printPersonInfo(person1)
-	person2 := person1.namehonorific("Dr.")
+	person1.namehonorific("Dr.")
 	fmt.Println("After adding honorific:")
-	printPersonInfo(person2)
+	printPersonInfo(person1)
 }
