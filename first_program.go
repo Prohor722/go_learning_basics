@@ -55,3 +55,18 @@ func Tests() {
 	print(sum)
 }
 
+func multiReturn() (int, int) {
+	a := 10
+	b := 20
+	return a, b
+}
+
+func printMultiReturn() {
+	var arr [2]int
+	arr[0], arr[1] = multiReturn()	//in array
+	print(arr[0], arr[1])
+
+	a, b := multiReturn()	//in variables
+	print(a, b)
+}
+
