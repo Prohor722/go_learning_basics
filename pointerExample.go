@@ -15,4 +15,6 @@ func (p *Person) incresseAge (incresseBy int) {
 func pointerExample() {
 	person1 := Person{name: "Alice", age: 30, address: "123 Main St"}
 	fmt.Printf("Before modification: %+v\n", person1)
+	person1.incresseAge(5)
+	fmt.Printf("After modification: %+v\n", person1)
 }
