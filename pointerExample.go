@@ -23,9 +23,10 @@ func printPersonInfo(p Person) {
 
 func pointerExample() {
 	person1 := Person{name: "Alice", age: 30, address: "123 Main St"}
-	fmt.Printf("Before modification: %+v\n", person1)
+	printPersonInfo(person1)
 	person1.incresseAge(5)
-	fmt.Printf("After modification: %+v\n", person1)
+	fmt.Println("After modification:")
+	printPersonInfo(person1)
 	person2 := person1.namehonorific("Dr.")
 	fmt.Printf("After adding honorific: %+v\n", person2)
 }
