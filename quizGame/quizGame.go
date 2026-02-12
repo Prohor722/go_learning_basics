@@ -17,7 +17,6 @@ func quizGame() {
 	} else {
 		getUserAnswer(quiz.C_questions)
 	}
-
 	
 	println("\nThank you for playing, ", name, "!")
 
