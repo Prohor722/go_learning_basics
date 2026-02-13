@@ -6,6 +6,12 @@ func variadicFunction(){
 	fmt.Println("Enter your first name:")
 	var firstName string
 	fmt.Scan(&firstName)
+	fmt.Println("Enter your last name:")
+	var lastName string
+	fmt.Scan(&lastName)
+
+	println("Hello", firstName, lastName)
+	
 	fmt.Println("Enter how many numbers you want to sum:")
 	var n int
 	fmt.Scan(&n)
