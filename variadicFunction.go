@@ -1,6 +1,12 @@
 package main
 
+import "fmt"
+
 func variadicFunction(){
+	fmt.Println("Enter how many numbers you want to sum:")
+	var n int
+	fmt.Scan(&n)
+
 	println(sumOfNumbers(1, 2, 3, 4, 5)) // Output: 15
 }
 
