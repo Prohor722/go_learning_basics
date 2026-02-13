@@ -9,3 +9,5 @@ func sumOfNumbers(nums ...int) int {
 	for _, num := range nums {
 		sum += num
 	}
+	return sum
+}
