@@ -1,7 +1,7 @@
 package main
 
 func variadicFunction(){
-	
+	println(sumOfNumbers(1, 2, 3, 4, 5)) // Output: 15
 }
 
 func sumOfNumbers(nums ...int) int {
