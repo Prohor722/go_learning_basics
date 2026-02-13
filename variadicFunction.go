@@ -31,3 +31,7 @@ func sumOfNumbers(nums ...int) int {
 	}
 	return sum
 }
+
+func printFullName(firstName, lastName string) {
+	fmt.Printf("Full Name: %s %s\n", firstName, lastName)
+}
