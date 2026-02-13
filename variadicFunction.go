@@ -12,7 +12,7 @@ func variadicFunction(){
 		fmt.Scan(&nums[i])
 	}
 
-	println(sumOfNumbers(1, 2, 3, 4, 5)) // Output: 15
+	println(sumOfNumbers(nums...)) // Output: sum of all numbers in nums slice
 }
 
 func sumOfNumbers(nums ...int) int {
