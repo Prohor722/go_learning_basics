@@ -33,6 +33,7 @@ func sumOfNumbers(nums ...int) int {
 }
 
 func sumOfNumbersUsingSlice(nums []int) int {
+	sum := 0
 
 func printFullName(firstName, lastName string) {
 	fmt.Printf("Full Name: %s %s\n", firstName, lastName)
