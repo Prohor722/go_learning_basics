@@ -32,6 +32,8 @@ func sumOfNumbers(nums ...int) int {
 	return sum
 }
 
+func sumOfNumbersUsingSlice(nums []int) int {
+
 func printFullName(firstName, lastName string) {
 	fmt.Printf("Full Name: %s %s\n", firstName, lastName)
 }
