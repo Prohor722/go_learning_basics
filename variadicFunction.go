@@ -22,6 +22,7 @@ func variadicFunction(){
 	}
 
 	println(sumOfNumbers(nums...)) // Output: sum of all numbers in nums slice
+	println(sumOfNumbersUsingSlice(nums)) // Output: sum of all numbers in nums slice
 }
 
 func sumOfNumbers(nums ...int) int {
