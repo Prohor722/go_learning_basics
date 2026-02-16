@@ -1,8 +1,4 @@
-package main 
-
-// import (
-// 	"fmt"
-// )
+package main
 
 func isPrime(num int) bool {
 	if num <= 1 {
