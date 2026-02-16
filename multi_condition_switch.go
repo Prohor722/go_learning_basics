@@ -1,4 +1,8 @@
 package main
 
+import "time"
+
 func multiConditionSwitch() {
-	day := 3
+	switch time.Now {
+	}
+}
