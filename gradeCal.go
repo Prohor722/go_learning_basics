@@ -34,6 +34,4 @@ func gradeCal(){
 	default:
 		println("Invalid Number!")
 	}
-
-
 }
