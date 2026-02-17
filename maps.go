@@ -1,3 +1,6 @@
 package main
 
-func maps() {}
+func maps() {
+	m := make(map[string]int)
+
+}
