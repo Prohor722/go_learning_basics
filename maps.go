@@ -9,5 +9,6 @@ func maps() {
 	m["type"] = "Programming Language"
 
 	fmt.Println(m["name"])
+	fmt.Println(m["type"])
 
 }

@@ -43,7 +43,8 @@ func main() {
 	// variableActAsConstant()
 	// ticketBookingApp()
 	// pointerExample()
-	variadicFunction()
+	// variadicFunction()
+	maps()
 }
 
 
