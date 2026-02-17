@@ -10,5 +10,5 @@ func maps() {
 
 	fmt.Println(m["name"])
 	fmt.Println(m["type"])
-
+	fmt.Println(m["nonexistent"]) // This will print an empty string
 }
