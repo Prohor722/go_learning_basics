@@ -17,7 +17,7 @@ func maps() {
 		fmt.Println("true")
 	}
 
-	k,ok := m["nonexistent"]
+	k,ok := m["nonexistent"] //if k is not needed use _
 
 	if !ok {
 		fmt.Println("Key does not exist")
