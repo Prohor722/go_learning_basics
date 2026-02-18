@@ -4,6 +4,11 @@ import "fmt"
 
 func maps() {
 	m := make(map[string]string)
+	m1 := map[string]int{
+		"one": 1,
+		"two": 2,
+	}
+	
 
 	m["name"] = "Go"
 	m["age"] = "15"
