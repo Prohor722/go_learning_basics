@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"maps"
+)
 
 func maps() {
 	m := make(map[string]string)
@@ -13,7 +16,7 @@ func maps() {
 		"two": 2,
 	}
 
-	fmt.Println(m)
+	fmt.Println(maps.Equal(m1, m2)) // true
 
 	m["name"] = "Go"
 	m["age"] = "15"
