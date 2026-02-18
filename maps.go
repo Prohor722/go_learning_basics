@@ -5,7 +5,7 @@ import (
 	"maps"
 )
 
-func maps() {
+func mapsFunction() {
 	m := make(map[string]string)
 	m1 := map[string]int{
 		"one": 1,

@@ -44,7 +44,7 @@ func main() {
 	// ticketBookingApp()
 	// pointerExample()
 	// variadicFunction()
-	maps()
+	mapsFunction()
 }
 
 
