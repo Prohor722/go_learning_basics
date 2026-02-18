@@ -10,4 +10,8 @@ func rangeExample() {
 	for value := range nums {
 		println("Value:", value)
 	}
+
+	for i,c := range "Hello" {
+		println("Index:", i, "Character:", string(c))
+	}
 }
