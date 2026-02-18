@@ -6,4 +6,8 @@ func rangeExample() {
 	for index, value := range nums {
 		println("Index:", index, "Value:", value)
 	}
+
+	for value := range nums {
+		println("Value:", value)
+	}
 }
