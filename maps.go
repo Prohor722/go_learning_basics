@@ -6,6 +6,7 @@ func maps() {
 	m := make(map[string]string)
 
 	m["name"] = "Go"
+	m["age"] = "15"
 	m["type"] = "Programming Language"
 
 	fmt.Println(m["name"])
@@ -14,5 +15,10 @@ func maps() {
 
 	if m["nonexistent"] == "" {
 		fmt.Println("true")
+	}
+
+	_,ok := m["nonexistent"]
+	if !ok {
+		fmt.Println("Key does not exist")
 	}
 }
