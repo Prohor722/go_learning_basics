@@ -8,7 +8,12 @@ func maps() {
 		"one": 1,
 		"two": 2,
 	}
-	
+	m2 := map[string]int{
+		"one": 1,
+		"two": 2,
+	}
+
+	fmt.Println(m)
 
 	m["name"] = "Go"
 	m["age"] = "15"
