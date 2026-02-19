@@ -42,15 +42,15 @@ func strucksExamples(){
 	// 	createdAt: time.Now(),
 	// }
 	order := NewOrder("1",55.10,"received")
-	
-	var orders []Order
 
-	orders = append(orders, order)
+	// var orders []Order
+
+	// orders = append(orders, order)
 
 	order.updatedAt = time.Now()
 
 	fmt.Println("order struct: ",order)
-	fmt.Println("orders array: ",orders)
+	// fmt.Println("orders array: ",orders)
 
 
 	order.changeStatus("on-processing")
