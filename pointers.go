@@ -8,5 +8,9 @@ func changeNum(num int) {
 }
 
 func pointersExample() {
+	num := 1
 
+	changeNum(num)
+
+	fmt.Println("After change num in main: ", num)
 }
