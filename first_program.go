@@ -45,7 +45,8 @@ func main() {
 	// pointerExample()
 	// variadicFunction()
 	// mapsFunction()
-	clousersExample()
+	// clousersExample()
+	pointersExample()
 }
 
 
