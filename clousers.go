@@ -13,4 +13,5 @@ func counter() func() int {
 func clousersExample() {
 	increment := counter()
 	fmt.Println(increment())
+	fmt.Println(increment())
 }
