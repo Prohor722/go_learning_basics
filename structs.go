@@ -11,6 +11,7 @@ type Order struct{
 	ammount float32
 	status string
 	createdAt time.Time // nanosecond precision
+	updatedAt time.Time
 }
 
 func strucksExamples(){
@@ -20,6 +21,8 @@ func strucksExamples(){
 		status: "received",
 		createdAt: time.Now(),
 	}
+
+	order.updatedAt = time.Now()
 
 	fmt.Println("order struct: ",order)
 
