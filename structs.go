@@ -22,14 +22,27 @@ func (o Order) getAmmount() float32{
 	return o.ammount
 }
 
-func strucksExamples(){
-	order := Order{
-		id: "1",
-		ammount: 55.10,
-		status: "received",
+// Constructor
+func NewOrder(id string, ammount float32, status string) *Order{
+	myOrder := Order{
+		id: id,
+		ammount: ammount,
+		status: status,
 		createdAt: time.Now(),
 	}
 
+	return &myOrder
+}
+
+func strucksExamples(){
+	// order := Order{
+	// 	id: "1",
+	// 	ammount: 55.10,
+	// 	status: "received",
+	// 	createdAt: time.Now(),
+	// }
+	order := NewOrder("1",55.10,"received")
+	
 	var orders []Order
 
 	orders = append(orders, order)
