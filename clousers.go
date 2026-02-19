@@ -1,5 +1,9 @@
 package main
 
-func clousersExample(){
+func counter(){
 	
+}
+
+func clousersExample(){
+
 }
