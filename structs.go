@@ -22,8 +22,13 @@ func strucksExamples(){
 		createdAt: time.Now(),
 	}
 
+	var orders []Order
+
+	orders = append(orders, order)
+
 	order.updatedAt = time.Now()
 
 	fmt.Println("order struct: ",order)
+	fmt.Println("orders array: ",orders)
 
 }
