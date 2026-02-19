@@ -35,4 +35,9 @@ func strucksExamples(){
 	fmt.Println("order struct: ",order)
 	fmt.Println("orders array: ",orders)
 
+
+	order.changeStatus("on processing")
+
+	fmt.Println("After changing status: ", order)
+
 }
