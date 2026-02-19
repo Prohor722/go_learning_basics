@@ -18,8 +18,8 @@ func (o *Order) changeStatus(status string){
 	o.status = status
 }
 
-func (o Order) getStatus() string{
-	return o.status
+func (o Order) getAmmount() float32{
+	return o.ammount
 }
 
 func strucksExamples(){
@@ -44,6 +44,6 @@ func strucksExamples(){
 
 	fmt.Println("After changing status: ", order)
 
-	fmt.Println("Printing Status: ",order.getStatus())
+	fmt.Println("Printing ammount: ",order.getAmmount())
 
 }
