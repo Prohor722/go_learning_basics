@@ -1,15 +1,25 @@
 package main
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 //order struct
-type order struct{
-	id int
+type Order struct{
+	id string
 	ammount float32
 	status string
-	createdAt time.Time //
+	createdAt time.Time // nanosecond precision
 }
 
 func strucksExamples(){
+	order := Order{
+		id: "1",
+		ammount: 55.10,
+		status: "received",
+	}
+
+	fmt.Println("order struct: ",order)
 
 }
