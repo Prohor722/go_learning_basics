@@ -18,6 +18,7 @@ func strucksExamples(){
 		id: "1",
 		ammount: 55.10,
 		status: "received",
+		createdAt: time.Now(),
 	}
 
 	fmt.Println("order struct: ",order)
