@@ -14,6 +14,10 @@ type Order struct{
 	updatedAt time.Time
 }
 
+func (o Order) changeStatus(status string){
+	o.status = status
+}
+
 func strucksExamples(){
 	order := Order{
 		id: "1",
