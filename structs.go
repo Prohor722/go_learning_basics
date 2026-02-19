@@ -18,6 +18,10 @@ func (o *Order) changeStatus(status string){
 	o.status = status
 }
 
+func (o Order) getStatus() string{
+	return o.status
+}
+
 func strucksExamples(){
 	order := Order{
 		id: "1",
@@ -39,5 +43,7 @@ func strucksExamples(){
 	order.changeStatus("on-processing")
 
 	fmt.Println("After changing status: ", order)
+
+	fmt.Println("Printing Status: ",order.getStatus())
 
 }
