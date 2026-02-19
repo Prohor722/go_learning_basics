@@ -14,7 +14,7 @@ type Order struct{
 	updatedAt time.Time
 }
 
-func (o Order) changeStatus(status string){
+func (o *Order) changeStatus(status string){
 	o.status = status
 }
 
@@ -36,7 +36,7 @@ func strucksExamples(){
 	fmt.Println("orders array: ",orders)
 
 
-	order.changeStatus("on processing")
+	order.changeStatus("on-processing")
 
 	fmt.Println("After changing status: ", order)
 
