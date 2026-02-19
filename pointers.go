@@ -4,7 +4,7 @@ import "fmt"
 
 func changeNum(num int) {
 	num = 5
-	fmt.Println("in change num: ",num)
+	fmt.Println("in changeFunc: ",num)
 }
 
 func pointersExample() {
@@ -12,5 +12,5 @@ func pointersExample() {
 
 	changeNum(num)
 
-	fmt.Println("After change num in main: ", num)
+	fmt.Println("After changeNum in main: ", num)
 }
