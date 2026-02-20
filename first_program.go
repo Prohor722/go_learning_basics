@@ -47,7 +47,8 @@ func main() {
 	// mapsFunction()
 	// clousersExample()
 	// pointersExample()
-	strucksExamples()
+	// strucksExamples()
+	interfaceExample()
 }
 
 

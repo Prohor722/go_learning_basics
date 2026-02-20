@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-type payment struct {
-}
+type payment struct {}
 
 func (p payment) makePayment(amount float32) {
 	razorpayPaymentGW := razorpay{}
@@ -14,6 +13,12 @@ type razorpay struct{}
 
 func (r razorpay) pay(amount float32) {
 	fmt.Println("making payment using razorpay", amount)
+}
+
+type stripe struct{}
+
+func (s stripe) pay(amount float32){
+	fmt.Println("Making payment using stripe: ",amount)
 }
 
 func interfaceExample() {
