@@ -60,3 +60,15 @@ func strucksExamples(){
 	fmt.Println("Printing ammount: ",order.getAmmount())
 
 }
+
+
+/* STUCT EMBEDDING (like inheritence in oop) */
+
+type Civilian struct{
+	name string
+	age int
+}
+
+type Police struct{
+	
+}
