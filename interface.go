@@ -5,8 +5,11 @@ import "fmt"
 type payment struct {}
 
 func (p payment) makePayment(amount float32) {
-	razorpayPaymentGW := razorpay{}
-	razorpayPaymentGW.pay(amount)
+	// razorpayPaymentGW := razorpay{}
+	// razorpayPaymentGW.pay(amount)
+
+	stripePaymentGW := stripe{}
+	stripePaymentGW.pay(amount)
 }
 
 type razorpay struct{}
