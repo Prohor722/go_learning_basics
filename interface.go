@@ -8,6 +8,7 @@ type payment struct {
 
 type paymenter interface{
 	pay(amount float32)
+	refund(amount float32)
 }
 
 func (p payment) makePayment(amount float32) {
@@ -36,11 +37,15 @@ func (p paypal) pay(amount float32){
 	fmt.Println("Making payment using paypal:",amount)
 }
 
+func (p paypal) refund(amount float32){
+	fmt.Println("Refund done from paypal amount:",amount)
+}
+
 func interfaceExample() {
 	// stripePaymentGW := stripe{}
 	// razorPaymentGW := razorpay{}
 	paypalPaymentGW := paypal{}
-	
+
 	newPayment := payment{
 		// gateway: stripePaymentGW,
 		// gateway: razorPaymentGW,
