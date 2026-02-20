@@ -3,7 +3,11 @@ package main
 import "fmt"
 
 type payment struct {
-	gateway stripe
+	gateway paymenter
+}
+
+type paymenter interface{
+	pay(amount float32)
 }
 
 func (p payment) makePayment(amount float32) {
@@ -26,10 +30,21 @@ func (s stripe) pay(amount float32){
 	fmt.Println("Making payment using stripe: ",amount)
 }
 
+type paypal struct{}
+
+func (p paypal) pay(amount float32){
+	fmt.Println("Making payment using paypal:",amount)
+}
+
 func interfaceExample() {
-	stripePaymentGW := stripe{}
+	// stripePaymentGW := stripe{}
+	// razorPaymentGW := razorpay{}
+	paypalPaymentGW := paypal{}
+	
 	newPayment := payment{
-		gateway: stripePaymentGW,
+		// gateway: stripePaymentGW,
+		// gateway: razorPaymentGW,
+		gateway: paypalPaymentGW,
 	}
 	newPayment.makePayment(100)
 }
