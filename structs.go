@@ -70,5 +70,11 @@ type Civilian struct{
 }
 
 type Police struct{
-	
+	rank string
+	post string
+	Civilian
+}
+
+func struckEmbedingExample(){
+	newOfficer 
 }
