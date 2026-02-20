@@ -52,4 +52,5 @@ func interfaceExample() {
 		gateway: paypalPaymentGW,
 	}
 	newPayment.makePayment(100)
+	newPayment.gateway.refund(100)
 }
