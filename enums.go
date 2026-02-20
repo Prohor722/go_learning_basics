@@ -6,9 +6,9 @@ type OrderStatus string
 
 const (
 	Received OrderStatus = "Received"
-	Confirmed = "Confirmed"
-	Prepared = "Prepared"
-	Delivered = "Delivered"
+	Confirmed OrderStatus = "Confirmed"
+	Prepared OrderStatus = "Prepared"
+	Delivered OrderStatus = "Delivered"
 )
 
 // const (
