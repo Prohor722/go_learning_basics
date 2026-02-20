@@ -30,6 +30,22 @@ func changeOrderStatus(status OrderStatus) {
 	fmt.Println("changing order status to: ",getStatus(status))
 }
 
+
+//Another way
+
+type OrderStatusList struct{
+	Received string
+	Confirmed string
+	Prepared string
+	Delivered string
+}
+var status = OrderStatusList{
+	Received : "Received",
+	Confirmed : "Confirmed",
+	Prepared : "Prepared",
+	Delivered : "Delivered",
+}
 func enumExamples() {
+	// changeOrderStatus(status.Confirmed)
 	changeOrderStatus(Received)
 }

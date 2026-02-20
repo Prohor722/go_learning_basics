@@ -48,7 +48,8 @@ func main() {
 	// clousersExample()
 	// pointersExample()
 	// strucksExamples()
-	interfaceExample()
+	// interfaceExample()
+	enumExamples()
 }
 
 
