@@ -2,14 +2,16 @@ package main
 
 import "fmt"
 
-type payment struct {}
+type payment struct {
+	gateway stripe
+}
 
 func (p payment) makePayment(amount float32) {
 	// razorpayPaymentGW := razorpay{}
 	// razorpayPaymentGW.pay(amount)
 
-	stripePaymentGW := stripe{}
-	stripePaymentGW.pay(amount)
+	// stripePaymentGW := stripe{}
+	p.gateway.pay(amount)
 }
 
 type razorpay struct{}
