@@ -55,5 +55,7 @@ var status = OrderStatusList{
 }
 func enumExamples() {
 	// changeOrderStatus(status.Confirmed)
+	// status.Received = "Canceled"	//as not constant it can be changed
+	// fmt.Println(status.Received)
 	changeOrderStatus(Received)
 }
