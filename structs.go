@@ -76,5 +76,11 @@ type Police struct{
 }
 
 func struckEmbedingExample(){
-	newOfficer 
+	newOfficer := Police{
+		name: "Billu Mia",
+		rank: "ASP",
+		post: "Dhaka",
+	}
+
+	fmt.Println("New Officer: ",newOfficer)
 }
