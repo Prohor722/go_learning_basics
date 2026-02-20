@@ -27,6 +27,9 @@ func (s stripe) pay(amount float32){
 }
 
 func interfaceExample() {
-	newPayment := payment{}
+	stripePaymentGW := stripe{}
+	newPayment := payment{
+		gateway: stripePaymentGW,
+	}
 	newPayment.makePayment(100)
 }
