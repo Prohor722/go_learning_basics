@@ -50,7 +50,8 @@ func main() {
 	// strucksExamples()
 	// interfaceExample()
 	// enumExamples()
-	genericExample()
+	// genericExample()
+	channelsExample()
 }
 
 
