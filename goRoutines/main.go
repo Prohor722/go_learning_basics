@@ -2,20 +2,26 @@ package main
 
 import (
 	"fmt"
-	"time"
+	"sync"
+	// "time"
 )
 
-func task(id int) {
+func task(id int, w *sync.WaitGroup) {
+	defer w.Done()
 	fmt.Println("Doing task:", id)
 }
 
 func main() {
+	var wg sync.WaitGroup
 	for i:=range 11 {
-		// go task(i)
-		go func(i int){
-			fmt.Println(i)
-		}(i)
+		wg.Add(1)
+		go task(i, &wg)
+		// go func(i int){
+		// 	fmt.Println(i)
+		// }(i)
 	}
 
-	time.Sleep(time.Microsecond*200)
+	wg.Wait()
+
+	// time.Sleep(time.Microsecond*200)
 }
