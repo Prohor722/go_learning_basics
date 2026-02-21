@@ -51,7 +51,8 @@ func main() {
 	// interfaceExample()
 	// enumExamples()
 	// genericExample()
-	channelsExample()
+	// channelsExample()
+	mutexExample()
 }
 
 
