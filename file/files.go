@@ -44,5 +44,7 @@ func main() {
 
 
 	//Another way of reading data
-	
+	data,err := os.ReadFile("file.txt")
+	errCheck(err)
+	fmt.Println("\nData:",string(data))
 }
