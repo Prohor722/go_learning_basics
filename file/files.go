@@ -5,17 +5,37 @@ import (
 	"os"
 )
 
+func errCheck(err error){
+	if err != nil {
+		panic(err)
+	}
+}
+
 func main() {
 	f, err := os.Open("file.txt")
 
-	if err != nil {
-		panic(err)
-	}
+	errCheck(err)
 
 	fileInfo, err := f.Stat()
-	if err != nil {
-		panic(err)
-	}
 
-	fmt.Println("File Name",fileInfo.Name())
+	errCheck(err)
+
+	// fmt.Println("File Name: ",fileInfo.Name())
+	// fmt.Println("File or Folder: ",fileInfo.IsDir())
+	// fmt.Println("File Size:",fileInfo.Size())
+	// fmt.Println("File Mode:",fileInfo.Mode())
+	// fmt.Println("File Modified Time:",fileInfo.ModTime())
+
+	//Read File
+	size := fileInfo.Size()
+	buf := make([]byte, size)
+
+	d,err := f.Read(buf)
+
+	errCheck(err)
+
+	fmt.Println(d)
+	println("data:",buf)
+
+	defer f.Close()
 }
