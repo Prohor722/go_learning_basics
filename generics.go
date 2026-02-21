@@ -1,5 +1,13 @@
 package main
 
-func genericExample(){
-	
+import "fmt"
+
+func printSlice(items []int) {
+	for _, item := range items {
+		fmt.Println(item)
+	}
+}
+
+func genericExample() {
+	printSlice([]int{1,2,3,4,5})
 }

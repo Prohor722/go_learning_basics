@@ -49,7 +49,8 @@ func main() {
 	// pointersExample()
 	// strucksExamples()
 	// interfaceExample()
-	enumExamples()
+	// enumExamples()
+	genericExample()
 }
 
 
