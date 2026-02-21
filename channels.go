@@ -25,11 +25,48 @@ func task(done chan bool){
 	fmt.Println("Processing....")
 }
 
+func emailSender(emailChan <-chan string, done chan<- bool){
+	defer func(){ done<-true}()
+	for email:=range emailChan{
+		fmt.Println("sending email to: ",email)
+		time.Sleep(time.Second)
+	}
+}
+
 func channelsExample() {
-	done := make(chan bool)
-	go task(done)
-	res:= <- done
-	fmt.Println(res)
+	chan1 := make(chan int)
+	chan2 := make(chan string)
+
+	go func(){
+		chan1 <- 1
+	}()
+
+	go func(){
+		chan2 <- "pong.."
+	}()
+
+	for range 2{
+		select {
+			case chan1Val := <-chan1:
+				fmt.Println("receiving data from chan1: ",chan1Val)
+			case chan1Val := <-chan2:
+				fmt.Println("receiving data from chan2: ",chan1Val)
+		}
+	}
+	// emailChan := make(chan string, 10)
+	// done := make(chan bool)
+	// go emailSender(emailChan, done)
+	// for i:=range 100{
+	// 	emailChan <- fmt.Sprintf("mail%d@gmail.com",i)	
+	// }
+	// fmt.Println("done sending.")
+	// close(emailChan)
+	// <-done
+
+	// done := make(chan bool)
+	// go task(done)
+	// res:= <- done
+	// fmt.Println(res)
 
 	// result := make(chan int)
 	// go sum(result,4,5)
