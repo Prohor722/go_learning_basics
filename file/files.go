@@ -35,7 +35,14 @@ func main() {
 	errCheck(err)
 
 	fmt.Println(d)
-	println("data:",buf)
 
+	fmt.Print("data: ")
+	for i:=range buf{
+		print(string(buf[i]))
+	}
 	defer f.Close()
+
+
+	//Another way of reading data
+	
 }
