@@ -13,6 +13,7 @@ import (
 //naming by the github project url is convension not mendatory
 
 //go get github.com/fatih/color		//to install package
+//go mod tidy 		//to fix basic warning issues fixed
 
 func main() {
 	auth.LoginWithCredentials("Prohor", "1234")
