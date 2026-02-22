@@ -6,10 +6,13 @@ import (
 	"github.com/Prohor722/go_learning_basics/account"
 	"github.com/Prohor722/go_learning_basics/auth"
 	"github.com/Prohor722/go_learning_basics/user"
+	"github.com/fatih/color"
 )
 
-// go mod init github.com/Prohor722/go_learning_basics	//cmd
+// go mod init github.com/Prohor722/go_learning_basics	//cmd for creating package
 //naming by the github project url is convension not mendatory
+
+//go get github.com/fatih/color		//to install package
 
 func main() {
 	auth.LoginWithCredentials("Prohor", "1234")
@@ -44,4 +47,8 @@ func main() {
 	user1.SubAmount(12)
 	fmt.Println("After sub 12")
 	fmt.Println(user1.CheckBalance())
+
+	//using installed package
+	color.Red(user1.Name)
+	color.Yellow(user1.Name)
 }
