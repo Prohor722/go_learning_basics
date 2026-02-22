@@ -47,4 +47,18 @@ func main() {
 	data,err := os.ReadFile("file.txt")
 	errCheck(err)
 	fmt.Println("\nData:",string(data))
+
+	//Read Folders
+	dir,err := os.Open(".")
+
+	errCheck(err)
+
+	defer dir.Close()
+
+	fileInfos, err := dir.ReadDir(1)
+	errCheck(err)
+
+	for _,fi :=range fileInfos{
+		fmt.Println(fi.Name())
+	}
 }
