@@ -49,8 +49,8 @@ func main() {
 	fmt.Println("\nData:",string(data))
 
 	//Read Folders
-	// dir,err := os.Open(".")
-	dir,err := os.Open("../")
+	dir,err := os.Open(".")
+	// dir,err := os.Open("../")
 
 	errCheck(err)
 
@@ -59,7 +59,8 @@ func main() {
 	fileInfos, err := dir.ReadDir(-1)
 	errCheck(err)
 
-	fmt.Println("\n")
+	fmt.Println()
+	fmt.Println()
 	for _,fi :=range fileInfos{
 		fmt.Print(fi.Name())
 		if(fi.IsDir()){
@@ -67,4 +68,12 @@ func main() {
 		}
 		fmt.Println()
 	}
+
+
+	//Write a file
+	file,err := os.Create("example.txt")	//creating a new file
+	errCheck(err)
+	defer file.Close()
+
+	file.WriteString("Hello ! i m under water, please help!!")
 }
