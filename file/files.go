@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"io"
 	"os"
+
+	// "github.com/golang-migrate/migrate/source"
 )
 
 //Cheaks error by checking not nill. Receiving parameter error(error type)
@@ -12,6 +14,44 @@ func errCheck(err error){
 	if err != nil {
 		panic(err)
 	}
+}
+
+func getFile(file string) *os.File{
+	openedFile,err := os.Open(file)
+	errCheck(err)
+	return openedFile
+}
+
+func createFileFunction(file string) *os.File{
+	newFile,err := os.Create(file)
+	errCheck(err)
+	return newFile
+}
+
+func closeFile(file *os.File){
+	defer file.Close()
+}
+
+//desFile(Destination file), soFile(Source file), createFile (if the destination file is not created)
+//createFile true if need to be created
+//returns the copy error of destination file
+func copyFile(desFile string,soFile string, createFile bool) error{
+	sFile := getFile(soFile)
+	var dFile *os.File
+	
+	if(createFile){
+		dFile = createFileFunction(desFile)
+	}else{
+		dFile = getFile(desFile)
+	}
+	
+	closeFile(dFile)
+	closeFile(sFile)
+
+	_,e := io.Copy(dFile,sFile)
+	errCheck(e)
+
+	return dFile.Sync()
 }
 
 func main() {
@@ -135,6 +175,9 @@ func main() {
 	errCheck(e)
 
 	fmt.Println("Response: ",res)
+	fmt.Println("DesFile Sync: ",destFile2.Sync())
 	fmt.Println("Coping Complete!")
 	
+
+
 }
