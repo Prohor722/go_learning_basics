@@ -49,16 +49,22 @@ func main() {
 	fmt.Println("\nData:",string(data))
 
 	//Read Folders
-	dir,err := os.Open(".")
+	// dir,err := os.Open(".")
+	dir,err := os.Open("../")
 
 	errCheck(err)
 
 	defer dir.Close()
 
-	fileInfos, err := dir.ReadDir(1)
+	fileInfos, err := dir.ReadDir(-1)
 	errCheck(err)
 
+	fmt.Println("\n")
 	for _,fi :=range fileInfos{
-		fmt.Println(fi.Name())
+		fmt.Print(fi.Name())
+		if(fi.IsDir()){
+			fmt.Print(" -  This is a directory!!")
+		}
+		fmt.Println()
 	}
 }
