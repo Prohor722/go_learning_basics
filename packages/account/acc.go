@@ -1,6 +1,16 @@
 package account
 
-var balance float32 = 0.00
+type UserAccount struct{
+	Name string
+	Age int
+	balance float32
+}
+
+func (u UserAccount) CreateAccount(){
+	if(u.balance < 0){
+		u.balance = 0
+	}
+}
 
 func checkAmount(amount float32) bool{
 	if amount<0 {
@@ -11,19 +21,19 @@ func checkAmount(amount float32) bool{
 	return true
 }
 
-func CheckBalance() float32{
-	return balance
+func (u UserAccount) CheckBalance() float32{
+	return u.balance
 }
 
-func AddAmoubt(amount float32){
+func (u UserAccount) AddAmoubt(amount float32){
 	if(checkAmount(amount)){
-		balance += amount
+		u.balance += amount
 	}
 }
 
-func SubAmount(amount float32){
+func (u UserAccount) SubAmount(amount float32){
 	if(checkAmount(amount)){
-		balance-= amount
+		u.balance-= amount
 	}
 }
 
