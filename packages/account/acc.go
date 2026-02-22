@@ -6,7 +6,7 @@ type UserAccount struct{
 	balance float32
 }
 
-func (u UserAccount) CreateAccount(){
+func (u *UserAccount) CreateAccount(){
 	if(u.balance < 0){
 		u.balance = 0
 	}
@@ -21,17 +21,17 @@ func checkAmount(amount float32) bool{
 	return true
 }
 
-func (u UserAccount) CheckBalance() float32{
+func (u *UserAccount) CheckBalance() float32{
 	return u.balance
 }
 
-func (u UserAccount) AddAmount(amount float32){
+func (u *UserAccount) AddAmount(amount float32){
 	if(checkAmount(amount)){
 		u.balance += amount
 	}
 }
 
-func (u UserAccount) SubAmount(amount float32){
+func (u *UserAccount) SubAmount(amount float32){
 	if(checkAmount(amount)){
 		u.balance-= amount
 	}
