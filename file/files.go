@@ -184,4 +184,7 @@ func main() {
 	res2 := copyFile("example4.txt","file.txt",true)
 	fmt.Println("Response: ",res2)
 
+	// delete file
+	// dE := os.Remove("example4.txt")
+	// fmt.Println(dE)
 }
