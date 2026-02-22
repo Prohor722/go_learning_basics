@@ -44,12 +44,14 @@ func copyFile(desFile string,soFile string, createFile bool) error{
 	}else{
 		dFile = getFile(desFile)
 	}
-	
-	closeFile(dFile)
-	closeFile(sFile)
 
 	_,e := io.Copy(dFile,sFile)
 	errCheck(e)
+
+	closeFile(dFile)
+	closeFile(sFile)
+
+	fmt.Println("File copied successfully!")
 
 	return dFile.Sync()
 }
@@ -179,5 +181,7 @@ func main() {
 	fmt.Println("Coping Complete!")
 	
 
+	res2 := copyFile("example4.txt","file.txt",true)
+	fmt.Println("Response: ",res2)
 
 }
