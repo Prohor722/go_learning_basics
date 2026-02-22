@@ -25,7 +25,7 @@ func (u UserAccount) CheckBalance() float32{
 	return u.balance
 }
 
-func (u UserAccount) AddAmoubt(amount float32){
+func (u UserAccount) AddAmount(amount float32){
 	if(checkAmount(amount)){
 		u.balance += amount
 	}

@@ -11,14 +11,14 @@ import (
 // go mod init github.com/Prohor722/go_learning_basics	//cmd
 //naming by the github project url is convension not mendatory
 
-func main(){
-	auth.LoginWithCredentials("Prohor","1234")
+func main() {
+	auth.LoginWithCredentials("Prohor", "1234")
 	session := auth.GetSession()
 	fmt.Println(session)
 
 	user := user.User{
 		Email: "user@user.com",
-		Name: "User1",
+		Name:  "User1",
 	}
 
 	fmt.Println(user.Email)
@@ -26,9 +26,22 @@ func main(){
 
 	user1 := account.UserAccount{
 		Name: "Abu",
-		Age: 10,
+		Age:  10,
 	}
 	user1.CreateAccount()
 
+	fmt.Println(user1.Name)
+	fmt.Println(user1.CheckBalance())
+	user1.AddAmount(-11.22)
+	fmt.Println("After add -11.20")
+	fmt.Println(user1.CheckBalance())
+	user1.AddAmount(10)
+	fmt.Println("After add 10")
+	fmt.Println(user1.CheckBalance())
+	user1.SubAmount(-40)
+	fmt.Println("After sub -40")
+	fmt.Println(user1.CheckBalance())
+	user1.SubAmount(10)
+	fmt.Println("After sub 10")
 	fmt.Println(user1.CheckBalance())
 }
