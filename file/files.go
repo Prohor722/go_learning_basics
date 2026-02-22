@@ -76,4 +76,5 @@ func main() {
 	defer file.Close()
 
 	file.WriteString("Hello ! i m under water, please help!!")
+	file.WriteString("I am drwaning....")
 }
