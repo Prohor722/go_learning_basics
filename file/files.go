@@ -1,14 +1,18 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 )
 
-func errCheck(err error){
+//Cheaks error by checking not nill. Receiving parameter error(error type)
+func errCheck(err error) bool{
 	if err != nil {
 		panic(err)
+		return false
 	}
+	return true
 }
 
 func main() {
@@ -86,4 +90,35 @@ func main() {
 	errCheck(err)
 
 	fmt.Println("Returend n: ",n)
+
+
+	//read and write to another file (streaming fashion)
+
+	sourceFile,err := os.Open("example.txt")
+	errCheck(err)
+
+	defer sourceFile.Close()
+
+	destFile, err := os.Create("example2.txt")
+
+	errCheck(err)
+	defer destFile.Close()
+
+	reader := bufio.NewReader(sourceFile)
+	writer := bufio.NewWriter(destFile)
+
+	for{
+		b,err := reader.ReadByte()
+		if !errCheck(err){
+			if err.Error() != "EOF" {
+				panic(err)
+			}
+			break
+		}
+		err2 := writer.WriteByte(b)
+		errCheck(err2)
+	}
+
+	writer.Flush()
+
 }
