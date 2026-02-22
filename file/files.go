@@ -3,16 +3,15 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"os"
 )
 
 //Cheaks error by checking not nill. Receiving parameter error(error type)
-func errCheck(err error) bool{
+func errCheck(err error){
 	if err != nil {
 		panic(err)
-		return false
 	}
-	return true
 }
 
 func main() {
@@ -109,7 +108,7 @@ func main() {
 
 	for{
 		b,err := reader.ReadByte()
-		if !errCheck(err){
+		if err != nil {
 			if err.Error() != "EOF" {
 				panic(err)
 			}
@@ -120,5 +119,22 @@ func main() {
 	}
 
 	writer.Flush()
+	fmt.Println("Written to new file successfully!")
 
+
+	//Another way of copying
+	sourceFile2, err := os.Open("file.txt")
+	errCheck(err)
+	defer sourceFile2.Close()
+
+	destFile2,err := os.Create("example3.txt")
+	errCheck(err)
+	defer destFile2.Close()
+
+	res,e := io.Copy(destFile2,sourceFile2)
+	errCheck(e)
+
+	fmt.Println("Response: ",res)
+	fmt.Println("Coping Complete!")
+	
 }
