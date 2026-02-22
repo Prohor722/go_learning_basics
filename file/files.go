@@ -77,4 +77,13 @@ func main() {
 
 	file.WriteString("Hello ! i m under water, please help!!")
 	file.WriteString("I am drwaning....")
+
+
+	bytes := []byte("hello go lang!")
+
+	n,err := file.Write(bytes)
+
+	errCheck(err)
+
+	fmt.Println("Returend n: ",n)
 }
